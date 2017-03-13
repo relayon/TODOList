@@ -6,7 +6,31 @@ target 'TODOList' do
   # use_frameworks!
 
   # Pods for TODOList
+  # sqlite ORM
+  pod 'LKDBHelper'
+  # 自动布局
+  pod 'Masonry'
+  # 带Placeholder的TextView
   pod 'UIPlaceholderTextView'
+  # UITableView Cell高度自适应
+  pod 'UITableView+FDTemplateLayoutCell'
+  # 硬件设备，分辨率监测
+  pod 'SDVersion'
+  # Crash跟踪
+  pod 'Bugly'
+  # 切面编程
+  #https://github.com/steipete/Aspects.git
+  pod 'Aspects'
+  # 解压缩
+  pod 'SSZipArchive'
+  # 文件管理
+  pod 'FCFileManager'
+  # 日志管理
+  pod 'CocoaLumberjack'
+  # 补丁热更新
+  pod 'JSPatchPlatform'
+  # 日历控件
+  pod 'FSCalendar'
 
   target 'TODOListTests' do
     inherit! :search_paths

@@ -22,6 +22,11 @@
 		5439DD011E7691E00093BE06 /* common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD001E7691E00093BE06 /* common.storyboard */; };
 		5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD031E7692710093BE06 /* TextEditViewController.m */; };
 		5439DD091E7694D30093BE06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD0B1E7694D30093BE06 /* Localizable.strings */; };
+		5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD101E76A4C90093BE06 /* GoalEditViewController.m */; };
+		5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD131E76A9200093BE06 /* UITextViewCell.m */; };
+		5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD141E76A9200093BE06 /* UITextViewCell.xib */; };
+		5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */; };
+		5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -82,6 +87,14 @@
 		5439DD061E76935A0093BE06 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		5439DD0D1E7694DD0093BE06 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5439DD0E1E7694F00093BE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5439DD0F1E76A4C90093BE06 /* GoalEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalEditViewController.h; sourceTree = "<group>"; };
+		5439DD101E76A4C90093BE06 /* GoalEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEditViewController.m; sourceTree = "<group>"; };
+		5439DD121E76A9200093BE06 /* UITextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewCell.h; sourceTree = "<group>"; };
+		5439DD131E76A9200093BE06 /* UITextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewCell.m; sourceTree = "<group>"; };
+		5439DD141E76A9200093BE06 /* UITextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewCell.xib; sourceTree = "<group>"; };
+		5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwitchViewSection.h; sourceTree = "<group>"; };
+		5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewSection.m; sourceTree = "<group>"; };
+		5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UISwitchViewSection.xib; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +246,8 @@
 			children = (
 				5439DCEF1E767FB50093BE06 /* GoalsViewController.h */,
 				5439DCF01E767FB50093BE06 /* GoalsViewController.m */,
+				5439DD0F1E76A4C90093BE06 /* GoalEditViewController.h */,
+				5439DD101E76A4C90093BE06 /* GoalEditViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +268,12 @@
 				5439DCF81E768AD40093BE06 /* GoalTableViewCell.h */,
 				5439DCF91E768AD40093BE06 /* GoalTableViewCell.m */,
 				5439DCFA1E768AD40093BE06 /* GoalTableViewCell.xib */,
+				5439DD121E76A9200093BE06 /* UITextViewCell.h */,
+				5439DD131E76A9200093BE06 /* UITextViewCell.m */,
+				5439DD141E76A9200093BE06 /* UITextViewCell.xib */,
+				5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */,
+				5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */,
+				5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,9 +418,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */,
 				5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */,
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
 				5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */,
+				5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */,
 				5439DCBF1E7673D00093BE06 /* Assets.xcassets in Resources */,
 				5439DD011E7691E00093BE06 /* common.storyboard in Resources */,
 				5439DCBD1E7673D00093BE06 /* Main.storyboard in Resources */,
@@ -567,10 +590,13 @@
 			files = (
 				5439DCFB1E768AD40093BE06 /* GoalTableViewCell.m in Sources */,
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
+				5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
+				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
+				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
 				5439DCF41E76824A0093BE06 /* GoalModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

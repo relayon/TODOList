@@ -31,6 +31,8 @@
     } else {
         self.textView.text = @"";
     }
+    
+    [self.textView becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

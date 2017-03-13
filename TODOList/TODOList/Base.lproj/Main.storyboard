@@ -81,5 +81,46 @@
             </objects>
             <point key="canvasLocation" x="1532" y="974.6626686656673"/>
         </scene>
+        <!--编辑-->
+        <scene sceneID="aiw-7A-WiI">
+            <objects>
+                <viewController storyboardIdentifier="GoalEditViewController" id="KuE-Vz-FV8" customClass="GoalEditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g3s-6D-zmR"/>
+                        <viewControllerLayoutGuide type="bottom" id="XfG-pf-0o1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Unf-Rk-hzs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-Ng-WA8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KuE-Vz-FV8" id="qr2-Pr-PBK"/>
+                                    <outlet property="delegate" destination="KuE-Vz-FV8" id="dPP-r5-piC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPk-Ng-WA8" firstAttribute="leading" secondItem="Unf-Rk-hzs" secondAttribute="leading" id="EIn-fZ-krW"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPk-Ng-WA8" secondAttribute="trailing" id="Y3D-tY-tou"/>
+                            <constraint firstItem="XfG-pf-0o1" firstAttribute="top" secondItem="ZPk-Ng-WA8" secondAttribute="bottom" id="e9n-bv-eQX"/>
+                            <constraint firstItem="ZPk-Ng-WA8" firstAttribute="top" secondItem="Unf-Rk-hzs" secondAttribute="top" id="fFv-5b-5tx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑" id="hsF-dn-0cS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5u0-MK-DCB"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZPk-Ng-WA8" id="gn7-Xj-28c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZH-xG-ZTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2300" y="972"/>
+        </scene>
     </scenes>
 </document>

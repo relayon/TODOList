@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  TODOList
+//
+//  Created by SMC-MAC on 17/3/13.
+//  Copyright © 2017年 heyou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 获取屏幕的大小，宽度和高度
+#define SCREEN_SIZE ([UIScreen mainScreen].bounds.size)  // 大小
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)  // 宽度
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)  // 高度
+
+// 弱引用/强引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self  // 弱引用
+#define SS(strongSelf)  __strong __typeof(&*self)strongSelf = self  // 强引用
+
+// 单例
+// 声明
+#define SINGLETON_DCL   +(instancetype)sharedInstance
+// 实现
+#define SINGLETON_IMP   +(instancetype)sharedInstance { \
+static id instance = nil; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+instance = [[[self class] alloc] init]; \
+}); \
+return instance;}
+
+// 本地化
+#define L(key) NSLocalizedString(key, nil)
+
+#endif /* PrefixHeader_pch */

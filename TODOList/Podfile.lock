@@ -1,0 +1,12 @@
+PODS:
+  - UIPlaceholderTextView (0.1.3)
+
+DEPENDENCIES:
+  - UIPlaceholderTextView
+
+SPEC CHECKSUMS:
+  UIPlaceholderTextView: 9b47dc3e6513b13186932fd265462dfd25679e59
+
+PODFILE CHECKSUM: c486e7d9de84903fa849084cef8026a5f287f9b1
+
+COCOAPODS: 1.1.1

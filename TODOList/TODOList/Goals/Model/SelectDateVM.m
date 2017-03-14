@@ -26,7 +26,7 @@
 }
 
 - (NSString*)title {
-    return @"重复";
+    return @"时间";
 }
 
 - (NSString*)detail {

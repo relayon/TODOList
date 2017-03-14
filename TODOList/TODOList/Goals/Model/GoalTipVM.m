@@ -9,6 +9,7 @@
 #import "GoalTipVM.h"
 #import "TitleDetailTableViewCell.h"
 #import "SelectDateVM.h"
+#import "SelectRepeatCellVM.h"
 
 @interface GoalTipVM ()
 @property (nonatomic, weak) GoalModel* goalModel;
@@ -30,9 +31,15 @@
     
     if ([self isTip]) {
         NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
+        // 时间
         SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self.controller cellName:selectDateCellName height:44];
         [selectDateVM updateWithGoalModel:self.goalModel];
         [self.cells addObject:selectDateVM];
+        
+        // 重复
+        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller cellName:selectDateCellName height:44];
+        [repeatVM updateWithGoalModel:self.goalModel];
+        [self.cells addObject:repeatVM];
     }
 }
 

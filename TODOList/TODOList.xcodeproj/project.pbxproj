@@ -39,6 +39,7 @@
 		5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */; };
 		5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD411E77BE110093BE06 /* BaseTableSection.m */; };
 		5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD441E77C09D0093BE06 /* GoalTipVM.m */; };
+		5439DD481E77D4290093BE06 /* SelectRepeatCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD471E77D4290093BE06 /* SelectRepeatCellVM.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -130,6 +131,8 @@
 		5439DD411E77BE110093BE06 /* BaseTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableSection.m; sourceTree = "<group>"; };
 		5439DD431E77C09D0093BE06 /* GoalTipVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalTipVM.h; sourceTree = "<group>"; };
 		5439DD441E77C09D0093BE06 /* GoalTipVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalTipVM.m; sourceTree = "<group>"; };
+		5439DD461E77D4290093BE06 /* SelectRepeatCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRepeatCellVM.h; sourceTree = "<group>"; };
+		5439DD471E77D4290093BE06 /* SelectRepeatCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRepeatCellVM.m; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 				5439DD361E77AF310093BE06 /* SelectDateVM.m */,
 				5439DD431E77C09D0093BE06 /* GoalTipVM.h */,
 				5439DD441E77C09D0093BE06 /* GoalTipVM.m */,
+				5439DD461E77D4290093BE06 /* SelectRepeatCellVM.h */,
+				5439DD471E77D4290093BE06 /* SelectRepeatCellVM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -672,6 +677,7 @@
 				5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */,
 				5439DD261E777BF90093BE06 /* TableSectionModel.m in Sources */,
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
+				5439DD481E77D4290093BE06 /* SelectRepeatCellVM.m in Sources */,
 				5439DD231E777BE90093BE06 /* TableCellModel.m in Sources */,
 				5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,

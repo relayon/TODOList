@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="737" y="972"/>
         </scene>
-        <!--任务-->
+        <!--Goals View Controller-->
         <scene sceneID="std-rE-Kqu">
             <objects>
                 <viewController storyboardIdentifier="GoalsViewController" id="6iB-w8-gm0" customClass="GoalsViewController" sceneMemberID="viewController">
@@ -61,12 +61,23 @@
                             <constraint firstItem="05B-Ix-woF" firstAttribute="leading" secondItem="yOQ-be-4fJ" secondAttribute="leading" id="zRU-CR-Kh3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="任务" id="2xi-pa-2KZ">
+                    <navigationItem key="navigationItem" id="2xi-pa-2KZ">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="设置" id="Tue-Vv-mpx">
                             <connections>
                                 <action selector="onSettingClick:" destination="6iB-w8-gm0" id="wsv-2n-mYY"/>
                             </connections>
                         </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eri-qA-383">
+                            <rect key="frame" x="161" y="11" width="53" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="今天" image="img_arrow_down">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonTitleClick:" destination="6iB-w8-gm0" eventType="touchUpInside" id="0DT-SK-WTr"/>
+                            </connections>
+                        </button>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7zI-ap-5vl">
                             <connections>
                                 <action selector="onAddClick:" destination="6iB-w8-gm0" id="h6m-mp-lWE"/>
@@ -74,6 +85,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonTitle" destination="Eri-qA-383" id="LGl-tK-efe"/>
                         <outlet property="tableView" destination="wlM-B9-INf" id="bAb-6j-cb8"/>
                     </connections>
                 </viewController>
@@ -123,4 +135,7 @@
             <point key="canvasLocation" x="2300" y="972"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_arrow_down" width="16" height="9"/>
+    </resources>
 </document>

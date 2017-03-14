@@ -1,22 +1,20 @@
 PODS:
   - Aspects (1.4.1)
-  - Bugly (2.4.6)
-  - CocoaLumberjack (3.0.0):
-    - CocoaLumberjack/Default (= 3.0.0)
-    - CocoaLumberjack/Extensions (= 3.0.0)
-  - CocoaLumberjack/Core (3.0.0)
-  - CocoaLumberjack/Default (3.0.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (3.0.0):
+  - Bugly (2.4.7)
+  - CocoaLumberjack (3.1.0):
+    - CocoaLumberjack/Default (= 3.1.0)
+    - CocoaLumberjack/Extensions (= 3.1.0)
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Extensions (3.1.0):
     - CocoaLumberjack/Default
   - FCFileManager (1.0.18)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - FSCalendar (2.7.1)
-  - JSPatch (1.1.2):
-    - JSPatch/Core (= 1.1.2)
-  - JSPatch/Core (1.1.2)
+  - FSCalendar (2.7.3)
+  - JSPatch (1.1.3):
+    - JSPatch/Core (= 1.1.3)
+  - JSPatch/Core (1.1.3)
   - JSPatchPlatform (1.6.6):
     - JSPatchPlatform/Core (= 1.6.6)
   - JSPatchPlatform/Core (1.6.6):
@@ -24,8 +22,9 @@ PODS:
   - LKDBHelper (2.4.1):
     - FMDB
   - Masonry (1.0.2)
-  - SDVersion (3.6)
+  - SDVersion (4.0.1)
   - SSZipArchive (1.7)
+  - UIButton-SSEdgeInsets (0.1.4)
   - UIPlaceholderTextView (0.1.3)
   - UITableView+FDTemplateLayoutCell (1.4)
 
@@ -40,25 +39,27 @@ DEPENDENCIES:
   - Masonry
   - SDVersion
   - SSZipArchive
+  - UIButton-SSEdgeInsets
   - UIPlaceholderTextView
   - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
-  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  Bugly: 2c256069145f550171907c5cb1c0f84ad291f6c1
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  FSCalendar: cfc95384cb0d648ad7c1957649ea74d6c26bb0de
-  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  FSCalendar: 574388d70778c22719eed9341653e1743b345573
+  JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   JSPatchPlatform: 8cc9aaebe21109d5fdfb4500384ddf38ed0990e9
   LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  SDVersion: 43383b6ac05462c973c3fd92d9748c74e360aba5
+  SDVersion: 6afaf76a7e71d620cc2039f96d4bff3064c129ec
   SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
+  UIButton-SSEdgeInsets: 50d42c7d441d42ea115f84765622f3dea5cadf55
   UIPlaceholderTextView: 9b47dc3e6513b13186932fd265462dfd25679e59
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: df8856554d216cc6852d2ace9cbce2e6d9ab95c2
+PODFILE CHECKSUM: 76f0a00505d869c927cb3788b1c195a7c31c219a
 
 COCOAPODS: 1.1.1

@@ -12,12 +12,16 @@
 #import "GoalTableViewCell.h"
 #import "GoalModel.h"
 
+#import "UIButton+SSEdgeInsets.h"
+
 @interface GoalsViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray<GoalModel*>* _goalsList;
 }
 - (IBAction)onAddClick:(id)sender;
 - (IBAction)onSettingClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *buttonTitle;
+- (IBAction)onButtonTitleClick:(UIButton *)sender;
 
 @end
 
@@ -26,6 +30,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.buttonTitle setImagePositionWithType:SSImagePositionTypeRight spacing:10.0f];
+    self.buttonTitle.backgroundColor = [UIColor whiteColor];
+    self.buttonTitle.frame = CGRectMake(0, 0, 100, 40);
     
     [self p_initTableView];
 }
@@ -88,6 +96,9 @@
 }
 
 - (IBAction)onSettingClick:(id)sender {
+    NSLog(@"%s", __FUNCTION__);
+}
+- (IBAction)onButtonTitleClick:(UIButton *)sender {
     NSLog(@"%s", __FUNCTION__);
 }
 @end

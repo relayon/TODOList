@@ -15,6 +15,8 @@
 #import "UIButton+SSEdgeInsets.h"
 #import "SettingViewController.h"
 
+#import "GoalBrowseViewController.h"
+
 @interface GoalsViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray<GoalModel*>* _goalsList;
 }
@@ -77,6 +79,15 @@
     [self p_configCell:cell forIndex:indexPath];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    GoalModel* md = [_goalsList objectAtIndex:indexPath.row];
+    GoalBrowseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GoalBrowseViewController class])];
+    vc.goalModel = md;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

@@ -45,6 +45,10 @@
 		5439DD541E77E20B0093BE06 /* GoalEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD531E77E20B0093BE06 /* GoalEnum.m */; };
 		5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD561E77F6D90093BE06 /* SettingViewController.m */; };
 		5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD591E77FBB10093BE06 /* NSString+Extension.m */; };
+		5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */; };
+		5439DD611E7801F40093BE06 /* TitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD5F1E7801F40093BE06 /* TitleTableViewCell.m */; };
+		5439DD621E7801F40093BE06 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD601E7801F40093BE06 /* TitleTableViewCell.xib */; };
+		5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD641E78030E0093BE06 /* UITableView+Extension.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -148,6 +152,13 @@
 		5439DD561E77F6D90093BE06 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		5439DD581E77FBB10093BE06 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		5439DD591E77FBB10093BE06 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		5439DD5B1E7801080093BE06 /* GoalBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalBrowseViewController.h; sourceTree = "<group>"; };
+		5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalBrowseViewController.m; sourceTree = "<group>"; };
+		5439DD5E1E7801F40093BE06 /* TitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleTableViewCell.h; sourceTree = "<group>"; };
+		5439DD5F1E7801F40093BE06 /* TitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleTableViewCell.m; sourceTree = "<group>"; };
+		5439DD601E7801F40093BE06 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		5439DD631E78030E0093BE06 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
+		5439DD641E78030E0093BE06 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +332,8 @@
 				5439DD101E76A4C90093BE06 /* GoalEditViewController.m */,
 				5439DD551E77F6D90093BE06 /* SettingViewController.h */,
 				5439DD561E77F6D90093BE06 /* SettingViewController.m */,
+				5439DD5B1E7801080093BE06 /* GoalBrowseViewController.h */,
+				5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -359,6 +372,9 @@
 				5439DD301E77AEA70093BE06 /* TitleDetailTableViewCell.h */,
 				5439DD311E77AEA70093BE06 /* TitleDetailTableViewCell.m */,
 				5439DD321E77AEA70093BE06 /* TitleDetailTableViewCell.xib */,
+				5439DD5E1E7801F40093BE06 /* TitleTableViewCell.h */,
+				5439DD5F1E7801F40093BE06 /* TitleTableViewCell.m */,
+				5439DD601E7801F40093BE06 /* TitleTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +394,8 @@
 				5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */,
 				5439DD581E77FBB10093BE06 /* NSString+Extension.h */,
 				5439DD591E77FBB10093BE06 /* NSString+Extension.m */,
+				5439DD631E78030E0093BE06 /* UITableView+Extension.h */,
+				5439DD641E78030E0093BE06 /* UITableView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -522,6 +540,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5439DD621E7801F40093BE06 /* TitleTableViewCell.xib in Resources */,
 				5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */,
 				5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */,
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
@@ -698,6 +717,7 @@
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
 				5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
+				5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */,
 				5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */,
 				5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */,
 				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
@@ -714,7 +734,9 @@
 				5439DD291E777F6F0093BE06 /* TableDataDelegate.m in Sources */,
 				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
 				5439DD541E77E20B0093BE06 /* GoalEnum.m in Sources */,
+				5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */,
 				5439DD331E77AEA70093BE06 /* TitleDetailTableViewCell.m in Sources */,
+				5439DD611E7801F40093BE06 /* TitleTableViewCell.m in Sources */,
 				5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */,
 				5439DD4C1E77DDA10093BE06 /* SelectItem.m in Sources */,
 				5439DCF41E76824A0093BE06 /* GoalModel.m in Sources */,

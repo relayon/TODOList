@@ -16,13 +16,13 @@
 
 @implementation TableCellModel
 
-- (NSString*)title {
-    return @"";
-}
-
-- (NSString*)detail {
-    return @"";
-}
+//- (NSString*)title {
+//    return @"";
+//}
+//
+//- (NSString*)detail {
+//    return @"";
+//}
 
 - (void)bind {
     NSLog(@"should be orride");

@@ -12,8 +12,6 @@
 
 @interface TableCellModel ()
 
-@property (nonatomic, weak) UIViewController* controller;
-
 @end
 
 @implementation TableCellModel

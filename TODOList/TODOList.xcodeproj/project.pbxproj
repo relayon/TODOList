@@ -32,6 +32,11 @@
 		5439DD291E777F6F0093BE06 /* TableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD281E777F6F0093BE06 /* TableDataDelegate.m */; };
 		5439DD2C1E77938A0093BE06 /* GoalContentVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD2B1E77938A0093BE06 /* GoalContentVM.m */; };
 		5439DD2F1E7794910093BE06 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD2E1E7794910093BE06 /* BaseTableViewCell.m */; };
+		5439DD331E77AEA70093BE06 /* TitleDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD311E77AEA70093BE06 /* TitleDetailTableViewCell.m */; };
+		5439DD341E77AEA70093BE06 /* TitleDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD321E77AEA70093BE06 /* TitleDetailTableViewCell.xib */; };
+		5439DD371E77AF310093BE06 /* SelectDateVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD361E77AF310093BE06 /* SelectDateVM.m */; };
+		5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD391E77B3470093BE06 /* DatePickerViewController.m */; };
+		5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -110,6 +115,15 @@
 		5439DD2B1E77938A0093BE06 /* GoalContentVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalContentVM.m; sourceTree = "<group>"; };
 		5439DD2D1E7794910093BE06 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		5439DD2E1E7794910093BE06 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		5439DD301E77AEA70093BE06 /* TitleDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleDetailTableViewCell.h; sourceTree = "<group>"; };
+		5439DD311E77AEA70093BE06 /* TitleDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDetailTableViewCell.m; sourceTree = "<group>"; };
+		5439DD321E77AEA70093BE06 /* TitleDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleDetailTableViewCell.xib; sourceTree = "<group>"; };
+		5439DD351E77AF310093BE06 /* SelectDateVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDateVM.h; sourceTree = "<group>"; };
+		5439DD361E77AF310093BE06 /* SelectDateVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDateVM.m; sourceTree = "<group>"; };
+		5439DD381E77B3470093BE06 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		5439DD391E77B3470093BE06 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSString.h"; sourceTree = "<group>"; };
+		5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSString.m"; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +183,7 @@
 		5439DCB11E7673D00093BE06 /* TODOList */ = {
 			isa = PBXGroup;
 			children = (
+				5439DD3B1E77BB020093BE06 /* Utils */,
 				5439DCE81E767DA50093BE06 /* Common */,
 				5439DCE61E767D570093BE06 /* Goals */,
 				5439DCB51E7673D00093BE06 /* AppDelegate.h */,
@@ -238,6 +253,8 @@
 			children = (
 				5439DD021E7692710093BE06 /* TextEditViewController.h */,
 				5439DD031E7692710093BE06 /* TextEditViewController.m */,
+				5439DD381E77B3470093BE06 /* DatePickerViewController.h */,
+				5439DD391E77B3470093BE06 /* DatePickerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +300,8 @@
 				5439DCF31E76824A0093BE06 /* GoalModel.m */,
 				5439DD2A1E77938A0093BE06 /* GoalContentVM.h */,
 				5439DD2B1E77938A0093BE06 /* GoalContentVM.m */,
+				5439DD351E77AF310093BE06 /* SelectDateVM.h */,
+				5439DD361E77AF310093BE06 /* SelectDateVM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,8 +318,28 @@
 				5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */,
 				5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */,
 				5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */,
+				5439DD301E77AEA70093BE06 /* TitleDetailTableViewCell.h */,
+				5439DD311E77AEA70093BE06 /* TitleDetailTableViewCell.m */,
+				5439DD321E77AEA70093BE06 /* TitleDetailTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5439DD3B1E77BB020093BE06 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5439DD3C1E77BB0E0093BE06 /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5439DD3C1E77BB0E0093BE06 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */,
+				5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		6DDDFD70CAC2EF272B8CAB78 /* Frameworks */ = {
@@ -449,6 +488,7 @@
 				5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */,
 				5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */,
 				5439DCBF1E7673D00093BE06 /* Assets.xcassets in Resources */,
+				5439DD341E77AEA70093BE06 /* TitleDetailTableViewCell.xib in Resources */,
 				5439DD011E7691E00093BE06 /* common.storyboard in Resources */,
 				5439DCBD1E7673D00093BE06 /* Main.storyboard in Resources */,
 			);
@@ -624,9 +664,13 @@
 				5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
+				5439DD371E77AF310093BE06 /* SelectDateVM.m in Sources */,
 				5439DD291E777F6F0093BE06 /* TableDataDelegate.m in Sources */,
 				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
+				5439DD331E77AEA70093BE06 /* TitleDetailTableViewCell.m in Sources */,
+				5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */,
 				5439DCF41E76824A0093BE06 /* GoalModel.m in Sources */,
+				5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */,
 				5439DD2C1E77938A0093BE06 /* GoalContentVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

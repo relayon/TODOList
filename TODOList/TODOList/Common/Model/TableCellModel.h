@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 // init
+@property (nonatomic, weak) UIViewController* controller;
 @property (nonatomic, copy) NSString* cellName;
 @property (nonatomic, assign) float height;
 + (instancetype)modelWithController:(UIViewController*)controller cellName:(NSString*)cellName;

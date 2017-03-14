@@ -8,6 +8,7 @@
 
 #import "GoalsViewController.h"
 #import "TextEditViewController.h"
+#import "GoalEditViewController.h"
 #import "GoalTableViewCell.h"
 #import "GoalModel.h"
 
@@ -79,8 +80,10 @@
 
 - (IBAction)onAddClick:(id)sender {
     NSLog(@"%s", __FUNCTION__);
-    UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"common" bundle:nil];
-    TextEditViewController* vc = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([TextEditViewController class])];
+//    UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"common" bundle:nil];
+//    TextEditViewController* vc = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([TextEditViewController class])];
+//    [self.navigationController pushViewController:vc animated:YES];
+    GoalEditViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GoalEditViewController class])];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

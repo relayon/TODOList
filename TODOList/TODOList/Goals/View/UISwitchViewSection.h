@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UISwitchViewSection : UIView
-
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+@property (weak, nonatomic) IBOutlet UISwitch *switchView;
 @end

@@ -9,9 +9,7 @@
 #import "UISwitchViewSection.h"
 
 @interface UISwitchViewSection ()
-@property (weak, nonatomic) IBOutlet UISwitch *switchView;
 - (IBAction)onValueChange:(UISwitch *)sender;
-
 @end
 
 @implementation UISwitchViewSection

@@ -96,10 +96,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-Ng-WA8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="KuE-Vz-FV8" id="qr2-Pr-PBK"/>
-                                    <outlet property="delegate" destination="KuE-Vz-FV8" id="dPP-r5-piC"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,7 +107,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="编辑" id="hsF-dn-0cS">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5u0-MK-DCB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5u0-MK-DCB">
+                            <connections>
+                                <action selector="onEditDone:" destination="KuE-Vz-FV8" id="Hw7-a3-n2a"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>

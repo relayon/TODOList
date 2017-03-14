@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GoalModel : NSObject
 
 // ID
-@property (nonnull, nonatomic, copy) NSString* goalId;
+@property (nonatomic, copy) NSString* goalId;
 // 包含的内容类型
 @property (nonatomic, assign) Goal_Content_Type contentType;
 // 任务状态
@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) Reminder_Way reminderWay;
 
 // 提醒日期
-@property (nonatomic, strong) NSDate* fireDate;
+@property (nullable, nonatomic, strong) NSDate* fireDate;
 // 基于位置的提醒
 // 纬度
 @property (nonatomic, assign) double latitude;
@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 任务的内容
 @property (nonatomic, copy) NSString* content;
 // 备注
-@property (nonatomic, copy) NSString* note;
+@property (nullable, nonatomic, copy) NSString* note;
 
 // 排序
 @property (nonatomic, assign) float order;

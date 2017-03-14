@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self p_initGoals];
     
     [self.buttonTitle setImagePositionWithType:SSImagePositionTypeRight spacing:10.0f];
     self.buttonTitle.backgroundColor = [UIColor whiteColor];
@@ -55,8 +56,9 @@
     self.tableView.tableFooterView = [UIView new];
 }
 
-- (void)p_configCell:(UITableViewCell*)cell forIndex:(NSIndexPath*)indexPath {
-    
+- (void)p_configCell:(GoalTableViewCell*)cell forIndex:(NSIndexPath*)indexPath {
+    GoalModel* md = [_goalsList objectAtIndex:indexPath.row];
+    [cell updateViewWithModel:md];
 }
 
 #pragma mark - UITableViewDataSource & UITableViewDelegate
@@ -70,7 +72,7 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString* cellName = NSStringFromClass([GoalTableViewCell class]);
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellName forIndexPath:indexPath];
+    GoalTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellName forIndexPath:indexPath];
     
     [self p_configCell:cell forIndex:indexPath];
     
@@ -90,6 +92,13 @@
 - (IBAction)onAddClick:(id)sender {
     NSLog(@"%s", __FUNCTION__);
     GoalEditViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GoalEditViewController class])];
+    GoalModel* md = [[GoalModel alloc] init];
+    vc.goalModel = md;
+    vc.onEditGoalModel = ^(GoalModel* model) {
+        [_goalsList insertObject:model atIndex:0];
+        [self.tableView reloadData];
+    };
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 

@@ -9,11 +9,14 @@
 #import "GoalTableViewCell.h"
 
 @interface GoalTableViewCell ()
-@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 
 @end
 
 @implementation GoalTableViewCell
+
+- (void)updateViewWithModel:(GoalModel*)model {
+    self.labelTitle.text = model.content;
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

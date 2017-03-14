@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GoalModel.h"
 
 @interface GoalTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+
+- (void)updateViewWithModel:(GoalModel*)model;
 
 @end

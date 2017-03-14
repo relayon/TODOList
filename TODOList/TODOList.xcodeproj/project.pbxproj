@@ -44,6 +44,7 @@
 		5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */; };
 		5439DD541E77E20B0093BE06 /* GoalEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD531E77E20B0093BE06 /* GoalEnum.m */; };
 		5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD561E77F6D90093BE06 /* SettingViewController.m */; };
+		5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD591E77FBB10093BE06 /* NSString+Extension.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -145,6 +146,8 @@
 		5439DD531E77E20B0093BE06 /* GoalEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEnum.m; sourceTree = "<group>"; };
 		5439DD551E77F6D90093BE06 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		5439DD561E77F6D90093BE06 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		5439DD581E77FBB10093BE06 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		5439DD591E77FBB10093BE06 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 			children = (
 				5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */,
 				5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */,
+				5439DD581E77FBB10093BE06 /* NSString+Extension.h */,
+				5439DD591E77FBB10093BE06 /* NSString+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -695,6 +700,7 @@
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
 				5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */,
 				5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */,
+				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
 				5439DD261E777BF90093BE06 /* TableSectionModel.m in Sources */,
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD481E77D4290093BE06 /* SelectRepeatCellVM.m in Sources */,

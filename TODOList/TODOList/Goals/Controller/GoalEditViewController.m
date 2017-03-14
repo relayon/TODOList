@@ -18,8 +18,6 @@
 
 @interface GoalEditViewController (){
     TableDataDelegate* _tableDelegate;
-    
-    GoalModel* _goalModel;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)onEditDone:(UIBarButtonItem *)sender;
@@ -31,10 +29,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _goalModel = [[GoalModel alloc] init];
-    _goalModel.content = @"haha";
-    _goalModel.fireDate = [NSDate date];
-    _goalModel.reminderWay = Reminder_Way_Notify;
     
     [self p_buildData];
     [self p_initTableView];
@@ -54,7 +48,7 @@
     NSString* contentCellName = NSStringFromClass([UITextViewCell class]);
     GoalContentVM* contentVM = [GoalContentVM modelWithController:self cellName:contentCellName height:250];
     contentVM.limitLen = 10;
-    [contentVM updateWithGoalModel:_goalModel];
+    [contentVM updateWithGoalModel:self.goalModel];
     [contentSection.cells addObject:contentVM];
     
     [dataList addObject:contentSection];
@@ -62,7 +56,7 @@
     // 提醒
     NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
     GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
-    [tipSection updateWithGoalModel:_goalModel];
+    [tipSection updateWithGoalModel:self.goalModel];
     [dataList addObject:tipSection];
     
     // 委托
@@ -82,7 +76,10 @@
 }
 
 - (IBAction)onEditDone:(UIBarButtonItem *)sender {
-    [_tableDelegate bind];
+    if (self.onEditGoalModel) {
+        [_tableDelegate bind];
+        self.onEditGoalModel(self.goalModel);
+    }
     
     NSLog(@"%s", __FUNCTION__);
     [self.navigationController popViewControllerAnimated:YES];

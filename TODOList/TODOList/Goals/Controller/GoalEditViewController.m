@@ -48,12 +48,6 @@
 - (void)p_buildData {
     NSMutableArray<TableSectionModel*>* dataList = [NSMutableArray array];
     
-    // 提醒
-    NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
-    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
-    [tipSection updateWithGoalModel:_goalModel];
-    [dataList addObject:tipSection];
-    
     // 输入
     TableSectionModel* contentSection = [TableSectionModel modelWithController:self];
     
@@ -64,6 +58,12 @@
     [contentSection.cells addObject:contentVM];
     
     [dataList addObject:contentSection];
+    
+    // 提醒
+    NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
+    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
+    [tipSection updateWithGoalModel:_goalModel];
+    [dataList addObject:tipSection];
     
     // 委托
     _tableDelegate = [TableDataDelegate delegateWithData:dataList];

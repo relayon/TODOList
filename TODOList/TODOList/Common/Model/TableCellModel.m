@@ -32,6 +32,10 @@
     NSLog(@"should be override");
 }
 
+- (UITableViewCellAccessoryType)accessoryType {
+    return UITableViewCellAccessoryNone;
+}
+
 + (instancetype)modelWithController:(UIViewController*)controller cellName:(NSString*)cellName {
     return [self modelWithController:controller cellName:cellName height:C_CELL_HEIGHT];
 }

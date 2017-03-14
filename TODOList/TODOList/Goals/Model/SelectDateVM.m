@@ -48,6 +48,10 @@
     [self.controller.navigationController pushViewController:vc animated:YES];
 }
 
+- (UITableViewCellAccessoryType)accessoryType {
+    return UITableViewCellAccessoryDisclosureIndicator;
+}
+
 - (void)dealloc {
     NSLog(@"%s", __FUNCTION__);
 }

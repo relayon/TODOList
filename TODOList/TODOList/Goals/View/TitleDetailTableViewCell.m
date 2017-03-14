@@ -21,6 +21,8 @@
     
     self.labelTitle.text = self.viewModel.title;
     self.labelDetail.text = self.viewModel.detail;
+    
+    self.accessoryType = [self.viewModel accessoryType];
 }
 
 - (void)awakeFromNib {

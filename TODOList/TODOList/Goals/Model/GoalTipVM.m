@@ -26,29 +26,8 @@
     [self p_buildCells];
 }
 
-- (void)p_buildCells {
-    [self.cells removeAllObjects];
-    
-    if ([self isTip]) {
-        NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
-        // 时间
-        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self.controller cellName:selectDateCellName height:44];
-        [selectDateVM updateWithGoalModel:self.goalModel];
-        [self.cells addObject:selectDateVM];
-        
-        // 重复
-        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller cellName:selectDateCellName height:44];
-        [repeatVM updateWithGoalModel:self.goalModel];
-        [self.cells addObject:repeatVM];
-    }
-}
-
 - (NSString*)title {
     return @"提醒";
-}
-
-- (BOOL)isTip {
-    return (self.reminderWay != Reminder_Way_None);
 }
 
 - (void)bind {
@@ -64,7 +43,30 @@
     }
     
     [self p_buildCells];
-    [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationNone];
+    
+    UITableViewRowAnimation anim = UITableViewRowAnimationNone;
+    [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:anim];
+}
+
+#pragma mark -- private functions
+- (BOOL)p_isTip {
+    return (self.reminderWay != Reminder_Way_None);
+}
+
+- (void)p_buildCells {
+    [self.cells removeAllObjects];
+    if ([self p_isTip]) {
+        NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
+        // 时间
+        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self.controller cellName:selectDateCellName height:44];
+        [selectDateVM updateWithGoalModel:self.goalModel];
+        [self.cells addObject:selectDateVM];
+        
+        // 重复
+        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller cellName:selectDateCellName height:44];
+        [repeatVM updateWithGoalModel:self.goalModel];
+        [self.cells addObject:repeatVM];
+    }
 }
 
 @end

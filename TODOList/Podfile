@@ -31,6 +31,8 @@ target 'TODOList' do
   pod 'JSPatchPlatform'
   # 日历控件
   pod 'FSCalendar'
+  # 修改按钮式样
+  pod 'UIButton-SSEdgeInsets'
 
   target 'TODOListTests' do
     inherit! :search_paths

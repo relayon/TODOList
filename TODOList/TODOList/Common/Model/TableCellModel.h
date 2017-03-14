@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bind;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
+- (UITableViewCellAccessoryType)accessoryType;
+
 // init
 @property (nonatomic, weak) UIViewController* controller;
 @property (nonatomic, copy) NSString* cellName;

@@ -7,6 +7,7 @@
 //
 
 #import "SelectRepeatCellVM.h"
+#import "SelectItemViewController.h"
 
 @interface SelectRepeatCellVM ()
 
@@ -28,27 +29,7 @@
 }
 
 - (NSString*)detail {
-    NSString* repeatStr = @"";
-    
-    switch (self.repeat) {
-        case Reminder_Repeat_None:
-            repeatStr = @"不重复";
-            break;
-        case Reminder_Repeat_Day:
-            repeatStr = @"每天";
-            break;
-        case Reminder_Repeat_Week:
-            repeatStr = @"每周";
-            break;
-        case Reminder_Repeat_Month:
-            repeatStr = @"每月";
-            break;
-        case Reminder_Repeat_Year:
-            repeatStr = @"每年";
-            break;
-    }
-    
-    return repeatStr;
+    return [GoalEnum stringWithReminderRepeat:self.repeat];
 }
 
 - (void)bind {
@@ -56,7 +37,20 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"common" bundle:nil];
+    SelectItemViewController* vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([SelectItemViewController class])];
+    vc.dataList = [GoalEnum reminderRepeatSelectItems];
+    vc.selectedItem = [SelectItem itemWithTitle:[GoalEnum stringWithReminderRepeat:self.repeat] value:self.repeat];
+    vc.onSelectItem = ^(SelectItem* item) {
+        self.repeat = item.value;
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    };
+    [self.controller.navigationController pushViewController:vc animated:YES];
 }
+
+- (UITableViewCellAccessoryType)accessoryType {
+    return UITableViewCellAccessoryDisclosureIndicator;
+}
+
 
 @end

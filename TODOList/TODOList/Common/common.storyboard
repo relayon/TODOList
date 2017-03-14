@@ -90,5 +90,25 @@
             </objects>
             <point key="canvasLocation" x="-34" y="131"/>
         </scene>
+        <!--选择-->
+        <scene sceneID="WKk-wb-Xs2">
+            <objects>
+                <tableViewController storyboardIdentifier="SelectItemViewController" id="cZP-wE-a0r" customClass="SelectItemViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dAa-GR-i7h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="cZP-wE-a0r" id="9Zb-gU-2An"/>
+                            <outlet property="delegate" destination="cZP-wE-a0r" id="H2Q-9A-ZQP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="选择" id="dWd-t2-KFR"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8c-td-ckM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="127"/>
+        </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SelectItem.h"
 
 /**
  任务包含的内容
@@ -92,7 +93,12 @@ typedef NS_OPTIONS(NSInteger, Reminder_Way) {
 };
 
 
+@interface GoalEnum : NSObject
+// 枚举转字符串
++ (NSString*)stringWithReminderRepeat:(Reminder_Repeat)repeat;
++ (NSArray<id<SelectableDelegate>>*)reminderRepeatSelectItems;
 
+@end
 
 
 

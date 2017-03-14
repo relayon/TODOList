@@ -7,6 +7,7 @@
 //
 
 #import "UISwitchViewSection.h"
+#import "GoalTipVM.h"
 
 @interface UISwitchViewSection ()
 - (IBAction)onValueChange:(UISwitch *)sender;
@@ -22,6 +23,15 @@
 }
 */
 
+- (void)updateViewWithModel:(GoalTipVM*)model withTableView:(UITableView*)tableView forSection:(NSInteger)section {
+    [super updateViewWithModel:model withTableView:tableView forSection:section];
+    
+    self.labelTitle.text = self.viewModel.title;
+    BOOL bOn = model.reminderWay != Reminder_Way_None;
+    [self.switchView setOn:bOn animated:NO];
+}
+
 - (IBAction)onValueChange:(UISwitch *)sender {
+    [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
 }
 @end

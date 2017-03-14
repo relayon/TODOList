@@ -8,6 +8,16 @@
 
 #import "TableSectionModel.h"
 
+@implementation SectionData
++ (instancetype)sectionDataWith:(NSInteger)section userData:(id _Nullable)userData {
+    SectionData* data = [[[self class] alloc] init];
+    data.section = section;
+    data.userData = userData;
+    
+    return data;
+}
+@end
+
 @implementation TableSectionModel
 
 - (NSString*)title {
@@ -22,8 +32,12 @@
     
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData {
     NSLog(@"should be override");
+}
+
+- (NSInteger)numberOfRows {
+    return self.cells.count;
 }
 
 #pragma mark -- init

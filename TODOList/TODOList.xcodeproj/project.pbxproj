@@ -37,6 +37,8 @@
 		5439DD371E77AF310093BE06 /* SelectDateVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD361E77AF310093BE06 /* SelectDateVM.m */; };
 		5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD391E77B3470093BE06 /* DatePickerViewController.m */; };
 		5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */; };
+		5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD411E77BE110093BE06 /* BaseTableSection.m */; };
+		5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD441E77C09D0093BE06 /* GoalTipVM.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -124,6 +126,10 @@
 		5439DD391E77B3470093BE06 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSString.h"; sourceTree = "<group>"; };
 		5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSString.m"; sourceTree = "<group>"; };
+		5439DD401E77BE110093BE06 /* BaseTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableSection.h; sourceTree = "<group>"; };
+		5439DD411E77BE110093BE06 /* BaseTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableSection.m; sourceTree = "<group>"; };
+		5439DD431E77C09D0093BE06 /* GoalTipVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalTipVM.h; sourceTree = "<group>"; };
+		5439DD441E77C09D0093BE06 /* GoalTipVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalTipVM.m; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 			children = (
 				5439DD2D1E7794910093BE06 /* BaseTableViewCell.h */,
 				5439DD2E1E7794910093BE06 /* BaseTableViewCell.m */,
+				5439DD401E77BE110093BE06 /* BaseTableSection.h */,
+				5439DD411E77BE110093BE06 /* BaseTableSection.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +310,8 @@
 				5439DD2B1E77938A0093BE06 /* GoalContentVM.m */,
 				5439DD351E77AF310093BE06 /* SelectDateVM.h */,
 				5439DD361E77AF310093BE06 /* SelectDateVM.m */,
+				5439DD431E77C09D0093BE06 /* GoalTipVM.h */,
+				5439DD441E77C09D0093BE06 /* GoalTipVM.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -658,6 +668,8 @@
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
 				5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
+				5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */,
+				5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */,
 				5439DD261E777BF90093BE06 /* TableSectionModel.m in Sources */,
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD231E777BE90093BE06 /* TableCellModel.m in Sources */,

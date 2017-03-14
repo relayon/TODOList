@@ -8,6 +8,8 @@
 
 #import "TableDataDelegate.h"
 
+#import "BaseTableSection.h"
+
 @implementation TableDataDelegate
 
 /**
@@ -39,8 +41,8 @@
     TableSectionModel* sectionModel = self.dataList[section];
     NSString* viewName = sectionModel.viewName;
     if (viewName) {
-        UIView* view = [[[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil] firstObject];
-        
+        BaseTableSection* view = [[[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil] firstObject];
+        [view updateViewWithModel:sectionModel withTableView:(UITableView*)tableView forSection:section];
         return view;
     }
     
@@ -70,7 +72,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     TableSectionModel* sectionModel = self.dataList[section];
-    return sectionModel.cells.count;
+    return [sectionModel numberOfRows];
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -11,16 +11,26 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface SectionData : NSObject
+@property (nonatomic, assign) NSInteger section;
+@property (nullable, nonatomic, strong) id userData;
+
++ (instancetype)sectionDataWith:(NSInteger)section userData:(id _Nullable)userData;
+@end
+
 @interface TableSectionModel : NSObject
 - (NSString*)title;
 - (NSString*)detail;
 - (void)bind;
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData;
 
 // init
 @property (nullable, nonatomic, copy) NSString* viewName;
 @property (nonatomic, assign) float height;
 @property (nullable, nonatomic, strong) NSMutableArray<TableCellModel*>* cells;
+
+- (NSInteger)numberOfRows;
 
 + (instancetype)model;
 + (instancetype)modelWithViewName:(NSString* _Nullable)viewName height:(float)height;

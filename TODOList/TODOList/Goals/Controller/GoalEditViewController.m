@@ -15,6 +15,7 @@
 
 #import "SelectDateVM.h"
 #import "TitleDetailTableViewCell.h"
+#import "GoalTipVM.h"
 
 @interface GoalEditViewController (){
     TableDataDelegate* _tableDelegate;
@@ -34,6 +35,7 @@
     _goalModel = [[GoalModel alloc] init];
     _goalModel.content = @"haha";
     _goalModel.fireDate = [NSDate date];
+    _goalModel.reminderWay = Reminder_Way_Notify;
     
     [self p_buildData];
     [self p_initTableView];
@@ -48,7 +50,9 @@
     NSMutableArray<TableSectionModel*>* dataList = [NSMutableArray array];
     
     // 提醒
-    TableSectionModel* tipSection = [TableSectionModel modelWithViewName:@"UISwitchViewSection" height:44];
+    NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
+    GoalTipVM* tipSection = [GoalTipVM modelWithViewName:viewName height:44];
+    [tipSection updateWithGoalModel:_goalModel];
     
     NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
     SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self cellName:selectDateCellName height:44];
@@ -65,8 +69,10 @@
     contentVM.limitLen = 10;
     [contentVM updateWithGoalModel:_goalModel];
     [contentSection.cells addObject:contentVM];
+    
     [dataList addObject:contentSection];
     
+    // 委托
     _tableDelegate = [TableDataDelegate delegateWithData:dataList];
     self.tableView.dataSource = _tableDelegate;
     self.tableView.delegate = _tableDelegate;

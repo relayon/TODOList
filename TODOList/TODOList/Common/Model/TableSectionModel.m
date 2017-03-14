@@ -50,12 +50,13 @@
     return self;
 }
 
-+ (instancetype)model {
-    return [self modelWithViewName:nil height:0];
++ (instancetype)modelWithController:(UIViewController*)controller {
+    return [self modelWithController:(UIViewController*)controller viewName:nil height:0];
 }
 
-+ (instancetype)modelWithViewName:(NSString* _Nullable)viewName height:(float)height {
++ (instancetype)modelWithController:(UIViewController*)controller viewName:(NSString* _Nullable)viewName height:(float)height {
     TableSectionModel* model = [[[self class] alloc] init];
+    model.controller = controller;
     model.viewName = viewName;
     model.height = height;
     

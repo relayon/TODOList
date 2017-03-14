@@ -51,18 +51,12 @@
     
     // 提醒
     NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
-    GoalTipVM* tipSection = [GoalTipVM modelWithViewName:viewName height:44];
+    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
     [tipSection updateWithGoalModel:_goalModel];
-    
-    NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
-    SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self cellName:selectDateCellName height:44];
-    [selectDateVM updateWithGoalModel:_goalModel];
-    [tipSection.cells addObject:selectDateVM];
-    
     [dataList addObject:tipSection];
     
     // 输入
-    TableSectionModel* contentSection = [TableSectionModel model];
+    TableSectionModel* contentSection = [TableSectionModel modelWithController:self];
     
     NSString* contentCellName = NSStringFromClass([UITextViewCell class]);
     GoalContentVM* contentVM = [GoalContentVM modelWithController:self cellName:contentCellName height:250];

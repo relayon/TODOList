@@ -7,6 +7,8 @@
 //
 
 #import "GoalTipVM.h"
+#import "TitleDetailTableViewCell.h"
+#import "SelectDateVM.h"
 
 @interface GoalTipVM ()
 @property (nonatomic, weak) GoalModel* goalModel;
@@ -19,6 +21,19 @@
     self.goalModel = goalModel;
     
     self.reminderWay = self.goalModel.reminderWay;
+    
+    [self p_buildCells];
+}
+
+- (void)p_buildCells {
+    [self.cells removeAllObjects];
+    
+    if ([self isTip]) {
+        NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
+        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self.controller cellName:selectDateCellName height:44];
+        [selectDateVM updateWithGoalModel:self.goalModel];
+        [self.cells addObject:selectDateVM];
+    }
 }
 
 - (NSString*)title {
@@ -27,14 +42,6 @@
 
 - (BOOL)isTip {
     return (self.reminderWay != Reminder_Way_None);
-}
-
-- (NSInteger)numberOfRows {
-    if (![self isTip]) {
-        return 0;
-    } else {
-        return [super numberOfRows];
-    }
 }
 
 - (void)bind {
@@ -49,6 +56,7 @@
         self.reminderWay = Reminder_Way_None;
     }
     
+    [self p_buildCells];
     [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationNone];
 }
 

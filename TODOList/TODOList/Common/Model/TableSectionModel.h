@@ -26,14 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData;
 
 // init
+@property (nonatomic, weak) UIViewController* controller;
 @property (nullable, nonatomic, copy) NSString* viewName;
 @property (nonatomic, assign) float height;
 @property (nullable, nonatomic, strong) NSMutableArray<TableCellModel*>* cells;
 
 - (NSInteger)numberOfRows;
 
-+ (instancetype)model;
-+ (instancetype)modelWithViewName:(NSString* _Nullable)viewName height:(float)height;
++ (instancetype)modelWithController:(UIViewController*)controller;
++ (instancetype)modelWithController:(UIViewController*)controller viewName:(NSString* _Nullable)viewName height:(float)height;
 
 @end
 

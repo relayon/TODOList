@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TableCellModel.h"
 
 @interface BaseTableViewCell : UITableViewCell
 
-- (void)updateViewWithModel:(TableCellModel*)model;
+/**
+ 根据ViewModel更新View
+ 
+ @param viewModel ViewModel
+ */
+- (void)updateWithViewModel:(id)viewModel;
 
 @end

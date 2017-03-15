@@ -13,6 +13,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SimpleTableBaseViewModel : NSObject <TableBaseViewModelProtocol>
 
+// 标题
+- (NSString*)title;
+// 详情
+- (NSString*)detail;
+
+/**
+ 设置通用标题和详情，不用绑定DataModel
+ 
+ @param title 标题
+ @param detail 详情
+ */
+- (void)setTitle:(NSString*)title detail:(NSString*)detail;
+
 /**************************************************************************
  * View只读，不可交互实现
  **************************************************************************/

@@ -10,8 +10,13 @@
 
 @implementation BaseTableViewCell
 
-- (void)updateViewWithModel:(TableCellModel*)model {
-    NSLog(@"should be override");
+/**
+ 根据ViewModel更新View
+ 
+ @param viewModel ViewModel
+ */
+- (void)updateWithViewModel:(id)viewModel {
+    NSLog(@"should be overrid");
 }
 
 - (void)awakeFromNib {

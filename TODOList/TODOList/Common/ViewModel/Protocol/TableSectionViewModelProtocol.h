@@ -10,10 +10,14 @@
 #define TableSectionViewModelProtocol_h
 
 #import "TableBaseViewModelProtocol.h"
+#import "TableCellViewModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TableSectionViewModelProtocol <NSObject, TableBaseViewModelProtocol>
+
+@required
+@property (nullable, nonatomic, strong) NSMutableArray<id<TableCellViewModelProtocol>>* cells;
 
 @optional
 /**

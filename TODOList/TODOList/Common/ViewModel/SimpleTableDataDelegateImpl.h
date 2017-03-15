@@ -1,5 +1,5 @@
 //
-//  SimpleTableCellViewModel.h
+//  TableDataDelegateImpl.h
 //  TODOList
 //
 //  Created by SMC-MAC on 17/3/15.
@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SimpleTableBaseViewModel.h"
-#import "TableCellViewModelProtocol.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleTableCellViewModel : SimpleTableBaseViewModel <TableCellViewModelProtocol>
-
+@interface TableDataDelegateImpl : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "SimpleTableBaseViewModel.h"
+#import "SimpleTableDataModelProtocol.h"
 
 #define C_VIEW_HEIGHT   44.0f
 
@@ -14,12 +15,47 @@
 
 @property (nonatomic, copy) NSString* viewClassName;
 @property (nonatomic, assign) CGFloat   viewHeight;
-
 @property (nonatomic, weak) UIViewController* controller;
+
+// 数据模型
+@property (nonatomic, weak) id<SimpleTableDataModelProtocol> dataModel;
+
+// 使用自定义标题，而不绑定数据模型
+@property (nonatomic, assign) BOOL isCustomTitleDetail;
+@property (nonatomic, copy) NSString* customTitle;
+@property (nonatomic, copy) NSString* customDetail;
 
 @end
 
 @implementation SimpleTableBaseViewModel
+
+// 标题
+- (NSString*)title {
+    if (self.isCustomTitleDetail) {
+        return self.customTitle;
+    }
+    return [self.dataModel smc_title];
+}
+
+// 详情
+- (NSString*)detail {
+    if (self.isCustomTitleDetail) {
+        return self.customDetail;
+    }
+    return [self.dataModel smc_detail];
+}
+
+/**
+ 设置通用标题和详情，不用绑定DataModel
+ 
+ @param title 标题
+ @param detail 详情
+ */
+- (void)setTitle:(NSString*)title detail:(NSString*)detail {
+    self.isCustomTitleDetail = YES;
+    self.customTitle = title;
+    self.customDetail = detail;
+}
 
 /**************************************************************************
  * View只读，不可交互实现
@@ -75,6 +111,16 @@
  */
 - (CGFloat)smc_viewHeight {
     return self.viewHeight;
+}
+
+/**
+ 绑定数据模型
+ 
+ @param dataModel 数据模型
+ */
+- (void)smc_bindDataModel:(id<SimpleTableDataModelProtocol>)dataModel {
+    self.isCustomTitleDetail = NO;
+    self.dataModel = dataModel;
 }
 
 /**

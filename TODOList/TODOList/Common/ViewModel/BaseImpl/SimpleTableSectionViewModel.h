@@ -14,13 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SimpleTableSectionViewModel : SimpleTableBaseViewModel <TableSectionViewModelProtocol>
 
-// 标题
-- (NSString*)title;
-// 详情
-- (NSString*)detail;
-
-
-
 @end
 
 NS_ASSUME_NONNULL_END

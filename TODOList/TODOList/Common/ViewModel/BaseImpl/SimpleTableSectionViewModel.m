@@ -7,34 +7,22 @@
 //
 
 #import "SimpleTableSectionViewModel.h"
-#import "SimpleTableDataModelProtocol.h"
 
 @interface SimpleTableSectionViewModel ()
-
-@property (nonatomic, weak) id<SimpleTableDataModelProtocol> dataModel;
 
 @end
 
 @implementation SimpleTableSectionViewModel
 
-// 标题
-- (NSString*)title {
-    return [self.dataModel smc_title];
-}
-
-// 详情
-- (NSString*)detail {
-    return [self.dataModel smc_detail];
-}
-
-#pragma mark -- SimpleTableSectionViewModelProtocol
 /**
- 绑定数据模型
+ 用户自定义事件：比如，在View上添加了一个按钮，开关等
  
- @param dataModel 数据模型
+ @param tableView Table
+ @param section section
+ @param userData 用户自定义数据
  */
-- (void)smc_bindDataModel:(id<SimpleTableDataModelProtocol>)dataModel {
-    self.dataModel = dataModel;
+- (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData {
+    
 }
 
 @end

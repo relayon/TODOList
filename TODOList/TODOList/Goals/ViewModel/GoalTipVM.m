@@ -68,7 +68,7 @@
     }
     
     [self p_buildCells:tableView forSection:section];
-    UITableViewRowAnimation anim = UITableViewRowAnimationAutomatic;
+    UITableViewRowAnimation anim = UITableViewRowAnimationFade;
     [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:anim];
 }
 

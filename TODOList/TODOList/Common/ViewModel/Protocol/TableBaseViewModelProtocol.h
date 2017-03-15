@@ -33,17 +33,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (CGFloat)smc_viewHeight;
 
-/**
- 绑定数据模型
-
- @param dataModel 数据模型
- */
-- (void)smc_bindDataModel:(id)dataModel;
-
 /**************************************************************************
  * 可选实现，View可交互
  **************************************************************************/
 @optional
+/**
+ 绑定数据模型
+ 
+ @param dataModel 数据模型
+ */
+- (void)smc_bindDataModel:(id)dataModel;
 
 /**
  获取当前所在的controller，如果View需要响应点击事件，则需要实现此方法

@@ -12,6 +12,9 @@
 @interface UISwitchViewSection ()
 - (IBAction)onValueChange:(UISwitch *)sender;
 
+@property (nonatomic, weak) UITableView* tableView;
+@property (nonatomic, assign) NSInteger section;
+
 @property (nonatomic, weak) GoalTipVM* viewModel;
 @end
 
@@ -26,10 +29,13 @@
 */
 - (void)updateWithViewModel:(id)viewModel withTableView:(UITableView*)tableView forSection:(NSInteger)section {
     
-//    self.viewModel = viewModel;
-//    self.labelTitle.text = self.viewModel.title;
-//    BOOL bOn = self.viewModel.reminderWay != Reminder_Way_None;
-//    [self.switchView setOn:bOn animated:NO];
+    self.tableView = tableView;
+    self.section = section;
+    
+    self.viewModel = viewModel;
+    self.labelTitle.text = self.viewModel.title;
+    BOOL bOn = self.viewModel.reminderWay != Reminder_Way_None;
+    [self.switchView setOn:bOn animated:NO];
 }
 
 //- (void)updateViewWithModel:(GoalTipVM*)model withTableView:(UITableView*)tableView forSection:(NSInteger)section {
@@ -42,5 +48,6 @@
 
 - (IBAction)onValueChange:(UISwitch *)sender {
 //    [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
+    [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
 }
 @end

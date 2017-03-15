@@ -26,7 +26,11 @@
  */
 - (void)smc_bindDataModel:(GoalModel*)dataModel {
     self.goalModel = dataModel;
-    self.fireDate = self.goalModel.fireDate;
+    if (self.goalModel.fireDate) {
+        self.fireDate = self.goalModel.fireDate;
+    } else {
+        self.fireDate = [NSDate date];
+    }
 }
 
 /**
@@ -78,7 +82,7 @@
 //}
 
 - (void)dealloc {
-    NSLog(@"%s", __FUNCTION__);
+    
 }
 
 @end

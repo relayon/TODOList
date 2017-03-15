@@ -124,6 +124,22 @@
 }
 
 /**
+ 在对View的数据修改后，把修改的数据保存到数据模型
+ */
+- (void)smc_saveToDataModel {
+    
+}
+
+/**
+ 获取当前所在的controller，如果View需要响应点击事件，则需要实现此方法
+ 
+ @return controller
+ */
+- (UIViewController*)smc_controller {
+    return self.controller;
+}
+
+/**
  新建一个Section ViewModel
  
  @param controller controller
@@ -133,6 +149,7 @@
  */
 + (instancetype)modelWithController:(UIViewController*)controller viewClassName:(NSString*)viewClassName height:(float)height {
     TableBaseViewModel* model = [[[self class] alloc] init];
+    model.controller = controller;
     model.viewClassName = viewClassName;
     model.viewHeight = height;
     return model;

@@ -33,7 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.datePicker.date = self.selDate;
+    if (self.selDate) {
+        self.datePicker.date = self.selDate;
+    } 
     self.datePicker.minimumDate = self.minDate;
     self.datePicker.maximumDate = self.maxDate;
 }

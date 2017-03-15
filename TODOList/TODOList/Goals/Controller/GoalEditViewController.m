@@ -81,7 +81,6 @@
         self.onEditGoalModel(self.goalModel);
     }
     
-    NSLog(@"%s", __FUNCTION__);
     [self.navigationController popViewControllerAnimated:YES];
 }
 @end

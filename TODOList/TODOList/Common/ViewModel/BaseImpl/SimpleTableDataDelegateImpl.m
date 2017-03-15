@@ -16,7 +16,10 @@
  保存数据到数据模型
  */
 - (void)smc_saveToDataModel {
-    
+    [self.dataList makeObjectsPerformSelector:@selector(smc_saveToDataModel)];
+    for (id<TableSectionViewModelProtocol> section in self.dataList) {
+        [section.cells makeObjectsPerformSelector:@selector(smc_saveToDataModel)];
+    }
 }
 
 /**

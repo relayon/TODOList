@@ -7,13 +7,12 @@
 //
 
 #import "GoalBrowseViewController.h"
-#import "TableDataDelegate.h"
 #import "UITableView+Extension.h"
 #import "TitleDetailTableViewCell.h"
 #import "TitleTableViewCell.h"
 
 @interface GoalBrowseViewController () {
-    TableDataDelegate* _tableDelegate;
+//    TableDataDelegate* _tableDelegate;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -34,29 +33,29 @@
 }
 
 - (void)p_buildData {
-    NSMutableArray<TableSectionModel*>* dataList = [NSMutableArray array];
-    
-    // 输入
-    TableSectionModel* contentSection = [TableSectionModel modelWithController:self];
-
-    NSString* contentCellName = NSStringFromClass([TitleTableViewCell class]);
-    TableCellModel* contentVM = [TableCellModel modelWithController:self cellName:contentCellName height:50];
-//    [contentVM updateWithGoalModel:self.goalModel];
-    contentVM.title = self.goalModel.content;
-    [contentSection.cells addObject:contentVM];
-    
-    [dataList addObject:contentSection];
+//    NSMutableArray<TableSectionModel*>* dataList = [NSMutableArray array];
+//    
+//    // 输入
+//    TableSectionModel* contentSection = [TableSectionModel modelWithController:self];
 //
-//    // 提醒
-//    NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
-//    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
-//    [tipSection updateWithGoalModel:self.goalModel];
-//    [dataList addObject:tipSection];
-    
-    // 委托
-    _tableDelegate = [TableDataDelegate delegateWithData:dataList];
-    self.tableView.dataSource = _tableDelegate;
-    self.tableView.delegate = _tableDelegate;
+//    NSString* contentCellName = NSStringFromClass([TitleTableViewCell class]);
+//    TableCellModel* contentVM = [TableCellModel modelWithController:self cellName:contentCellName height:50];
+////    [contentVM updateWithGoalModel:self.goalModel];
+//    contentVM.title = self.goalModel.content;
+//    [contentSection.cells addObject:contentVM];
+//    
+//    [dataList addObject:contentSection];
+////
+////    // 提醒
+////    NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
+////    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
+////    [tipSection updateWithGoalModel:self.goalModel];
+////    [dataList addObject:tipSection];
+//    
+//    // 委托
+//    _tableDelegate = [TableDataDelegate delegateWithData:dataList];
+//    self.tableView.dataSource = _tableDelegate;
+//    self.tableView.delegate = _tableDelegate;
 }
 
 #pragma mark -- tableview

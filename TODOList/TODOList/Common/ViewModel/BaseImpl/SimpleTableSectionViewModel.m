@@ -30,7 +30,7 @@
 {
     self = [super init];
     if (self) {
-        
+        _tableCells = [NSMutableArray array];
     }
     return self;
 }

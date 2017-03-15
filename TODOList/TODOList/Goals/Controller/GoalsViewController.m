@@ -101,7 +101,6 @@
 */
 
 - (IBAction)onAddClick:(id)sender {
-    NSLog(@"%s", __FUNCTION__);
     GoalEditViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GoalEditViewController class])];
     GoalModel* md = [[GoalModel alloc] init];
     vc.goalModel = md;
@@ -114,12 +113,10 @@
 }
 
 - (IBAction)onSettingClick:(id)sender {
-    NSLog(@"%s", __FUNCTION__);
     SettingViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SettingViewController class])];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)onButtonTitleClick:(UIButton *)sender {
-    NSLog(@"%s", __FUNCTION__);
 }
 @end

@@ -40,6 +40,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)smc_bindDataModel:(id)dataModel;
 
+/**
+ 在对View的数据修改后，把修改的数据保存到数据模型
+ */
+- (void)smc_saveToDataModel;
+
 /**************************************************************************
  * 可选实现，View可交互
  **************************************************************************/
@@ -55,11 +60,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return controller
  */
 - (UIViewController*)smc_controller;
-
-/**
- 在对View的数据修改后，把修改的数据保存到数据模型
- */
-- (void)smc_saveToDataModel;
 @end
 
 NS_ASSUME_NONNULL_END

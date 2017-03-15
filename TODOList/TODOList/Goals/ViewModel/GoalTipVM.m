@@ -18,21 +18,39 @@
 
 @implementation GoalTipVM
 
-- (void)updateWithGoalModel:(GoalModel*)goalModel {
-    self.goalModel = goalModel;
-    
+/**
+ 绑定数据模型
+ 
+ @param dataModel 数据模型
+ */
+- (void)smc_bindDataModel:(id)dataModel {
+    self.goalModel = dataModel;
     self.reminderWay = self.goalModel.reminderWay;
-    
-    [self p_buildCells];
+    [self p_buildCells:nil forSection:0];
 }
+
+/**
+ 在对View的数据修改后，把修改的数据保存到数据模型
+ */
+- (void)smc_saveToDataModel {
+    self.goalModel.reminderWay = self.reminderWay;
+}
+
+//- (void)updateWithGoalModel:(GoalModel*)goalModel {
+//    self.goalModel = goalModel;
+//    
+//    self.reminderWay = self.goalModel.reminderWay;
+//    
+//    [self p_buildCells];
+//}
 
 - (NSString*)title {
     return @"提醒";
 }
 
-- (void)bind {
-    self.goalModel.reminderWay = self.reminderWay;
-}
+//- (void)bind {
+//    self.goalModel.reminderWay = self.reminderWay;
+//}
 
 /**
  用户自定义事件：比如，在View上添加了一个按钮，开关等
@@ -49,9 +67,8 @@
         self.reminderWay = Reminder_Way_None;
     }
     
-    [self p_buildCells];
-    
-    UITableViewRowAnimation anim = UITableViewRowAnimationNone;
+    [self p_buildCells:tableView forSection:section];
+    UITableViewRowAnimation anim = UITableViewRowAnimationAutomatic;
     [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:anim];
 }
 
@@ -74,8 +91,10 @@
     return (self.reminderWay != Reminder_Way_None);
 }
 
-- (void)p_buildCells {
+- (void)p_buildCells:(UITableView*)tableView forSection:(NSInteger)section {
+    NSLog(@"%s", __FUNCTION__);
     [self.cells removeAllObjects];
+    
     if ([self p_isTip]) {
         NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
         // 时间
@@ -87,6 +106,19 @@
 //        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:[self smc_controller] cellName:selectDateCellName height:44];
 //        [repeatVM updateWithGoalModel:self.goalModel];
 //        [self.cells addObject:repeatVM];
+        
+//        NSMutableArray* mary = [NSMutableArray array];
+//        for (NSInteger row = 0; row < self.cells.count; row++) {
+//            [mary addObject:[NSIndexPath indexPathForRow:row inSection:section]];
+//        }
+//        [tableView insertRowsAtIndexPaths:mary withRowAnimation:UITableViewRowAnimationNone];
+    } else {
+//        NSMutableArray* mary = [NSMutableArray array];
+//        for (NSInteger row = 0; row < self.cells.count; row++) {
+//            [mary addObject:[NSIndexPath indexPathForRow:row inSection:section]];
+//        }
+//        [self.cells removeAllObjects];
+//        [tableView deleteRowsAtIndexPaths:mary withRowAnimation:UITableViewRowAnimationNone];
     }
 }
 

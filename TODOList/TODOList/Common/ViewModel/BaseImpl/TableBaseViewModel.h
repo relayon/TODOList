@@ -1,5 +1,5 @@
 //
-//  SimpleTableBaseViewModel.h
+//  TableBaseViewModel.h
 //  TODOList
 //
 //  Created by SMC-MAC on 17/3/15.
@@ -11,12 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleTableBaseViewModel : NSObject <TableBaseViewModelProtocol>
-
-// 标题
-- (NSString*)title;
-// 详情
-- (NSString*)detail;
+@interface TableBaseViewModel : NSObject <TableBaseViewModelProtocol>
 
 /**
  设置通用标题和详情，不用绑定DataModel

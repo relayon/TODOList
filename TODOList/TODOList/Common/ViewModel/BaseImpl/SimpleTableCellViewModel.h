@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SimpleTableBaseViewModel.h"
+#import "TableBaseViewModel.h"
 #import "TableCellViewModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleTableCellViewModel : SimpleTableBaseViewModel <TableCellViewModelProtocol>
+@interface SimpleTableCellViewModel : TableBaseViewModel <TableCellViewModelProtocol>
 
 
 @end

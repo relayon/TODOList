@@ -6,10 +6,10 @@
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "BaseTableViewCell.h"
+#import "TableBaseCellViewProtocol.h"
 #import "UIPlaceHolderTextView.h"
 
-@interface UITextViewCell : BaseTableViewCell <UITextViewDelegate>
+@interface UITextViewCell : UITableViewCell <UITextViewDelegate, TableBaseCellViewProtocol>
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *labelStatus;
 

@@ -6,13 +6,13 @@
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "TableSectionModel.h"
+#import "TableBaseViewModel.h"
+#import "SimpleTableSectionViewModel.h"
+
 #import "GoalModel.h"
 
-@interface GoalTipVM : TableSectionModel
-
+@interface GoalTipVM : SimpleTableSectionViewModel
 
 @property (nonatomic, assign) Reminder_Way reminderWay;
-- (void)updateWithGoalModel:(GoalModel*)goalModel;
 
 @end

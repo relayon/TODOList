@@ -9,7 +9,7 @@
 #import "SimpleTableCellViewModel.h"
 #import "SimpleTableDataModelProtocol.h"
 
-@interface SimpleTableBaseViewModel ()
+@interface TableBaseViewModel ()
 @property (nonatomic, weak) id<SimpleTableDataModelProtocol> dataModel;
 
 @end

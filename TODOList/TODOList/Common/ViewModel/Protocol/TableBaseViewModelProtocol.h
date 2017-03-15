@@ -44,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 可选实现，View可交互
  **************************************************************************/
 @optional
+// 标题
+- (NSString*)title;
+// 详情
+- (NSString*)detail;
 
 /**
  获取当前所在的controller，如果View需要响应点击事件，则需要实现此方法

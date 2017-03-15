@@ -7,12 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SimpleTableBaseViewModel.h"
+#import "TableBaseViewModel.h"
 #import "TableSectionViewModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleTableSectionViewModel : SimpleTableBaseViewModel <TableSectionViewModelProtocol>
+@interface SimpleTableSectionViewModel : TableBaseViewModel <TableSectionViewModelProtocol>
+
+
+/**
+ 创建一个空的Section
+
+ @return Section
+ */
++ (instancetype)model;
 
 @end
 

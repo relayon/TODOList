@@ -1,17 +1,17 @@
 //
-//  SimpleTableBaseViewModel.m
+//  TableBaseViewModel.m
 //  TODOList
 //
 //  Created by SMC-MAC on 17/3/15.
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "SimpleTableBaseViewModel.h"
+#import "TableBaseViewModel.h"
 #import "SimpleTableDataModelProtocol.h"
 
 #define C_VIEW_HEIGHT   44.0f
 
-@interface SimpleTableBaseViewModel ()
+@interface TableBaseViewModel ()
 
 @property (nonatomic, copy) NSString* viewClassName;
 @property (nonatomic, assign) CGFloat   viewHeight;
@@ -27,7 +27,7 @@
 
 @end
 
-@implementation SimpleTableBaseViewModel
+@implementation TableBaseViewModel
 
 // 标题
 - (NSString*)title {
@@ -132,7 +132,7 @@
  @return ViewModel
  */
 + (instancetype)modelWithController:(UIViewController*)controller viewClassName:(NSString*)viewClassName height:(float)height {
-    SimpleTableBaseViewModel* model = [[[self class] alloc] init];
+    TableBaseViewModel* model = [[[self class] alloc] init];
     model.viewClassName = viewClassName;
     model.viewHeight = height;
     return model;

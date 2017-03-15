@@ -9,6 +9,7 @@
 #ifndef TableBaseSectionViewProtocol_h
 #define TableBaseSectionViewProtocol_h
 
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TableBaseSectionViewProtocol <NSObject>

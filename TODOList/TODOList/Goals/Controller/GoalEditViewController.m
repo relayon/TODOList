@@ -10,14 +10,14 @@
 
 #import "UITextViewCell.h"
 #import "UISwitchViewSection.h"
-#import "TableDataDelegate.h"
+#import "SimpleTableDataDelegateImpl.h"
 #import "GoalContentVM.h"
 
 #import "TitleDetailTableViewCell.h"
 #import "GoalTipVM.h"
 
 @interface GoalEditViewController (){
-    TableDataDelegate* _tableDelegate;
+    SimpleTableDataDelegateImpl* _tableDelegate;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)onEditDone:(UIBarButtonItem *)sender;
@@ -40,27 +40,27 @@
 }
 
 - (void)p_buildData {
-    NSMutableArray<TableSectionModel*>* dataList = [NSMutableArray array];
+    NSMutableArray<id<TableSectionViewModelProtocol>>* dataList = [NSMutableArray array];
     
     // 输入
-    TableSectionModel* contentSection = [TableSectionModel modelWithController:self];
+    SimpleTableSectionViewModel* contentSection = [SimpleTableSectionViewModel model];
     
     NSString* contentCellName = NSStringFromClass([UITextViewCell class]);
-    GoalContentVM* contentVM = [GoalContentVM modelWithController:self cellName:contentCellName height:250];
-    contentVM.limitLen = 10;
-    [contentVM updateWithGoalModel:self.goalModel];
+//    GoalContentVM* contentVM = [GoalContentVM modelWithController:self cellName:contentCellName height:250];
+//    contentVM.limitLen = 10;
+    GoalContentVM* contentVM = [GoalContentVM modelWithController:self viewClassName:contentCellName height:250];
+    [contentVM smc_bindDataModel:self.goalModel];
     [contentSection.cells addObject:contentVM];
-    
     [dataList addObject:contentSection];
     
     // 提醒
     NSString* viewName = NSStringFromClass([UISwitchViewSection class]);
-    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewName:viewName height:44];
-    [tipSection updateWithGoalModel:self.goalModel];
+    GoalTipVM* tipSection = [GoalTipVM modelWithController:self viewClassName:viewName height:44];
+    [tipSection smc_bindDataModel:self.goalModel];
     [dataList addObject:tipSection];
     
     // 委托
-    _tableDelegate = [TableDataDelegate delegateWithData:dataList];
+    _tableDelegate = [SimpleTableDataDelegateImpl delegateWithData:dataList];
     self.tableView.dataSource = _tableDelegate;
     self.tableView.delegate = _tableDelegate;
 }
@@ -77,7 +77,7 @@
 
 - (IBAction)onEditDone:(UIBarButtonItem *)sender {
     if (self.onEditGoalModel) {
-        [_tableDelegate bind];
+        [_tableDelegate smc_saveToDataModel];
         self.onEditGoalModel(self.goalModel);
     }
     

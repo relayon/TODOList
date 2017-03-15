@@ -6,9 +6,9 @@
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "BaseTableSection.h"
+#import "TableBaseSectionViewProtocol.h"
 
-@interface UISwitchViewSection : BaseTableSection
+@interface UISwitchViewSection : UIView <TableBaseSectionViewProtocol>
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UISwitch *switchView;
 @end

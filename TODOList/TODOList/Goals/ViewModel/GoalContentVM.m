@@ -7,6 +7,7 @@
 //
 
 #import "GoalContentVM.h"
+#import "GoalModel.h"
 
 @interface GoalContentVM ()
 @property (nonatomic, weak) GoalModel* goalModel;
@@ -24,18 +25,16 @@
     return self;
 }
 
-- (void)updateWithGoalModel:(GoalModel*)goalModel {
-    self.goalModel = goalModel;
-    self.content = goalModel.content;
+- (void)smc_bindDataModel:(GoalModel*)dataModel {
+    self.goalModel = dataModel;
+    self.content = self.goalModel.content;
 }
 
-- (void)bind {
+/**
+ 在对View的数据修改后，把修改的数据保存到数据模型
+ */
+- (void)smc_saveToDataModel {
     self.goalModel.content = self.content;
 }
-
-// 绑定字段
-//- (void)setContent:(NSString *)content {
-//    _content = content;
-//}
 
 @end

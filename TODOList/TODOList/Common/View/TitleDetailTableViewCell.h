@@ -6,9 +6,9 @@
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "BaseTableViewCell.h"
+#import "SimpleTableCellView.h"
 
-@interface TitleDetailTableViewCell : BaseTableViewCell
+@interface TitleDetailTableViewCell : SimpleTableCellView
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelDetail;
 

@@ -11,27 +11,36 @@
 
 @interface UISwitchViewSection ()
 - (IBAction)onValueChange:(UISwitch *)sender;
+
+@property (nonatomic, weak) GoalTipVM* viewModel;
 @end
 
 @implementation UISwitchViewSection
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+/**
+根据ViewModel更新View
 
-- (void)updateViewWithModel:(GoalTipVM*)model withTableView:(UITableView*)tableView forSection:(NSInteger)section {
-    [super updateViewWithModel:model withTableView:tableView forSection:section];
+@param viewModel ViewModel
+@param tableView table
+@param section section
+*/
+- (void)updateWithViewModel:(id)viewModel withTableView:(UITableView*)tableView forSection:(NSInteger)section {
     
-    self.labelTitle.text = self.viewModel.title;
-    BOOL bOn = model.reminderWay != Reminder_Way_None;
-    [self.switchView setOn:bOn animated:NO];
+//    self.viewModel = viewModel;
+//    self.labelTitle.text = self.viewModel.title;
+//    BOOL bOn = self.viewModel.reminderWay != Reminder_Way_None;
+//    [self.switchView setOn:bOn animated:NO];
 }
+
+//- (void)updateViewWithModel:(GoalTipVM*)model withTableView:(UITableView*)tableView forSection:(NSInteger)section {
+//    [super updateViewWithModel:model withTableView:tableView forSection:section];
+//    
+//    self.labelTitle.text = self.viewModel.title;
+//    BOOL bOn = model.reminderWay != Reminder_Way_None;
+//    [self.switchView setOn:bOn animated:NO];
+//}
 
 - (IBAction)onValueChange:(UISwitch *)sender {
-    [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
+//    [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
 }
 @end

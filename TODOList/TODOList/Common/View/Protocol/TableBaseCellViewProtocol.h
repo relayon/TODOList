@@ -9,6 +9,7 @@
 #ifndef TableBaseCellViewProtocol_h
 #define TableBaseCellViewProtocol_h
 
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TableBaseCellViewProtocol <NSObject>

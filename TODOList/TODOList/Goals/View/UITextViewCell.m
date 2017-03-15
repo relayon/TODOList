@@ -19,8 +19,15 @@
 
 @implementation UITextViewCell
 
-- (void)updateViewWithModel:(GoalContentVM*)model {
-    self.viewModel = model;
+/**
+ 根据ViewModel更新View
+ 
+ @param viewModel ViewModel
+ @param tableView table
+ @param indexPath indexPath
+ */
+- (void)updateWithViewModel:(id)viewModel withTableView:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath {
+    self.viewModel = viewModel;
     
     self.textView.placeholder = self.viewModel.placeHolder;
     self.textView.text = self.viewModel.content;

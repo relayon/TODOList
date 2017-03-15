@@ -34,6 +34,13 @@
     self.goalModel.reminderWay = self.reminderWay;
 }
 
+/**
+ 用户自定义事件：比如，在View上添加了一个按钮，开关等
+ 
+ @param tableView Table
+ @param section section
+ @param userData 用户自定义数据
+ */
 - (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData {
     UISwitch* sender = (UISwitch*)userData;
     if (sender.isOn) {
@@ -48,6 +55,20 @@
     [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:anim];
 }
 
+//- (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData {
+//    UISwitch* sender = (UISwitch*)userData;
+//    if (sender.isOn) {
+//        self.reminderWay = Reminder_Way_Notify;
+//    } else {
+//        self.reminderWay = Reminder_Way_None;
+//    }
+//    
+//    [self p_buildCells];
+//    
+//    UITableViewRowAnimation anim = UITableViewRowAnimationNone;
+//    [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:anim];
+//}
+
 #pragma mark -- private functions
 - (BOOL)p_isTip {
     return (self.reminderWay != Reminder_Way_None);
@@ -58,14 +79,14 @@
     if ([self p_isTip]) {
         NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
         // 时间
-        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self.controller cellName:selectDateCellName height:44];
-        [selectDateVM updateWithGoalModel:self.goalModel];
+        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:[self smc_controller] viewClassName:selectDateCellName height:44];
+        [selectDateVM smc_bindDataModel:self.goalModel];
         [self.cells addObject:selectDateVM];
         
         // 重复
-        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller cellName:selectDateCellName height:44];
-        [repeatVM updateWithGoalModel:self.goalModel];
-        [self.cells addObject:repeatVM];
+//        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:[self smc_controller] cellName:selectDateCellName height:44];
+//        [repeatVM updateWithGoalModel:self.goalModel];
+//        [self.cells addObject:repeatVM];
     }
 }
 

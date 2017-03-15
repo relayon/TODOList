@@ -11,8 +11,11 @@
 
 #import "TableBaseViewModelProtocol.h"
 
-@protocol TableCellViewModelProtocol <NSObject, TableBaseViewModelProtocol>
+NS_ASSUME_NONNULL_BEGIN
 
+@protocol TableSectionViewModelProtocol <NSObject, TableBaseViewModelProtocol>
+
+@optional
 /**
  用户自定义事件：比如，在View上添加了一个按钮，开关等
 
@@ -23,5 +26,7 @@
 - (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif /* TableSectionViewModelProtocol_h */

@@ -11,6 +11,8 @@
 
 #import "TableBaseViewModelProtocol.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol TableCellViewModelProtocol <NSObject, TableBaseViewModelProtocol>
 
 // 可选实现，View可交互
@@ -34,5 +36,7 @@
 - (void)smc_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath withData:(id _Nullable)userData;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif /* TableCellViewModelProtocol_h */

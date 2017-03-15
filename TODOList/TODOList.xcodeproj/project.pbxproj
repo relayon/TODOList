@@ -27,9 +27,6 @@
 		5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD141E76A9200093BE06 /* UITextViewCell.xib */; };
 		5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */; };
 		5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */; };
-		5439DD231E777BE90093BE06 /* TableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD221E777BE90093BE06 /* TableCellModel.m */; };
-		5439DD261E777BF90093BE06 /* TableSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD251E777BF90093BE06 /* TableSectionModel.m */; };
-		5439DD291E777F6F0093BE06 /* TableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD281E777F6F0093BE06 /* TableDataDelegate.m */; };
 		5439DD2C1E77938A0093BE06 /* GoalContentVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD2B1E77938A0093BE06 /* GoalContentVM.m */; };
 		5439DD2F1E7794910093BE06 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD2E1E7794910093BE06 /* BaseTableViewCell.m */; };
 		5439DD331E77AEA70093BE06 /* TitleDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD311E77AEA70093BE06 /* TitleDetailTableViewCell.m */; };
@@ -40,7 +37,6 @@
 		5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD411E77BE110093BE06 /* BaseTableSection.m */; };
 		5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD441E77C09D0093BE06 /* GoalTipVM.m */; };
 		5439DD481E77D4290093BE06 /* SelectRepeatCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD471E77D4290093BE06 /* SelectRepeatCellVM.m */; };
-		5439DD4C1E77DDA10093BE06 /* SelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD4B1E77DDA10093BE06 /* SelectItem.m */; };
 		5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */; };
 		5439DD541E77E20B0093BE06 /* GoalEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD531E77E20B0093BE06 /* GoalEnum.m */; };
 		5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD561E77F6D90093BE06 /* SettingViewController.m */; };
@@ -49,6 +45,13 @@
 		5439DD611E7801F40093BE06 /* TitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD5F1E7801F40093BE06 /* TitleTableViewCell.m */; };
 		5439DD621E7801F40093BE06 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD601E7801F40093BE06 /* TitleTableViewCell.xib */; };
 		5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD641E78030E0093BE06 /* UITableView+Extension.m */; };
+		5439DD871E78E8160093BE06 /* TableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD771E78E8160093BE06 /* TableCellViewModel.m */; };
+		5439DD891E78E8160093BE06 /* SelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD801E78E8160093BE06 /* SelectItem.m */; };
+		5439DD8A1E78E8160093BE06 /* TableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD821E78E8160093BE06 /* TableCellModel.m */; };
+		5439DD8B1E78E8160093BE06 /* TableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD841E78E8160093BE06 /* TableDataDelegate.m */; };
+		5439DD8C1E78E8160093BE06 /* TableSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD861E78E8160093BE06 /* TableSectionModel.m */; };
+		5439DD901E78E89C0093BE06 /* SimpleTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD8F1E78E89C0093BE06 /* SimpleTableDataModel.m */; };
+		5439DD931E78EA2E0093BE06 /* SimpleTableSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD921E78EA2E0093BE06 /* SimpleTableSectionViewModel.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -117,12 +120,6 @@
 		5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwitchViewSection.h; sourceTree = "<group>"; };
 		5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewSection.m; sourceTree = "<group>"; };
 		5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UISwitchViewSection.xib; sourceTree = "<group>"; };
-		5439DD211E777BE90093BE06 /* TableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellModel.h; sourceTree = "<group>"; };
-		5439DD221E777BE90093BE06 /* TableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellModel.m; sourceTree = "<group>"; };
-		5439DD241E777BF90093BE06 /* TableSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionModel.h; sourceTree = "<group>"; };
-		5439DD251E777BF90093BE06 /* TableSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionModel.m; sourceTree = "<group>"; };
-		5439DD271E777F6F0093BE06 /* TableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDataDelegate.h; sourceTree = "<group>"; };
-		5439DD281E777F6F0093BE06 /* TableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDataDelegate.m; sourceTree = "<group>"; };
 		5439DD2A1E77938A0093BE06 /* GoalContentVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalContentVM.h; sourceTree = "<group>"; };
 		5439DD2B1E77938A0093BE06 /* GoalContentVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalContentVM.m; sourceTree = "<group>"; };
 		5439DD2D1E7794910093BE06 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
@@ -142,9 +139,6 @@
 		5439DD441E77C09D0093BE06 /* GoalTipVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalTipVM.m; sourceTree = "<group>"; };
 		5439DD461E77D4290093BE06 /* SelectRepeatCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRepeatCellVM.h; sourceTree = "<group>"; };
 		5439DD471E77D4290093BE06 /* SelectRepeatCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRepeatCellVM.m; sourceTree = "<group>"; };
-		5439DD491E77DD5E0093BE06 /* SelectableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectableDelegate.h; sourceTree = "<group>"; };
-		5439DD4A1E77DDA10093BE06 /* SelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItem.h; sourceTree = "<group>"; };
-		5439DD4B1E77DDA10093BE06 /* SelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItem.m; sourceTree = "<group>"; };
 		5439DD501E77DEEE0093BE06 /* SelectItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItemViewController.h; sourceTree = "<group>"; };
 		5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItemViewController.m; sourceTree = "<group>"; };
 		5439DD531E77E20B0093BE06 /* GoalEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEnum.m; sourceTree = "<group>"; };
@@ -159,9 +153,25 @@
 		5439DD601E7801F40093BE06 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		5439DD631E78030E0093BE06 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		5439DD641E78030E0093BE06 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
-		5439DD691E78D9FD0093BE06 /* TableSectionViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableSectionViewModelProtocol.h; sourceTree = "<group>"; };
-		5439DD6A1E78DB6C0093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; };
-		5439DD6C1E78DD8D0093BE06 /* TableCellViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD761E78E8160093BE06 /* TableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellViewModel.h; sourceTree = "<group>"; };
+		5439DD771E78E8160093BE06 /* TableCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellViewModel.m; sourceTree = "<group>"; };
+		5439DD7B1E78E8160093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD7C1E78E8160093BE06 /* TableCellViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD7D1E78E8160093BE06 /* TableSectionViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD7E1E78E8160093BE06 /* SelectableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableDelegate.h; sourceTree = "<group>"; };
+		5439DD7F1E78E8160093BE06 /* SelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItem.h; sourceTree = "<group>"; };
+		5439DD801E78E8160093BE06 /* SelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItem.m; sourceTree = "<group>"; };
+		5439DD811E78E8160093BE06 /* TableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellModel.h; sourceTree = "<group>"; };
+		5439DD821E78E8160093BE06 /* TableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellModel.m; sourceTree = "<group>"; };
+		5439DD831E78E8160093BE06 /* TableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDataDelegate.h; sourceTree = "<group>"; };
+		5439DD841E78E8160093BE06 /* TableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDataDelegate.m; sourceTree = "<group>"; };
+		5439DD851E78E8160093BE06 /* TableSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionModel.h; sourceTree = "<group>"; };
+		5439DD861E78E8160093BE06 /* TableSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionModel.m; sourceTree = "<group>"; };
+		5439DD8E1E78E89C0093BE06 /* SimpleTableDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableDataModel.h; sourceTree = "<group>"; };
+		5439DD8F1E78E89C0093BE06 /* SimpleTableDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableDataModel.m; sourceTree = "<group>"; };
+		5439DD911E78EA2E0093BE06 /* SimpleTableSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableSectionViewModel.h; sourceTree = "<group>"; };
+		5439DD921E78EA2E0093BE06 /* SimpleTableSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableSectionViewModel.m; sourceTree = "<group>"; };
+		5439DD941E78EDB30093BE06 /* SimpleTableDataModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableDataModelProtocol.h; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,7 +289,8 @@
 			isa = PBXGroup;
 			children = (
 				5439DCE91E767DA50093BE06 /* Controller */,
-				5439DCEA1E767DA50093BE06 /* Model */,
+				5439DD8D1E78E8290093BE06 /* DataModel */,
+				5439DD741E78E8160093BE06 /* ViewModel */,
 				5439DCEB1E767DA50093BE06 /* View */,
 				5439DD001E7691E00093BE06 /* common.storyboard */,
 			);
@@ -297,23 +308,6 @@
 				5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		5439DCEA1E767DA50093BE06 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5439DD671E78D2B90093BE06 /* Protocol */,
-				5439DD211E777BE90093BE06 /* TableCellModel.h */,
-				5439DD221E777BE90093BE06 /* TableCellModel.m */,
-				5439DD241E777BF90093BE06 /* TableSectionModel.h */,
-				5439DD251E777BF90093BE06 /* TableSectionModel.m */,
-				5439DD271E777F6F0093BE06 /* TableDataDelegate.h */,
-				5439DD281E777F6F0093BE06 /* TableDataDelegate.m */,
-				5439DD491E77DD5E0093BE06 /* SelectableDelegate.h */,
-				5439DD4A1E77DDA10093BE06 /* SelectItem.h */,
-				5439DD4B1E77DDA10093BE06 /* SelectItem.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		5439DCEB1E767DA50093BE06 /* View */ = {
@@ -404,14 +398,53 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		5439DD671E78D2B90093BE06 /* Protocol */ = {
+		5439DD741E78E8160093BE06 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5439DD6C1E78DD8D0093BE06 /* TableCellViewModelProtocol.h */,
-				5439DD6A1E78DB6C0093BE06 /* TableBaseViewModelProtocol.h */,
-				5439DD691E78D9FD0093BE06 /* TableSectionViewModelProtocol.h */,
+				5439DD7A1E78E8160093BE06 /* Protocol */,
+				5439DD751E78E8160093BE06 /* BaseImpl */,
+				5439DD7E1E78E8160093BE06 /* SelectableDelegate.h */,
+				5439DD7F1E78E8160093BE06 /* SelectItem.h */,
+				5439DD801E78E8160093BE06 /* SelectItem.m */,
+				5439DD811E78E8160093BE06 /* TableCellModel.h */,
+				5439DD821E78E8160093BE06 /* TableCellModel.m */,
+				5439DD831E78E8160093BE06 /* TableDataDelegate.h */,
+				5439DD841E78E8160093BE06 /* TableDataDelegate.m */,
+				5439DD851E78E8160093BE06 /* TableSectionModel.h */,
+				5439DD861E78E8160093BE06 /* TableSectionModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5439DD751E78E8160093BE06 /* BaseImpl */ = {
+			isa = PBXGroup;
+			children = (
+				5439DD911E78EA2E0093BE06 /* SimpleTableSectionViewModel.h */,
+				5439DD921E78EA2E0093BE06 /* SimpleTableSectionViewModel.m */,
+				5439DD761E78E8160093BE06 /* TableCellViewModel.h */,
+				5439DD771E78E8160093BE06 /* TableCellViewModel.m */,
+			);
+			path = BaseImpl;
+			sourceTree = "<group>";
+		};
+		5439DD7A1E78E8160093BE06 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5439DD7B1E78E8160093BE06 /* TableBaseViewModelProtocol.h */,
+				5439DD7C1E78E8160093BE06 /* TableCellViewModelProtocol.h */,
+				5439DD7D1E78E8160093BE06 /* TableSectionViewModelProtocol.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5439DD8D1E78E8290093BE06 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5439DD941E78EDB30093BE06 /* SimpleTableDataModelProtocol.h */,
+				5439DD8E1E78E89C0093BE06 /* SimpleTableDataModel.h */,
+				5439DD8F1E78E89C0093BE06 /* SimpleTableDataModel.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		6DDDFD70CAC2EF272B8CAB78 /* Frameworks */ = {
@@ -726,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5439DD891E78E8160093BE06 /* SelectItem.m in Sources */,
 				5439DD2F1E7794910093BE06 /* BaseTableViewCell.m in Sources */,
 				5439DCFB1E768AD40093BE06 /* GoalTableViewCell.m in Sources */,
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
@@ -734,27 +768,29 @@
 				5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */,
 				5439DD421E77BE110093BE06 /* BaseTableSection.m in Sources */,
 				5439DD451E77C09D0093BE06 /* GoalTipVM.m in Sources */,
+				5439DD871E78E8160093BE06 /* TableCellViewModel.m in Sources */,
 				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
-				5439DD261E777BF90093BE06 /* TableSectionModel.m in Sources */,
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD481E77D4290093BE06 /* SelectRepeatCellVM.m in Sources */,
-				5439DD231E777BE90093BE06 /* TableCellModel.m in Sources */,
 				5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */,
 				5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
+				5439DD8A1E78E8160093BE06 /* TableCellModel.m in Sources */,
 				5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */,
 				5439DD371E77AF310093BE06 /* SelectDateVM.m in Sources */,
-				5439DD291E777F6F0093BE06 /* TableDataDelegate.m in Sources */,
 				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
 				5439DD541E77E20B0093BE06 /* GoalEnum.m in Sources */,
 				5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */,
 				5439DD331E77AEA70093BE06 /* TitleDetailTableViewCell.m in Sources */,
+				5439DD8B1E78E8160093BE06 /* TableDataDelegate.m in Sources */,
 				5439DD611E7801F40093BE06 /* TitleTableViewCell.m in Sources */,
 				5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */,
-				5439DD4C1E77DDA10093BE06 /* SelectItem.m in Sources */,
+				5439DD931E78EA2E0093BE06 /* SimpleTableSectionViewModel.m in Sources */,
+				5439DD8C1E78E8160093BE06 /* TableSectionModel.m in Sources */,
 				5439DCF41E76824A0093BE06 /* GoalModel.m in Sources */,
 				5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */,
+				5439DD901E78E89C0093BE06 /* SimpleTableDataModel.m in Sources */,
 				5439DD2C1E77938A0093BE06 /* GoalContentVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

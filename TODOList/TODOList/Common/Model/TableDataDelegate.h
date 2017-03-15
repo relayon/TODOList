@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)bind;
 @property (nonatomic, strong) NSArray<TableSectionModel*>* dataList;
 
-- (void)configCell:(BaseTableViewCell*)cell forIndex:(NSIndexPath*)indexPath;
+//- (void)configCell:(BaseTableViewCell*)cell forIndex:(NSIndexPath*)indexPath;
 + (instancetype)delegateWithData:(NSArray<TableSectionModel*>*)data;
 
 @end

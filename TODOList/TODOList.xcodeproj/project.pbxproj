@@ -159,6 +159,9 @@
 		5439DD601E7801F40093BE06 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		5439DD631E78030E0093BE06 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		5439DD641E78030E0093BE06 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
+		5439DD691E78D9FD0093BE06 /* TableSectionViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableSectionViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD6A1E78DB6C0093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD6C1E78DD8D0093BE06 /* TableCellViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellViewModelProtocol.h; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -299,6 +302,7 @@
 		5439DCEA1E767DA50093BE06 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5439DD671E78D2B90093BE06 /* Protocol */,
 				5439DD211E777BE90093BE06 /* TableCellModel.h */,
 				5439DD221E777BE90093BE06 /* TableCellModel.m */,
 				5439DD241E777BF90093BE06 /* TableSectionModel.h */,
@@ -398,6 +402,16 @@
 				5439DD641E78030E0093BE06 /* UITableView+Extension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		5439DD671E78D2B90093BE06 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5439DD6C1E78DD8D0093BE06 /* TableCellViewModelProtocol.h */,
+				5439DD6A1E78DB6C0093BE06 /* TableBaseViewModelProtocol.h */,
+				5439DD691E78D9FD0093BE06 /* TableSectionViewModelProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		6DDDFD70CAC2EF272B8CAB78 /* Frameworks */ = {

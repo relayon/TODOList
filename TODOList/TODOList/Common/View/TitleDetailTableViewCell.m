@@ -7,7 +7,7 @@
 //
 
 #import "TitleDetailTableViewCell.h"
-#import "TableCellViewModelProtocol.h"
+#import "TitleDetailViewProtocol.h"
 
 @interface TitleDetailTableViewCell ()
 
@@ -23,8 +23,9 @@
  @param tableView table
  @param indexPath indexPath
  */
-- (void)updateWithViewModel:(id<TableCellViewModelProtocol>)viewModel withTableView:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath {
-    [super updateWithViewModel:viewModel withTableView:tableView forIndexPath:indexPath];
+- (void)updateWithViewModel:(id<TitleDetailViewProtocol>)viewModel withTableView:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath {
+//    [super updateWithViewModel:viewModel withTableView:tableView forIndexPath:indexPath];
+    
     self.labelTitle.text = [viewModel title];
     self.labelDetail.text = [viewModel detail];
 }

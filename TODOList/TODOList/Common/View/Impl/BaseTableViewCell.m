@@ -1,25 +1,15 @@
 //
-//  SimpleTableCellView.m
+//  BaseTableViewCell.m
 //  TODOList
 //
-//  Created by SMC-MAC on 17/3/15.
+//  Created by SMC-MAC on 17/3/16.
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "SimpleTableCellView.h"
-#import "TableCellViewModelProtocol.h"
+#import "BaseTableViewCell.h"
 
-@interface SimpleTableCellView ()
+@implementation BaseTableViewCell
 
-@property (nonatomic, weak) id<TableCellViewModelProtocol> viewModel;
-@property (nonatomic, weak) UITableView* tableView;
-@property (nonatomic, copy) NSIndexPath* indexPath;
-
-@end
-
-@implementation SimpleTableCellView
-
-#pragma mark -- TableBaseCellViewProtocol
 /**
  根据ViewModel更新View
  
@@ -33,7 +23,6 @@
     self.indexPath = indexPath;
 }
 
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -44,6 +33,5 @@
 
     // Configure the view for the selected state
 }
-
 
 @end

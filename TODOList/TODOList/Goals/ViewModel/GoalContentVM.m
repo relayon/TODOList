@@ -25,7 +25,7 @@
     return self;
 }
 
-- (void)smc_bindDataModel:(GoalModel*)dataModel {
+- (void)bindDataModel:(GoalModel*)dataModel {
     self.goalModel = dataModel;
     self.content = self.goalModel.content;
 }
@@ -33,7 +33,7 @@
 /**
  在对View的数据修改后，把修改的数据保存到数据模型
  */
-- (void)smc_saveToDataModel {
+- (void)saveToDataModel {
     self.goalModel.content = self.content;
 }
 

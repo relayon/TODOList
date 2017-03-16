@@ -1,25 +1,26 @@
 //
-//  SimpleTableDataDelegateImpl.m
+//  SimpleTableDataDelegate.m
 //  TODOList
 //
-//  Created by SMC-MAC on 17/3/15.
+//  Created by SMC-MAC on 17/3/16.
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "SimpleTableDataDelegateImpl.h"
-#import "TableBaseSectionViewProtocol.h"
-#import "TableBaseCellViewProtocol.h"
+#import "SimpleTableDataDelegate.h"
+#import "TableSectionViewModelProtocol.h"
+#import "TableViewSectionProtocol.h"
+#import "TableViewCellProtocol.h"
 
-@implementation SimpleTableDataDelegateImpl
+@implementation SimpleTableDataDelegate
 
 /**
  保存数据到数据模型
  */
-- (void)smc_saveToDataModel {
-    [self.dataList makeObjectsPerformSelector:@selector(smc_saveToDataModel)];
-    for (id<TableSectionViewModelProtocol> section in self.dataList) {
-        [section.cells makeObjectsPerformSelector:@selector(smc_saveToDataModel)];
-    }
+- (void)saveToDataModel {
+//    [self.dataList makeObjectsPerformSelector:@selector(saveToDataModel)];
+//    for (id<TableSectionViewModelProtocol> section in self.dataList) {
+//        [section.cells makeObjectsPerformSelector:@selector(saveToDataModel)];
+//    }
 }
 
 /**
@@ -28,9 +29,21 @@
  @param data 数据源
  @return 委托
  */
-+ (instancetype)delegateWithData:(NSArray<id<TableSectionViewModelProtocol>>*)data {
-    SimpleTableDataDelegateImpl* delegate = [[[self class] alloc] init];
++ (instancetype)delegateWithData:(NSArray*)data {
+    return [self delegateWithData:data sectionType:TableSectionType_Single];
+}
+
+/**
+ 创建委托
+ 
+ @param data 数据源
+ @param sectionType 数据类型
+ @return 委托
+ */
++ (instancetype)delegateWithData:(NSArray*)data sectionType:(TableSectionType)sectionType {
+    SimpleTableDataDelegate* delegate = [[[self class] alloc] init];
     delegate.dataList = data;
+    delegate.sectionType = sectionType;
     return delegate;
 }
 
@@ -40,20 +53,20 @@
     
     id<TableSectionViewModelProtocol> sectionModel = self.dataList[indexPath.section];
     id<TableCellViewModelProtocol> cellModel = sectionModel.cells[indexPath.row];
-    [cellModel smc_tableView:tableView didSelectRowAtIndexPath:indexPath];
+    [cellModel tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 #pragma mark -- table section
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     id<TableSectionViewModelProtocol> sectionModel = self.dataList[section];
-    return [sectionModel smc_viewHeight];
+    return sectionModel.viewHeight;
 }
 
 - (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     id<TableSectionViewModelProtocol> sectionModel = self.dataList[section];
-    NSString* viewName = [sectionModel smc_viewClassName];
+    NSString* viewName = sectionModel.viewClassName;
     if (viewName) {
-        UIView<TableBaseSectionViewProtocol>* view = [[[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil] firstObject];
+        UIView<TableViewSectionProtocol>* view = [[[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil] firstObject];
         [view updateWithViewModel:sectionModel withTableView:tableView forSection:section];
         return view;
     }
@@ -64,7 +77,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<TableSectionViewModelProtocol> sectionModel = self.dataList[indexPath.section];
     id<TableCellViewModelProtocol> cellModel = sectionModel.cells[indexPath.row];
-    return [cellModel smc_viewHeight];
+    return cellModel.viewHeight;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -80,7 +93,7 @@
     id<TableSectionViewModelProtocol> sectionModel = self.dataList[indexPath.section];
     id<TableCellViewModelProtocol> cellModel = sectionModel.cells[indexPath.row];
     
-    UITableViewCell<TableBaseCellViewProtocol>* cell = [tableView dequeueReusableCellWithIdentifier:[cellModel smc_viewClassName] forIndexPath:indexPath];
+    UITableViewCell<TableViewCellProtocol>* cell = [tableView dequeueReusableCellWithIdentifier:cellModel.viewClassName forIndexPath:indexPath];
     [cell updateWithViewModel:cellModel withTableView:tableView forIndexPath:indexPath];
     
     return cell;

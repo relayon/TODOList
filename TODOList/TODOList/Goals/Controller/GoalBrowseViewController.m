@@ -9,7 +9,7 @@
 #import "GoalBrowseViewController.h"
 #import "UITableView+Extension.h"
 #import "TitleDetailTableViewCell.h"
-#import "TitleTableViewCell.h"
+//#import "TitleTableViewCell.h"
 
 @interface GoalBrowseViewController () {
 //    TableDataDelegate* _tableDelegate;
@@ -60,9 +60,9 @@
 
 #pragma mark -- tableview
 - (void)p_initTableView {
-    [self.tableView registerCell:[TitleTableViewCell class]];
-    [self.tableView registerCell:[TitleDetailTableViewCell class]];
-    self.tableView.tableFooterView = [UIView new];
+//    [self.tableView registerCell:[TitleTableViewCell class]];
+//    [self.tableView registerCell:[TitleDetailTableViewCell class]];
+//    self.tableView.tableFooterView = [UIView new];
 }
 
 /*

@@ -6,11 +6,9 @@
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "TableCellModel.h"
-#import "TableBaseViewModel.h"
-#import "TableCellViewModelProtocol.h"
+#import "BaseTableCellViewModel.h"
 
-@interface GoalContentVM : TableBaseViewModel <TableCellViewModelProtocol>
+@interface GoalContentVM : BaseTableCellViewModel
 
 @property (nonatomic, copy) NSString* placeHolder;
 @property (nonatomic, copy) NSString* content;

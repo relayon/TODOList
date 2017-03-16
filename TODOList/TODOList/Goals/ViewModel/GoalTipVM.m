@@ -23,7 +23,7 @@
  
  @param dataModel 数据模型
  */
-- (void)smc_bindDataModel:(id)dataModel {
+- (void)bindDataModel:(id)dataModel {
     self.goalModel = dataModel;
     self.reminderWay = self.goalModel.reminderWay;
     [self p_buildCells:nil forSection:0];
@@ -32,7 +32,7 @@
 /**
  在对View的数据修改后，把修改的数据保存到数据模型
  */
-- (void)smc_saveToDataModel {
+- (void)saveToDataModel {
     self.goalModel.reminderWay = self.reminderWay;
 }
 
@@ -98,12 +98,12 @@
     if ([self p_isTip]) {
         NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
         // 时间
-        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:[self smc_controller] viewClassName:selectDateCellName height:44];
-        [selectDateVM smc_bindDataModel:self.goalModel];
+        SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self.controller viewClassName:selectDateCellName height:44];
+        [selectDateVM bindDataModel:self.goalModel];
         [self.cells addObject:selectDateVM];
         
         // 重复
-//        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:[self smc_controller] cellName:selectDateCellName height:44];
+//        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:[self ] cellName:selectDateCellName height:44];
 //        [repeatVM updateWithGoalModel:self.goalModel];
 //        [self.cells addObject:repeatVM];
         

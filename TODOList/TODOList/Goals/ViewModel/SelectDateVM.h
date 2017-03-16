@@ -6,9 +6,8 @@
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "TableBaseViewModel.h"
-#import "TableCellViewModelProtocol.h"
+#import "BaseTableCellViewModel.h"
 
-@interface SelectDateVM : TableBaseViewModel <TableCellViewModelProtocol>
+@interface SelectDateVM : BaseTableCellViewModel
 
 @end

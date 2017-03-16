@@ -24,7 +24,7 @@
  
  @param dataModel 数据模型
  */
-- (void)smc_bindDataModel:(GoalModel*)dataModel {
+- (void)bindDataModel:(GoalModel*)dataModel {
     self.goalModel = dataModel;
     if (self.goalModel.fireDate) {
         self.fireDate = self.goalModel.fireDate;
@@ -36,7 +36,7 @@
 /**
  在对View的数据修改后，把修改的数据保存到数据模型
  */
-- (void)smc_saveToDataModel {
+- (void)saveToDataModel {
     self.goalModel.fireDate = self.fireDate;
 }
 
@@ -55,7 +55,7 @@
  @param tableView Table
  @param indexPath index
  */
-- (void)smc_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"common" bundle:nil];
     DatePickerViewController* vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([DatePickerViewController class])];
     [vc setSelectedDate:self.fireDate];
@@ -63,7 +63,7 @@
         self.fireDate = date;
         [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     };
-    [[self smc_controller].navigationController pushViewController:vc animated:YES];
+    [self.controller.navigationController pushViewController:vc animated:YES];
 }
 
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

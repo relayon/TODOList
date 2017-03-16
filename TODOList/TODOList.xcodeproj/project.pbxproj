@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5422BD831E7A347F003C55FC /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD821E7A347F003C55FC /* BaseTableViewCell.m */; };
+		5422BD861E7A3495003C55FC /* BaseTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD851E7A3495003C55FC /* BaseTableViewSection.m */; };
+		5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */; };
+		5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD971E7A3EE0003C55FC /* BaseTableCellViewModel.m */; };
+		5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD9A1E7A3EF2003C55FC /* BaseTableSectionViewModel.m */; };
+		5422BD9E1E7A409F003C55FC /* SimpleTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD9D1E7A409F003C55FC /* SimpleTableDataDelegate.m */; };
 		5439DCB41E7673D00093BE06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB31E7673D00093BE06 /* main.m */; };
 		5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB61E7673D00093BE06 /* AppDelegate.m */; };
 		5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB91E7673D00093BE06 /* ViewController.m */; };
@@ -33,26 +39,16 @@
 		5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD591E77FBB10093BE06 /* NSString+Extension.m */; };
 		5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */; };
 		5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD641E78030E0093BE06 /* UITableView+Extension.m */; };
-		5439DD8A1E78E8160093BE06 /* TableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD821E78E8160093BE06 /* TableCellModel.m */; };
-		5439DD8C1E78E8160093BE06 /* TableSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD861E78E8160093BE06 /* TableSectionModel.m */; };
 		5439DD901E78E89C0093BE06 /* SimpleTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD8F1E78E89C0093BE06 /* SimpleTableDataModel.m */; };
-		5439DD931E78EA2E0093BE06 /* SimpleTableSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD921E78EA2E0093BE06 /* SimpleTableSectionViewModel.m */; };
-		5439DD971E78F04E0093BE06 /* SimpleTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD961E78F04E0093BE06 /* SimpleTableCellViewModel.m */; };
 		5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD9D1E7903B80093BE06 /* SelectItem.m */; };
-		5439DDA41E7905340093BE06 /* SimpleTableDataDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDA31E7905340093BE06 /* SimpleTableDataDelegateImpl.m */; };
-		5439DDAF1E7914BC0093BE06 /* SimpleTableSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDAE1E7914BC0093BE06 /* SimpleTableSectionView.m */; };
-		5439DDB21E7914EC0093BE06 /* SimpleTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDB11E7914EC0093BE06 /* SimpleTableCellView.m */; };
 		5439DDB91E791ED40093BE06 /* TitleDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDB41E791ED40093BE06 /* TitleDetailTableViewCell.m */; };
 		5439DDBA1E791ED40093BE06 /* TitleDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DDB51E791ED40093BE06 /* TitleDetailTableViewCell.xib */; };
-		5439DDBB1E791ED40093BE06 /* TitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDB71E791ED40093BE06 /* TitleTableViewCell.m */; };
-		5439DDBC1E791ED40093BE06 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DDB81E791ED40093BE06 /* TitleTableViewCell.xib */; };
 		5439DDC21E7923300093BE06 /* GoalEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDBF1E7923300093BE06 /* GoalEnum.m */; };
 		5439DDC31E7923300093BE06 /* GoalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC11E7923300093BE06 /* GoalModel.m */; };
 		5439DDCD1E7923360093BE06 /* GoalContentVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC61E7923360093BE06 /* GoalContentVM.m */; };
 		5439DDCE1E7923360093BE06 /* GoalTipVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC81E7923360093BE06 /* GoalTipVM.m */; };
 		5439DDCF1E7923360093BE06 /* SelectDateVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDCA1E7923360093BE06 /* SelectDateVM.m */; };
 		5439DDD01E7923360093BE06 /* SelectRepeatCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */; };
-		5439DDD31E7929320093BE06 /* TableBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDD21E7929320093BE06 /* TableBaseViewModel.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -81,6 +77,21 @@
 		27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B1C33782FFED22C3137F15 /* Pods-TODOListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C3AD4E05396345EAE26075D /* Pods-TODOListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListTests/Pods-TODOListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5422BD801E7A32CC003C55FC /* TitleDetailViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleDetailViewProtocol.h; sourceTree = "<group>"; };
+		5422BD811E7A347F003C55FC /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		5422BD821E7A347F003C55FC /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		5422BD841E7A3495003C55FC /* BaseTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewSection.h; sourceTree = "<group>"; };
+		5422BD851E7A3495003C55FC /* BaseTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewSection.m; sourceTree = "<group>"; };
+		5422BD871E7A34C8003C55FC /* TableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellProtocol.h; sourceTree = "<group>"; };
+		5422BD881E7A34D6003C55FC /* TableViewSectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSectionProtocol.h; sourceTree = "<group>"; };
+		5422BD901E7A3D3A003C55FC /* TableBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModel.h; sourceTree = "<group>"; };
+		5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TableBaseViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		5422BD961E7A3EE0003C55FC /* BaseTableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCellViewModel.h; sourceTree = "<group>"; };
+		5422BD971E7A3EE0003C55FC /* BaseTableCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCellViewModel.m; sourceTree = "<group>"; };
+		5422BD991E7A3EF2003C55FC /* BaseTableSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableSectionViewModel.h; sourceTree = "<group>"; };
+		5422BD9A1E7A3EF2003C55FC /* BaseTableSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableSectionViewModel.m; sourceTree = "<group>"; };
+		5422BD9C1E7A409F003C55FC /* SimpleTableDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableDataDelegate.h; sourceTree = "<group>"; };
+		5422BD9D1E7A409F003C55FC /* SimpleTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableDataDelegate.m; sourceTree = "<group>"; };
 		5439DCAF1E7673D00093BE06 /* TODOList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5439DCB31E7673D00093BE06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5439DCB51E7673D00093BE06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,7 +122,7 @@
 		5439DD0D1E7694DD0093BE06 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5439DD0E1E7694F00093BE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5439DD0F1E76A4C90093BE06 /* GoalEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalEditViewController.h; sourceTree = "<group>"; };
-		5439DD101E76A4C90093BE06 /* GoalEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEditViewController.m; sourceTree = "<group>"; };
+		5439DD101E76A4C90093BE06 /* GoalEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoalEditViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5439DD121E76A9200093BE06 /* UITextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewCell.h; sourceTree = "<group>"; };
 		5439DD131E76A9200093BE06 /* UITextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewCell.m; sourceTree = "<group>"; };
 		5439DD141E76A9200093BE06 /* UITextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewCell.xib; sourceTree = "<group>"; };
@@ -132,51 +143,30 @@
 		5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalBrowseViewController.m; sourceTree = "<group>"; };
 		5439DD631E78030E0093BE06 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		5439DD641E78030E0093BE06 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
-		5439DD7B1E78E8160093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; };
+		5439DD7B1E78E8160093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		5439DD7C1E78E8160093BE06 /* TableCellViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellViewModelProtocol.h; sourceTree = "<group>"; };
 		5439DD7D1E78E8160093BE06 /* TableSectionViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionViewModelProtocol.h; sourceTree = "<group>"; };
-		5439DD811E78E8160093BE06 /* TableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellModel.h; sourceTree = "<group>"; };
-		5439DD821E78E8160093BE06 /* TableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellModel.m; sourceTree = "<group>"; };
-		5439DD851E78E8160093BE06 /* TableSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionModel.h; sourceTree = "<group>"; };
-		5439DD861E78E8160093BE06 /* TableSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionModel.m; sourceTree = "<group>"; };
 		5439DD8E1E78E89C0093BE06 /* SimpleTableDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableDataModel.h; sourceTree = "<group>"; };
 		5439DD8F1E78E89C0093BE06 /* SimpleTableDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableDataModel.m; sourceTree = "<group>"; };
-		5439DD911E78EA2E0093BE06 /* SimpleTableSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableSectionViewModel.h; sourceTree = "<group>"; };
-		5439DD921E78EA2E0093BE06 /* SimpleTableSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableSectionViewModel.m; sourceTree = "<group>"; };
 		5439DD941E78EDB30093BE06 /* SimpleTableDataModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableDataModelProtocol.h; sourceTree = "<group>"; };
-		5439DD951E78F04E0093BE06 /* SimpleTableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCellViewModel.h; sourceTree = "<group>"; };
-		5439DD961E78F04E0093BE06 /* SimpleTableCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCellViewModel.m; sourceTree = "<group>"; };
 		5439DD9B1E7903B80093BE06 /* SelectableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableDelegate.h; sourceTree = "<group>"; };
 		5439DD9C1E7903B80093BE06 /* SelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItem.h; sourceTree = "<group>"; };
 		5439DD9D1E7903B80093BE06 /* SelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItem.m; sourceTree = "<group>"; };
-		5439DDA21E7905340093BE06 /* SimpleTableDataDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableDataDelegateImpl.h; sourceTree = "<group>"; };
-		5439DDA31E7905340093BE06 /* SimpleTableDataDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableDataDelegateImpl.m; sourceTree = "<group>"; };
-		5439DDAB1E7911FE0093BE06 /* TableBaseCellViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableBaseCellViewProtocol.h; sourceTree = "<group>"; };
-		5439DDAC1E7912210093BE06 /* TableBaseSectionViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableBaseSectionViewProtocol.h; sourceTree = "<group>"; };
-		5439DDAD1E7914BC0093BE06 /* SimpleTableSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableSectionView.h; sourceTree = "<group>"; };
-		5439DDAE1E7914BC0093BE06 /* SimpleTableSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableSectionView.m; sourceTree = "<group>"; };
-		5439DDB01E7914EC0093BE06 /* SimpleTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCellView.h; sourceTree = "<group>"; };
-		5439DDB11E7914EC0093BE06 /* SimpleTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCellView.m; sourceTree = "<group>"; };
 		5439DDB31E791ED40093BE06 /* TitleDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleDetailTableViewCell.h; sourceTree = "<group>"; };
 		5439DDB41E791ED40093BE06 /* TitleDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDetailTableViewCell.m; sourceTree = "<group>"; };
 		5439DDB51E791ED40093BE06 /* TitleDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleDetailTableViewCell.xib; sourceTree = "<group>"; };
-		5439DDB61E791ED40093BE06 /* TitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleTableViewCell.h; sourceTree = "<group>"; };
-		5439DDB71E791ED40093BE06 /* TitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleTableViewCell.m; sourceTree = "<group>"; };
-		5439DDB81E791ED40093BE06 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		5439DDBE1E7923300093BE06 /* GoalEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalEnum.h; sourceTree = "<group>"; };
 		5439DDBF1E7923300093BE06 /* GoalEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEnum.m; sourceTree = "<group>"; };
 		5439DDC01E7923300093BE06 /* GoalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalModel.h; sourceTree = "<group>"; };
 		5439DDC11E7923300093BE06 /* GoalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalModel.m; sourceTree = "<group>"; };
 		5439DDC51E7923360093BE06 /* GoalContentVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalContentVM.h; sourceTree = "<group>"; };
-		5439DDC61E7923360093BE06 /* GoalContentVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalContentVM.m; sourceTree = "<group>"; };
+		5439DDC61E7923360093BE06 /* GoalContentVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoalContentVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5439DDC71E7923360093BE06 /* GoalTipVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalTipVM.h; sourceTree = "<group>"; };
-		5439DDC81E7923360093BE06 /* GoalTipVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalTipVM.m; sourceTree = "<group>"; };
+		5439DDC81E7923360093BE06 /* GoalTipVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoalTipVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5439DDC91E7923360093BE06 /* SelectDateVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDateVM.h; sourceTree = "<group>"; };
-		5439DDCA1E7923360093BE06 /* SelectDateVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDateVM.m; sourceTree = "<group>"; };
+		5439DDCA1E7923360093BE06 /* SelectDateVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SelectDateVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5439DDCB1E7923360093BE06 /* SelectRepeatCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRepeatCellVM.h; sourceTree = "<group>"; };
-		5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectRepeatCellVM.m; sourceTree = "<group>"; };
-		5439DDD11E7929320093BE06 /* TableBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModel.h; sourceTree = "<group>"; };
-		5439DDD21E7929320093BE06 /* TableBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableBaseViewModel.m; sourceTree = "<group>"; };
+		5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SelectRepeatCellVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +201,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5422BD891E7A3D3A003C55FC /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				5422BD901E7A3D3A003C55FC /* TableBaseViewModel.h */,
+				5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */,
+				5422BD961E7A3EE0003C55FC /* BaseTableCellViewModel.h */,
+				5422BD971E7A3EE0003C55FC /* BaseTableCellViewModel.m */,
+				5422BD991E7A3EF2003C55FC /* BaseTableSectionViewModel.h */,
+				5422BD9A1E7A3EF2003C55FC /* BaseTableSectionViewModel.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
 		5439DCA61E7673D00093BE06 = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +315,8 @@
 				5439DD391E77B3470093BE06 /* DatePickerViewController.m */,
 				5439DD501E77DEEE0093BE06 /* SelectItemViewController.h */,
 				5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */,
+				5422BD9C1E7A409F003C55FC /* SimpleTableDataDelegate.h */,
+				5422BD9D1E7A409F003C55FC /* SimpleTableDataDelegate.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,9 +329,6 @@
 				5439DDB31E791ED40093BE06 /* TitleDetailTableViewCell.h */,
 				5439DDB41E791ED40093BE06 /* TitleDetailTableViewCell.m */,
 				5439DDB51E791ED40093BE06 /* TitleDetailTableViewCell.xib */,
-				5439DDB61E791ED40093BE06 /* TitleTableViewCell.h */,
-				5439DDB71E791ED40093BE06 /* TitleTableViewCell.m */,
-				5439DDB81E791ED40093BE06 /* TitleTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -387,28 +389,9 @@
 			isa = PBXGroup;
 			children = (
 				5439DD7A1E78E8160093BE06 /* Protocol */,
-				5439DD751E78E8160093BE06 /* BaseImpl */,
-				5439DD811E78E8160093BE06 /* TableCellModel.h */,
-				5439DD821E78E8160093BE06 /* TableCellModel.m */,
-				5439DD851E78E8160093BE06 /* TableSectionModel.h */,
-				5439DD861E78E8160093BE06 /* TableSectionModel.m */,
+				5422BD891E7A3D3A003C55FC /* Impl */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		5439DD751E78E8160093BE06 /* BaseImpl */ = {
-			isa = PBXGroup;
-			children = (
-				5439DDD11E7929320093BE06 /* TableBaseViewModel.h */,
-				5439DDD21E7929320093BE06 /* TableBaseViewModel.m */,
-				5439DD911E78EA2E0093BE06 /* SimpleTableSectionViewModel.h */,
-				5439DD921E78EA2E0093BE06 /* SimpleTableSectionViewModel.m */,
-				5439DD951E78F04E0093BE06 /* SimpleTableCellViewModel.h */,
-				5439DD961E78F04E0093BE06 /* SimpleTableCellViewModel.m */,
-				5439DDA21E7905340093BE06 /* SimpleTableDataDelegateImpl.h */,
-				5439DDA31E7905340093BE06 /* SimpleTableDataDelegateImpl.m */,
-			);
-			path = BaseImpl;
 			sourceTree = "<group>";
 		};
 		5439DD7A1E78E8160093BE06 /* Protocol */ = {
@@ -437,10 +420,10 @@
 		5439DDA51E79097C0093BE06 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				5439DDAD1E7914BC0093BE06 /* SimpleTableSectionView.h */,
-				5439DDAE1E7914BC0093BE06 /* SimpleTableSectionView.m */,
-				5439DDB01E7914EC0093BE06 /* SimpleTableCellView.h */,
-				5439DDB11E7914EC0093BE06 /* SimpleTableCellView.m */,
+				5422BD811E7A347F003C55FC /* BaseTableViewCell.h */,
+				5422BD821E7A347F003C55FC /* BaseTableViewCell.m */,
+				5422BD841E7A3495003C55FC /* BaseTableViewSection.h */,
+				5422BD851E7A3495003C55FC /* BaseTableViewSection.m */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -448,8 +431,9 @@
 		5439DDA61E79097C0093BE06 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				5439DDAB1E7911FE0093BE06 /* TableBaseCellViewProtocol.h */,
-				5439DDAC1E7912210093BE06 /* TableBaseSectionViewProtocol.h */,
+				5422BD871E7A34C8003C55FC /* TableViewCellProtocol.h */,
+				5422BD881E7A34D6003C55FC /* TableViewSectionProtocol.h */,
+				5422BD801E7A32CC003C55FC /* TitleDetailViewProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -620,7 +604,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5439DDBC1E791ED40093BE06 /* TitleTableViewCell.xib in Resources */,
 				5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */,
 				5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */,
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
@@ -793,15 +776,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5439DDCE1E7923360093BE06 /* GoalTipVM.m in Sources */,
-				5439DDD31E7929320093BE06 /* TableBaseViewModel.m in Sources */,
 				5439DCFB1E768AD40093BE06 /* GoalTableViewCell.m in Sources */,
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
+				5422BD831E7A347F003C55FC /* BaseTableViewCell.m in Sources */,
 				5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
 				5439DDB91E791ED40093BE06 /* TitleDetailTableViewCell.m in Sources */,
 				5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */,
+				5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */,
 				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
-				5439DDA41E7905340093BE06 /* SimpleTableDataDelegateImpl.m in Sources */,
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */,
 				5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */,
@@ -810,21 +793,18 @@
 				5439DDD01E7923360093BE06 /* SelectRepeatCellVM.m in Sources */,
 				5439DDC21E7923300093BE06 /* GoalEnum.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
-				5439DDAF1E7914BC0093BE06 /* SimpleTableSectionView.m in Sources */,
+				5422BD861E7A3495003C55FC /* BaseTableViewSection.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
-				5439DD8A1E78E8160093BE06 /* TableCellModel.m in Sources */,
+				5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */,
 				5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */,
 				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
 				5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */,
-				5439DDBB1E791ED40093BE06 /* TitleTableViewCell.m in Sources */,
 				5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */,
 				5439DDC31E7923300093BE06 /* GoalModel.m in Sources */,
-				5439DDB21E7914EC0093BE06 /* SimpleTableCellView.m in Sources */,
+				5422BD9E1E7A409F003C55FC /* SimpleTableDataDelegate.m in Sources */,
+				5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */,
 				5439DDCF1E7923360093BE06 /* SelectDateVM.m in Sources */,
-				5439DD931E78EA2E0093BE06 /* SimpleTableSectionViewModel.m in Sources */,
-				5439DD8C1E78E8160093BE06 /* TableSectionModel.m in Sources */,
 				5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */,
-				5439DD971E78F04E0093BE06 /* SimpleTableCellViewModel.m in Sources */,
 				5439DD901E78E89C0093BE06 /* SimpleTableDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

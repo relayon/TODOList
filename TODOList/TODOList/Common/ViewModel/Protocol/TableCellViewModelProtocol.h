@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param tableView Table
  @param indexPath index
  */
-- (void)smc_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 /**
  用户自定义事件：比如，在Cell上添加了一个按钮，开关等
@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param indexPath index
  @param userData 自定义数据
  */
-- (void)smc_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath withData:(id _Nullable)userData;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath withData:(id _Nullable)userData;
 
 @end
 

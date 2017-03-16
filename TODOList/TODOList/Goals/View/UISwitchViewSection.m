@@ -11,11 +11,6 @@
 
 @interface UISwitchViewSection ()
 - (IBAction)onValueChange:(UISwitch *)sender;
-
-@property (nonatomic, weak) UITableView* tableView;
-@property (nonatomic, assign) NSInteger section;
-
-@property (nonatomic, weak) GoalTipVM* viewModel;
 @end
 
 @implementation UISwitchViewSection
@@ -28,13 +23,11 @@
 @param section section
 */
 - (void)updateWithViewModel:(id)viewModel withTableView:(UITableView*)tableView forSection:(NSInteger)section {
+    [super updateWithViewModel:viewModel withTableView:tableView forSection:section];
     
-    self.tableView = tableView;
-    self.section = section;
-    
-    self.viewModel = viewModel;
-    self.labelTitle.text = self.viewModel.title;
-    BOOL bOn = self.viewModel.reminderWay != Reminder_Way_None;
+    GoalTipVM* goalVM = viewModel;
+    self.labelTitle.text = goalVM.title;
+    BOOL bOn = goalVM.reminderWay != Reminder_Way_None;
     [self.switchView setOn:bOn animated:NO];
 }
 
@@ -47,7 +40,6 @@
 //}
 
 - (IBAction)onValueChange:(UISwitch *)sender {
-//    [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
     [self.viewModel tableView:self.tableView didSelectSection:self.section withData:sender];
 }
 @end

@@ -7,11 +7,13 @@
 //
 
 #import "TableBaseViewModel.h"
-#import "SimpleTableSectionViewModel.h"
+#import "BaseTableSectionViewModel.h"
 
 #import "GoalModel.h"
 
-@interface GoalTipVM : SimpleTableSectionViewModel
+@interface GoalTipVM : BaseTableSectionViewModel
+
+- (NSString*)title;
 
 @property (nonatomic, assign) Reminder_Way reminderWay;
 

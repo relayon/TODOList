@@ -1,30 +1,20 @@
 //
-//  SimpleTableSectionViewModel.m
+//  BaseTableSectionViewModel.m
 //  TODOList
 //
-//  Created by SMC-MAC on 17/3/15.
+//  Created by SMC-MAC on 17/3/16.
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "SimpleTableSectionViewModel.h"
+#import "BaseTableSectionViewModel.h"
 
-@interface SimpleTableSectionViewModel () {
+@interface BaseTableSectionViewModel () {
     NSMutableArray<id<TableCellViewModelProtocol>>* _tableCells;
 }
 
 @end
 
-@implementation SimpleTableSectionViewModel
-
-/**
- 创建一个空的Section
- 
- @return Section
- */
-+ (instancetype)model {
-    SimpleTableSectionViewModel* md = [[[self class] alloc] init];
-    return md;
-}
+@implementation BaseTableSectionViewModel
 
 - (instancetype)init
 {
@@ -51,7 +41,7 @@
  @param userData 用户自定义数据
  */
 - (void)tableView:(UITableView *)tableView didSelectSection:(NSInteger)section withData:(id _Nullable)userData {
-    
+    NSLog(@"%s", __FUNCTION__);
 }
 
 @end

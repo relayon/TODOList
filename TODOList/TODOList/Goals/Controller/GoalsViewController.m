@@ -17,14 +17,20 @@
 
 #import "GoalBrowseViewController.h"
 
+#import "CalendarView.h"
+
 @interface GoalsViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray<GoalModel*>* _goalsList;
+    
+    BOOL _isCalenderViewVisible;
 }
 - (IBAction)onAddClick:(id)sender;
 - (IBAction)onSettingClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *buttonTitle;
 - (IBAction)onButtonTitleClick:(UIButton *)sender;
+
+@property (nonatomic, weak) CalendarView* calendarView;
 
 @end
 
@@ -40,6 +46,16 @@
     self.buttonTitle.frame = CGRectMake(0, 0, 100, 40);
     
     [self p_initTableView];
+    
+    CalendarView* tView = self.calendarView;
+    if (tView == nil) {
+        //        tView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([CalendarView class]) owner:nil options:nil] firstObject];
+        //        tView.frame = self.view.bounds;
+        tView = [[CalendarView alloc] initWithFrame:self.view.bounds];
+        tView.hidden = YES;
+        [self.view addSubview:tView];
+        self.calendarView = tView;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,15 +106,6 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)onAddClick:(id)sender {
     GoalEditViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GoalEditViewController class])];
@@ -118,5 +125,26 @@
 }
 
 - (IBAction)onButtonTitleClick:(UIButton *)sender {
+    CalendarView* tView = self.calendarView;
+    if (tView == nil) {
+//        tView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([CalendarView class]) owner:nil options:nil] firstObject];
+//        tView.frame = self.view.bounds;
+        tView = [[CalendarView alloc] initWithFrame:self.view.bounds];
+        tView.hidden = YES;
+        [self.view addSubview:tView];
+        self.calendarView = tView;
+    }
+//    if (_isCalenderViewVisible) {
+//        // 隐藏
+//        tView.hidden = YES;
+//        
+//    } else {
+//        // 显示
+//        tView.hidden = NO;
+//    }
+    
+    _isCalenderViewVisible = !_isCalenderViewVisible;
+    
+    [tView setVisible:_isCalenderViewVisible];
 }
 @end

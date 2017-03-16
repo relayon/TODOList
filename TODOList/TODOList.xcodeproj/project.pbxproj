@@ -16,6 +16,8 @@
 		5422BDA41E7A5AFE003C55FC /* TableEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA31E7A5AFE003C55FC /* TableEnum.m */; };
 		5422BDA71E7A647E003C55FC /* TitleDetailCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA61E7A647E003C55FC /* TitleDetailCellViewModel.m */; };
 		5422BDAA1E7A6882003C55FC /* GoalModel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA91E7A6882003C55FC /* GoalModel+Extension.m */; };
+		5422BDB01E7A79F6003C55FC /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDAF1E7A79F6003C55FC /* CalendarView.m */; };
+		5422BDB21E7A7A07003C55FC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5422BDB11E7A7A07003C55FC /* CalendarView.xib */; };
 		5439DCB41E7673D00093BE06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB31E7673D00093BE06 /* main.m */; };
 		5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB61E7673D00093BE06 /* AppDelegate.m */; };
 		5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB91E7673D00093BE06 /* ViewController.m */; };
@@ -100,6 +102,9 @@
 		5422BDA61E7A647E003C55FC /* TitleDetailCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDetailCellViewModel.m; sourceTree = "<group>"; };
 		5422BDA81E7A6882003C55FC /* GoalModel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoalModel+Extension.h"; sourceTree = "<group>"; };
 		5422BDA91E7A6882003C55FC /* GoalModel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoalModel+Extension.m"; sourceTree = "<group>"; };
+		5422BDAE1E7A79F6003C55FC /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
+		5422BDAF1E7A79F6003C55FC /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
+		5422BDB11E7A7A07003C55FC /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		5439DCAF1E7673D00093BE06 /* TODOList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5439DCB31E7673D00093BE06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5439DCB51E7673D00093BE06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -367,6 +372,9 @@
 				5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */,
 				5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */,
 				5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */,
+				5422BDAE1E7A79F6003C55FC /* CalendarView.h */,
+				5422BDAF1E7A79F6003C55FC /* CalendarView.m */,
+				5422BDB11E7A7A07003C55FC /* CalendarView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -614,6 +622,7 @@
 			files = (
 				5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */,
 				5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */,
+				5422BDB21E7A7A07003C55FC /* CalendarView.xib in Resources */,
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
 				5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */,
 				5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */,
@@ -795,6 +804,7 @@
 				5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */,
 				5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */,
 				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
+				5422BDB01E7A79F6003C55FC /* CalendarView.m in Sources */,
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */,
 				5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */,

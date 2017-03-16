@@ -103,9 +103,9 @@
         [self.cells addObject:selectDateVM];
         
         // 重复
-//        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:[self ] cellName:selectDateCellName height:44];
-//        [repeatVM updateWithGoalModel:self.goalModel];
-//        [self.cells addObject:repeatVM];
+        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller viewClassName:selectDateCellName height:44];
+        [repeatVM bindDataModel:self.goalModel];
+        [self.cells addObject:repeatVM];
         
 //        NSMutableArray* mary = [NSMutableArray array];
 //        for (NSInteger row = 0; row < self.cells.count; row++) {

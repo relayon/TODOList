@@ -10,7 +10,7 @@
 
 #import "UITextViewCell.h"
 #import "UISwitchViewSection.h"
-#import "SimpleTableDataDelegate.h"
+#import "VMTableDataDelegate.h"
 #import "GoalContentVM.h"
 
 #import "TitleDetailTableViewCell.h"
@@ -18,7 +18,7 @@
 
 
 @interface GoalEditViewController (){
-    SimpleTableDataDelegate* _tableDelegate;
+    VMTableDataDelegate* _tableDelegate;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)onEditDone:(UIBarButtonItem *)sender;
@@ -47,7 +47,7 @@
     BaseTableSectionViewModel* contentSection = [BaseTableSectionViewModel modelWithController:nil viewClassName:nil];
     
     NSString* contentCellName = NSStringFromClass([UITextViewCell class]);
-    GoalContentVM* contentVM = [GoalContentVM modelWithController:self viewClassName:contentCellName height:250];
+    GoalContentVM* contentVM = [GoalContentVM modelWithController:self viewClassName:contentCellName height:200];
     [contentVM bindDataModel:self.goalModel];
     [contentSection.cells addObject:contentVM];
     [dataList addObject:contentSection];
@@ -59,7 +59,7 @@
     [dataList addObject:tipSection];
     
     // 委托
-    _tableDelegate = [SimpleTableDataDelegate delegateWithData:dataList sectionType:TableSectionType_Multiple];
+    _tableDelegate = [VMTableDataDelegate delegateWithData:dataList sectionType:TableSectionType_Multiple];
     self.tableView.dataSource = _tableDelegate;
     self.tableView.delegate = _tableDelegate;
 }

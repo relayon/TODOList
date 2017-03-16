@@ -1,26 +1,26 @@
 //
-//  SimpleTableDataDelegate.m
+//  VMTableDataDelegate.m
 //  TODOList
 //
 //  Created by SMC-MAC on 17/3/16.
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
-#import "SimpleTableDataDelegate.h"
+#import "VMTableDataDelegate.h"
 #import "TableSectionViewModelProtocol.h"
 #import "TableViewSectionProtocol.h"
 #import "TableViewCellProtocol.h"
 
-@implementation SimpleTableDataDelegate
+@implementation VMTableDataDelegate
 
 /**
  保存数据到数据模型
  */
 - (void)saveToDataModel {
-//    [self.dataList makeObjectsPerformSelector:@selector(saveToDataModel)];
-//    for (id<TableSectionViewModelProtocol> section in self.dataList) {
-//        [section.cells makeObjectsPerformSelector:@selector(saveToDataModel)];
-//    }
+    [self.dataList makeObjectsPerformSelector:@selector(saveToDataModel)];
+    for (id<TableSectionViewModelProtocol> section in self.dataList) {
+        [section.cells makeObjectsPerformSelector:@selector(saveToDataModel)];
+    }
 }
 
 /**
@@ -41,7 +41,7 @@
  @return 委托
  */
 + (instancetype)delegateWithData:(NSArray*)data sectionType:(TableSectionType)sectionType {
-    SimpleTableDataDelegate* delegate = [[[self class] alloc] init];
+    VMTableDataDelegate* delegate = [[[self class] alloc] init];
     delegate.dataList = data;
     delegate.sectionType = sectionType;
     return delegate;

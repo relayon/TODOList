@@ -40,6 +40,7 @@
     self.goalModel.fireDate = self.fireDate;
 }
 
+#pragma mark -- TitleDetailViewProtocol
 - (NSString*)title {
     return @"时间";
 }

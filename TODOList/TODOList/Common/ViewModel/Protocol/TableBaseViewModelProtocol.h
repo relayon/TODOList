@@ -17,32 +17,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 /**
- 获取当前所在的controller，如果View需要响应点击事件，则需要实现此方法
- 
- @return controller
+ View所在的controller
  */
 @property (nonatomic, weak) UIViewController* controller;
 
 /**
- 获取当前View使用的类名
- 
- @return View类名
+ View使用的类名
  */
 @property (nonatomic, copy) NSString* viewClassName;
 
 /**
- 当前View的高度
- 
- @return View高度
+ View的高度
  */
-@property (nonatomic, assign) CGFloat   viewHeight;
+@property (nonatomic, assign) CGFloat viewHeight;
+
+/**
+ 数据模型
+ */
+@property (nonatomic, weak) id dataModel;
 
 /**
  绑定数据模型
  
- @param dataModel 数据模型
+ @param model 数据模型
  */
-- (void)bindDataModel:(id)dataModel;
+- (void)bindDataModel:(id)model;
 
 /**
  在对View的数据修改后，把修改的数据保存到数据模型

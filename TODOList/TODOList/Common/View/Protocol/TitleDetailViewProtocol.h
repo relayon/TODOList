@@ -18,17 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  标题
-
- @return 标题
  */
-- (NSString*)title;
+@property (nonatomic, copy) NSString* title;
 
 /**
  详情
-
- @return 详情
  */
-- (nullable NSString*)detail;
+@property (nonatomic, copy) NSString* detail;
 
 @end
 

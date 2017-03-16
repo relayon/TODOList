@@ -13,7 +13,7 @@
 
 @interface UITextViewCell ()
 
-@property (nonatomic, weak) GoalContentVM* viewModel;
+//@property (nonatomic, weak) GoalContentVM* viewModel;
 
 @end
 
@@ -26,11 +26,11 @@
  @param tableView table
  @param indexPath indexPath
  */
-- (void)updateWithViewModel:(id)viewModel withTableView:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath {
+- (void)updateWithViewModel:(GoalContentVM*)viewModel withTableView:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath {
     self.viewModel = viewModel;
     
-    self.textView.placeholder = self.viewModel.placeHolder;
-    self.textView.text = self.viewModel.content;
+    self.textView.placeholder = viewModel.placeHolder;
+    self.textView.text = viewModel.content;
     
     [self textViewDidChange:self.textView];
 }
@@ -50,7 +50,9 @@
 
 #pragma mark -- UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
-    NSInteger limitLen = self.viewModel.limitLen;
+    GoalContentVM* vm = self.viewModel;
+    
+    NSInteger limitLen = vm.limitLen;
     if (limitLen > 0) {
         NSInteger number = [textView.text length];
         if (number > limitLen) {
@@ -63,7 +65,7 @@
     }
     
     // 绑定Model
-    self.viewModel.content = textView.text;
+    vm.content = textView.text;
 }
 
 @end

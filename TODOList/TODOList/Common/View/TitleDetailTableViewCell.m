@@ -24,10 +24,29 @@
  @param indexPath indexPath
  */
 - (void)updateWithViewModel:(id<TitleDetailViewProtocol>)viewModel withTableView:(UITableView*)tableView forIndexPath:(NSIndexPath*)indexPath {
-//    [super updateWithViewModel:viewModel withTableView:tableView forIndexPath:indexPath];
+    [super updateWithViewModel:viewModel withTableView:tableView forIndexPath:indexPath];
     
-    self.labelTitle.text = [viewModel title];
-    self.labelDetail.text = [viewModel detail];
+    [self updateWithViewModel:viewModel];
+}
+
+/**
+ 更新数据
+ 
+ @param viewModel 模型
+ */
+- (void)updateWithViewModel:(id<TitleDetailViewProtocol>)viewModel {
+    [self setTitle:viewModel.title detail:viewModel.detail];
+}
+
+/**
+ 设置标题和详情
+ 
+ @param title 标题
+ @param detail 详情
+ */
+- (void)setTitle:(NSString*)title detail:(NSString*)detail {
+    self.labelTitle.text = title;
+    self.labelDetail.text = detail;
 }
 
 - (void)awakeFromNib {

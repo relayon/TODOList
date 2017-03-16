@@ -13,12 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableBaseViewModel : NSObject <TableBaseViewModelProtocol>
 
-//@property (nonatomic, copy) NSString* viewClassName;
-//@property (nonatomic, assign) CGFloat   viewHeight;
-//@property (nonatomic, weak) UIViewController* controller;
-// 数据模型
-@property (nonatomic, weak) id dataModel;
-
 /**
  新建一个Section ViewModel
  

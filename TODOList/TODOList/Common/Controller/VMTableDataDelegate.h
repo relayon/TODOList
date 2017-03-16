@@ -1,5 +1,5 @@
 //
-//  SimpleTableDataDelegate.h
+//  VMTableDataDelegate.h
 //  TODOList
 //
 //  Created by SMC-MAC on 17/3/16.
@@ -7,15 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableEnum.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, TableSectionType) {
-    TableSectionType_Single,   // 一组，默认
-    TableSectionType_Multiple, // 多组
-};
-
-@interface SimpleTableDataDelegate : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface VMTableDataDelegate : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 /**
  保存数据到数据模型
@@ -38,7 +34,7 @@ typedef NS_ENUM(NSInteger, TableSectionType) {
 
 /**
  创建委托
-
+ 
  @param data 数据源
  @param sectionType 数据类型
  @return 委托

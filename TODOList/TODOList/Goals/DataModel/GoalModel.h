@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 备注
 @property (nullable, nonatomic, copy) NSString* note;
 
-// 排序
+// 排序, order是sqlite的关键字，不能使用，否则LKDB会报错
 @property (nonatomic, assign) float weight;
 
 // 创建日期

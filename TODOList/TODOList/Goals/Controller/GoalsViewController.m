@@ -29,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *buttonTitle;
 - (IBAction)onButtonTitleClick:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *buttonSetting;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *buttonAdd;
 
 @property (nonatomic, weak) CalendarView* calendarView;
 
@@ -39,23 +41,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // 目标数据
     [self p_initGoals];
-    
-    [self.buttonTitle setImagePositionWithType:SSImagePositionTypeRight spacing:10.0f];
-    self.buttonTitle.backgroundColor = [UIColor whiteColor];
-    self.buttonTitle.frame = CGRectMake(0, 0, 100, 40);
-    
+    // 标题按钮
+    [self p_setButonTitle];
+    // Table
     [self p_initTableView];
-    
-    CalendarView* tView = self.calendarView;
-    if (tView == nil) {
-        //        tView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([CalendarView class]) owner:nil options:nil] firstObject];
-        //        tView.frame = self.view.bounds;
-        tView = [[CalendarView alloc] initWithFrame:self.view.bounds];
-        tView.hidden = YES;
-        [self.view addSubview:tView];
-        self.calendarView = tView;
-    }
+    // 日历
+    [self p_initCalendarView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +58,23 @@
 
 - (void)p_initGoals {
     _goalsList = [NSMutableArray array];
+}
+
+#pragma mark -- 标题
+- (void)p_setButonTitle {
+    [self.buttonTitle setImagePositionWithType:SSImagePositionTypeRight spacing:10.0f];
+    self.buttonTitle.backgroundColor = [UIColor whiteColor];
+    self.buttonTitle.frame = CGRectMake(0, 0, 100, 40);
+}
+
+- (void)p_initCalendarView {
+    CalendarView* tView = self.calendarView;
+    if (tView == nil) {
+        tView = [[CalendarView alloc] initWithFrame:self.view.bounds];
+        tView.hidden = YES;
+        [self.view addSubview:tView];
+        self.calendarView = tView;
+    }
 }
 
 #pragma mark -- tableview
@@ -125,26 +135,15 @@
 }
 
 - (IBAction)onButtonTitleClick:(UIButton *)sender {
-    CalendarView* tView = self.calendarView;
-    if (tView == nil) {
-//        tView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([CalendarView class]) owner:nil options:nil] firstObject];
-//        tView.frame = self.view.bounds;
-        tView = [[CalendarView alloc] initWithFrame:self.view.bounds];
-        tView.hidden = YES;
-        [self.view addSubview:tView];
-        self.calendarView = tView;
-    }
-//    if (_isCalenderViewVisible) {
-//        // 隐藏
-//        tView.hidden = YES;
-//        
-//    } else {
-//        // 显示
-//        tView.hidden = NO;
-//    }
-    
     _isCalenderViewVisible = !_isCalenderViewVisible;
+    [self.calendarView setVisible:_isCalenderViewVisible];
     
-    [tView setVisible:_isCalenderViewVisible];
+    if (_isCalenderViewVisible) {
+        self.navigationItem.leftBarButtonItem = nil;
+        self.navigationItem.rightBarButtonItem = nil;
+    } else {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingClick:)];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onAddClick:)];
+    }
 }
 @end

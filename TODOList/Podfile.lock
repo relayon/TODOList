@@ -12,6 +12,7 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - FSCalendar (2.7.3)
+  - IQKeyboardManager (4.0.8)
   - JSPatch (1.1.3):
     - JSPatch/Core (= 1.1.3)
   - JSPatch/Core (1.1.3)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - CocoaLumberjack
   - FCFileManager
   - FSCalendar
+  - IQKeyboardManager
   - JSPatchPlatform
   - LKDBHelper
   - Masonry
@@ -50,6 +52,7 @@ SPEC CHECKSUMS:
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FSCalendar: 574388d70778c22719eed9341653e1743b345573
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   JSPatchPlatform: 8cc9aaebe21109d5fdfb4500384ddf38ed0990e9
   LKDBHelper: 531581fa6a7d0f14236cc028ce0d277bca73436a
@@ -60,6 +63,6 @@ SPEC CHECKSUMS:
   UIPlaceholderTextView: 9b47dc3e6513b13186932fd265462dfd25679e59
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 76f0a00505d869c927cb3788b1c195a7c31c219a
+PODFILE CHECKSUM: 96c240784e0752e6257ae75c718d190dfcb70a90
 
 COCOAPODS: 1.1.1

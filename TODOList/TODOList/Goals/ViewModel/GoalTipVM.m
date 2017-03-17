@@ -102,10 +102,13 @@
         [selectDateVM bindDataModel:self.goalModel];
         [self.cells addObject:selectDateVM];
         
-        // 重复
-        SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller viewClassName:selectDateCellName height:44];
-        [repeatVM bindDataModel:self.goalModel];
-        [self.cells addObject:repeatVM];
+        for (int i = 0; i < 5; i++) {
+            // 重复
+            SelectRepeatCellVM* repeatVM = [SelectRepeatCellVM modelWithController:self.controller viewClassName:selectDateCellName height:44];
+            [repeatVM bindDataModel:self.goalModel];
+            [self.cells addObject:repeatVM];
+        }
+        
         
 //        NSMutableArray* mary = [NSMutableArray array];
 //        for (NSInteger row = 0; row < self.cells.count; row++) {

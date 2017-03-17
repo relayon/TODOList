@@ -16,6 +16,7 @@
 #import "TitleDetailTableViewCell.h"
 #import "GoalTipVM.h"
 
+#import "IQKeyboardManager.h"
 
 @interface GoalEditViewController (){
     VMTableDataDelegate* _tableDelegate;
@@ -33,6 +34,9 @@
     
     [self p_buildData];
     [self p_initTableView];
+    
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
 }
 
 - (void)didReceiveMemoryWarning {

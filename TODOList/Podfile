@@ -33,6 +33,8 @@ target 'TODOList' do
   pod 'FSCalendar'
   # 修改按钮式样
   pod 'UIButton-SSEdgeInsets'
+  # 键盘
+  pod 'IQKeyboardManager'
 
   target 'TODOListTests' do
     inherit! :search_paths

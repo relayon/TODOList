@@ -18,6 +18,8 @@
 
 #import "IQKeyboardManager.h"
 
+//#import "SelectDateVM.h"
+
 @interface GoalEditViewController (){
     VMTableDataDelegate* _tableDelegate;
 }
@@ -56,6 +58,12 @@
     [contentVM bindDataModel:self.goalModel];
     [contentSection.cells addObject:contentVM];
     [dataList addObject:contentSection];
+    
+    // 地点：必选
+//    NSString* selectDateCellName = NSStringFromClass([TitleDetailTableViewCell class]);
+//    SelectDateVM* selectDateVM = [SelectDateVM modelWithController:self viewClassName:selectDateCellName height:44];
+//    [selectDateVM bindDataModel:self.goalModel];
+//    [contentSection.cells addObject:selectDateVM];
     
     // 提醒
     NSString* viewName = NSStringFromClass([UISwitchViewSection class]);

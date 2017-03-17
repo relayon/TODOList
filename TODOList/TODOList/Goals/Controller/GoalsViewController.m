@@ -82,6 +82,9 @@
     NSString* cellName = NSStringFromClass([GoalTableViewCell class]);
     [self.tableView registerNib:[UINib nibWithNibName:cellName bundle:nil] forCellReuseIdentifier:cellName];
     self.tableView.tableFooterView = [UIView new];
+    
+//    [self.myTableView setEditing:YES animated];
+//    self.tableView.editing = YES;
 }
 
 - (void)p_configCell:(GoalTableViewCell*)cell forIndex:(NSIndexPath*)indexPath {
@@ -116,7 +119,36 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark -- 编辑任务
+//- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return YES;
+//}
+//
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+//    [_goalsList exchangeObjectAtIndex:sourceIndexPath.row withObjectAtIndex:destinationIndexPath.row];
+//}
+//
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return UITableViewCellEditingStyleNone;
+//}
 
+- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSMutableArray* mary = [NSMutableArray array];
+    
+    UITableViewRowAction* finish = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"完成" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+       NSLog(@"%s", __FUNCTION__);
+    }];
+    [mary addObject:finish];
+    
+    UITableViewRowAction* delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"%s", __FUNCTION__);
+    }];
+    [mary addObject:delete];
+    
+    return mary;
+}
+
+#pragma mark -- 其他杂项
 - (IBAction)onAddClick:(id)sender {
     GoalEditViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GoalEditViewController class])];
     GoalModel* md = [[GoalModel alloc] init];

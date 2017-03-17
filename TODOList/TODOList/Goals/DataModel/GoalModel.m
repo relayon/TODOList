@@ -25,4 +25,16 @@
     self.createDate = [NSDate date];
 }
 
+#pragma mark -- DB Setting
+/**
+ *  overwrite in your models, if your table has primary key
+ 
+ *  主键列名 如果rowid<0 则跟据此名称update 和delete
+ 
+ *  @return # column name  #
+ */
++ (nullable NSString *)getPrimaryKey {
+    return @"goalId";
+}
+
 @end

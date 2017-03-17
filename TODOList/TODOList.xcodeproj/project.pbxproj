@@ -18,6 +18,9 @@
 		5422BDAA1E7A6882003C55FC /* GoalModel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA91E7A6882003C55FC /* GoalModel+Extension.m */; };
 		5422BDB01E7A79F6003C55FC /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDAF1E7A79F6003C55FC /* CalendarView.m */; };
 		5422BDB21E7A7A07003C55FC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5422BDB11E7A7A07003C55FC /* CalendarView.xib */; };
+		5422BDB51E7B748F003C55FC /* PModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDB41E7B748F003C55FC /* PModel.m */; };
+		5422BDB91E7B77BB003C55FC /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDB81E7B77BB003C55FC /* DataManager.m */; };
+		5422BDBC1E7B7966003C55FC /* ORMGoalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDBB1E7B7966003C55FC /* ORMGoalTests.m */; };
 		5439DCB41E7673D00093BE06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB31E7673D00093BE06 /* main.m */; };
 		5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB61E7673D00093BE06 /* AppDelegate.m */; };
 		5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCB91E7673D00093BE06 /* ViewController.m */; };
@@ -105,6 +108,11 @@
 		5422BDAE1E7A79F6003C55FC /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
 		5422BDAF1E7A79F6003C55FC /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
 		5422BDB11E7A7A07003C55FC /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		5422BDB31E7B748F003C55FC /* PModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PModel.h; sourceTree = "<group>"; };
+		5422BDB41E7B748F003C55FC /* PModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PModel.m; sourceTree = "<group>"; };
+		5422BDB71E7B77BB003C55FC /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		5422BDB81E7B77BB003C55FC /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		5422BDBB1E7B7966003C55FC /* ORMGoalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORMGoalTests.m; sourceTree = "<group>"; };
 		5439DCAF1E7673D00093BE06 /* TODOList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5439DCB31E7673D00093BE06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5439DCB51E7673D00093BE06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -224,6 +232,23 @@
 			path = Impl;
 			sourceTree = "<group>";
 		};
+		5422BDB61E7B77AD003C55FC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5422BDB71E7B77BB003C55FC /* DataManager.h */,
+				5422BDB81E7B77BB003C55FC /* DataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5422BDBA1E7B7913003C55FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5422BDBB1E7B7966003C55FC /* ORMGoalTests.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		5439DCA61E7673D00093BE06 = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +303,7 @@
 		5439DCCB1E7673D00093BE06 /* TODOListTests */ = {
 			isa = PBXGroup;
 			children = (
+				5422BDBA1E7B7913003C55FC /* Data */,
 				5439DCCC1E7673D00093BE06 /* TODOListTests.m */,
 				5439DCCE1E7673D00093BE06 /* Info.plist */,
 			);
@@ -319,6 +345,7 @@
 		5439DCE91E767DA50093BE06 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5422BDB61E7B77AD003C55FC /* Manager */,
 				5439DD021E7692710093BE06 /* TextEditViewController.h */,
 				5439DD031E7692710093BE06 /* TextEditViewController.m */,
 				5439DD381E77B3470093BE06 /* DatePickerViewController.h */,
@@ -427,6 +454,8 @@
 				5439DD9B1E7903B80093BE06 /* SelectableDelegate.h */,
 				5439DD9C1E7903B80093BE06 /* SelectItem.h */,
 				5439DD9D1E7903B80093BE06 /* SelectItem.m */,
+				5422BDB31E7B748F003C55FC /* PModel.h */,
+				5422BDB41E7B748F003C55FC /* PModel.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -817,7 +846,9 @@
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
 				5422BDA71E7A647E003C55FC /* TitleDetailCellViewModel.m in Sources */,
 				5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */,
+				5422BDB91E7B77BB003C55FC /* DataManager.m in Sources */,
 				5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */,
+				5422BDB51E7B748F003C55FC /* PModel.m in Sources */,
 				5422BDAA1E7A6882003C55FC /* GoalModel+Extension.m in Sources */,
 				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
 				5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */,
@@ -834,6 +865,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5439DCCD1E7673D00093BE06 /* TODOListTests.m in Sources */,
+				5422BDBC1E7B7966003C55FC /* ORMGoalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

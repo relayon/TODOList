@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "GoalEnum.h"
+#import "PModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GoalModel : NSObject
+@interface GoalModel : PModel
 
 // ID
 @property (nonatomic, copy) NSString* goalId;
@@ -40,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString* note;
 
 // 排序
-@property (nonatomic, assign) float order;
+@property (nonatomic, assign) float weight;
 
 // 创建日期
 @property (nonatomic, strong) NSDate* createDate;

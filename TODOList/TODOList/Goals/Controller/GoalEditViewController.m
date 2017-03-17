@@ -48,6 +48,7 @@
     
     NSString* contentCellName = NSStringFromClass([UITextViewCell class]);
     GoalContentVM* contentVM = [GoalContentVM modelWithController:self viewClassName:contentCellName height:200];
+    contentVM.isFirstResponder = YES;   // 打开键盘
     [contentVM bindDataModel:self.goalModel];
     [contentSection.cells addObject:contentVM];
     [dataList addObject:contentSection];

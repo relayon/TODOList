@@ -14,6 +14,7 @@
 @interface UITextViewCell ()
 
 //@property (nonatomic, weak) GoalContentVM* viewModel;
+@property (nonatomic, assign) BOOL bInitialized;
 
 @end
 
@@ -33,6 +34,13 @@
     self.textView.text = viewModel.content;
     
     [self textViewDidChange:self.textView];
+    
+    if (!self.bInitialized) {
+        self.bInitialized = YES;
+        if (viewModel.isFirstResponder) {
+            [self.textView becomeFirstResponder];
+        }
+    }
 }
 
 - (void)awakeFromNib {

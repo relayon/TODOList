@@ -17,4 +17,7 @@
  */
 @property (assign, nonatomic) NSInteger limitLen;
 
+// init
+@property (nonatomic, assign) BOOL isFirstResponder;
+
 @end

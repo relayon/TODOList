@@ -42,8 +42,17 @@ SINGLETON_IMP;
 /**
  请求通知授权
  */
-- (void)requestNotificationPermission {
-    [_notifyImpl requestNotificationPermission];
+- (void)requestAuthorization:(void (^)(BOOL granted, NSError *__nullable error))_callback {
+    [_notifyImpl requestAuthorization:_callback];
+}
+
+/**
+ 获取通知是否可用
+ 
+ @param _callback 回调
+ */
+- (void)getNotifyStatus:(void (^)(BOOL enabled))_callback {
+    [_notifyImpl getNotifyStatus:_callback];
 }
 
 /**

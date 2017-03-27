@@ -20,16 +20,21 @@
 /**
  请求通知授权
  */
-- (void)requestNotificationPermission {
+- (void)requestAuthorization:(void (^)(BOOL granted, NSError *__nullable error))_callback {
     UNAuthorizationOptions options = UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert;
-    [_notifyCenter requestAuthorizationWithOptions:options completionHandler:^(BOOL granted, NSError * _Nullable error) {
-        if (granted) {
-            NSLog(@"requestAuthorizationWithOptions OK");
-            [_notifyCenter getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-                NSLog(@"%s - %@", __FUNCTION__, settings);
-            }];
-        } else {
-            NSLog(@"%@", error);
+    [_notifyCenter requestAuthorizationWithOptions:options completionHandler:_callback];
+}
+
+/**
+ 获取通知是否可用
+ 
+ @param _callback 回调
+ */
+- (void)getNotifyStatus:(void (^)(BOOL enabled))_callback {
+    [_notifyCenter getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+        if (_callback) {
+            BOOL en = (settings.authorizationStatus == UNAuthorizationStatusAuthorized);
+            _callback(en);
         }
     }];
 }
@@ -45,10 +50,9 @@
     UNMutableNotificationContent *content = [UNMutableNotificationContent new];
     content.body = config.notifyBody;
     content.sound = [UNNotificationSound defaultSound];
-    content.categoryIdentifier = config.categoryId;
-    content.userInfo = @{@"config":config};
+//    content.categoryIdentifier = config.categoryId;
+//    content.userInfo = @{@"config":config};
     
-    //NSString* dateStr = [[NSDate date] description];
     UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:config.notifyId
                                                                           content:content
                                                                           trigger:[UNTimeIntervalNotificationTrigger triggerWithTimeInterval:config.delaySeconds repeats:NO]];
@@ -93,6 +97,7 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(void(^)())completionHandler {
 //    NSString *actid = response.actionIdentifier;
 //    NSLog(@"%s - %@", __FUNCTION__, actid);
+    completionHandler();
 }
 
 @end

@@ -16,7 +16,7 @@
  
  @return MD5
  */
-- (NSString *) smc_MD5 {
+- (NSString *)smc_MD5 {
     const char *cStr = [self UTF8String];
     
     unsigned char result[16];
@@ -32,7 +32,7 @@
              ] uppercaseString];
 }
 
-+ (NSString *) smc_UUID {
++ (NSString *)smc_UUID {
     NSString *str = [NSString stringWithFormat:@"UUID_%@", [NSDate date]];
     NSString *uuid = [str smc_MD5];
     return uuid;

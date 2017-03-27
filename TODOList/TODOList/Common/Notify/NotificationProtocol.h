@@ -11,13 +11,23 @@
 
 #import "NotificationConfig.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol NotificationProtocol <NSObject>
 
 @required
 /**
  请求通知授权
  */
-- (void)requestNotificationPermission;
+- (void)requestAuthorization:(void (^)(BOOL granted, NSError *__nullable error))_callback;
+
+/**
+ 获取通知是否可用
+
+ @param _callback 回调
+ */
+- (void)getNotifyStatus:(void (^)(BOOL enabled))_callback;
+
 
 /**
  添加通知
@@ -34,5 +44,7 @@
 - (void)removeNotification:(NotificationConfig*)config;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif /* NotificationProtocol_h */

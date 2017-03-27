@@ -23,10 +23,10 @@
 + (id)loadXib:(Class)clazz;
 
 /**
- *  向UITableView注册Cell
- *
- *  @param clazz Cell类
- *  @param table
+ 向UITableView注册Cell
+
+ @param clazz Cell类
+ @param tableView table
  */
 + (void)registXibCell:(Class)clazz toTable:(UITableView*)tableView;
 

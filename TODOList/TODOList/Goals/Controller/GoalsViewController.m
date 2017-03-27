@@ -18,6 +18,7 @@
 #import "GoalBrowseViewController.h"
 
 #import "CalendarView.h"
+#import "NotificationManager.h"
 
 @interface GoalsViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray<GoalModel*>* _goalsList;
@@ -170,7 +171,10 @@
 }
 
 - (IBAction)onSettingClick:(id)sender {
-    SettingViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SettingViewController class])];
+//    SettingViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SettingViewController class])];
+//    [self.navigationController pushViewController:vc animated:YES];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Tests" bundle:nil];
+    UIViewController* vc = [sb instantiateViewControllerWithIdentifier:@"TestsTableViewController"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

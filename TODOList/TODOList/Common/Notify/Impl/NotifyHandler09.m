@@ -13,7 +13,7 @@
 /**
  请求通知授权
  */
-- (void)requestNotificationPermission {
+- (void)requestAuthorization:(void (^)(BOOL granted, NSError *__nullable error))_callback {
     
 }
 

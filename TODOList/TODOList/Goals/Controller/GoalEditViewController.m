@@ -38,7 +38,8 @@
     [self p_initTableView];
     
     [[IQKeyboardManager sharedManager] setEnable:YES];
-    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
+    [[IQKeyboardManager sharedManager] setShouldResignOnTouchOutside:YES];
 }
 
 - (void)didReceiveMemoryWarning {

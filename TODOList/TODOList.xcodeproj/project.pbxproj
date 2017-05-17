@@ -56,6 +56,14 @@
 		5439DDCE1E7923360093BE06 /* GoalTipVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC81E7923360093BE06 /* GoalTipVM.m */; };
 		5439DDCF1E7923360093BE06 /* SelectDateVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDCA1E7923360093BE06 /* SelectDateVM.m */; };
 		5439DDD01E7923360093BE06 /* SelectRepeatCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */; };
+		5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0EA1E88FBD3005792E1 /* XibUtils.m */; };
+		5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */; };
+		5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0F81E88FE38005792E1 /* NotificationManager.m */; };
+		5463A0FD1E88FE5A005792E1 /* NotificationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0FC1E88FE5A005792E1 /* NotificationConfig.m */; };
+		5463A1001E88FFFF005792E1 /* NotifyHandler10.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0FF1E88FFFF005792E1 /* NotifyHandler10.m */; };
+		5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A1021E890022005792E1 /* NotifyHandler09.m */; };
+		5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */; };
+		5463A10D1E891118005792E1 /* Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5463A10C1E891118005792E1 /* Tests.storyboard */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -185,6 +193,22 @@
 		5439DDCA1E7923360093BE06 /* SelectDateVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SelectDateVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5439DDCB1E7923360093BE06 /* SelectRepeatCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRepeatCellVM.h; sourceTree = "<group>"; };
 		5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SelectRepeatCellVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		5463A0E91E88FBD3005792E1 /* XibUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibUtils.h; sourceTree = "<group>"; };
+		5463A0EA1E88FBD3005792E1 /* XibUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibUtils.m; sourceTree = "<group>"; };
+		5463A0EC1E88FBE5005792E1 /* NSObject+Undefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Undefine.h"; sourceTree = "<group>"; };
+		5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Undefine.m"; sourceTree = "<group>"; };
+		5463A0F71E88FE38005792E1 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
+		5463A0F81E88FE38005792E1 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
+		5463A0F91E88FE38005792E1 /* NotificationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationProtocol.h; sourceTree = "<group>"; };
+		5463A0FB1E88FE5A005792E1 /* NotificationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationConfig.h; sourceTree = "<group>"; };
+		5463A0FC1E88FE5A005792E1 /* NotificationConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationConfig.m; sourceTree = "<group>"; };
+		5463A0FE1E88FFFF005792E1 /* NotifyHandler10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyHandler10.h; sourceTree = "<group>"; };
+		5463A0FF1E88FFFF005792E1 /* NotifyHandler10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyHandler10.m; sourceTree = "<group>"; };
+		5463A1011E890022005792E1 /* NotifyHandler09.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyHandler09.h; sourceTree = "<group>"; };
+		5463A1021E890022005792E1 /* NotifyHandler09.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyHandler09.m; sourceTree = "<group>"; };
+		5463A1091E890B4E005792E1 /* TestNotifyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNotifyTableViewController.h; sourceTree = "<group>"; };
+		5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNotifyTableViewController.m; sourceTree = "<group>"; };
+		5463A10C1E891118005792E1 /* Tests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tests.storyboard; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -333,6 +357,8 @@
 		5439DCE81E767DA50093BE06 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5463A1061E89095A005792E1 /* Testcase */,
+				5463A0F51E88FE38005792E1 /* Notify */,
 				5439DCE91E767DA50093BE06 /* Controller */,
 				5439DD8D1E78E8290093BE06 /* DataModel */,
 				5439DD741E78E8160093BE06 /* ViewModel */,
@@ -409,6 +435,8 @@
 		5439DD3B1E77BB020093BE06 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5463A0E91E88FBD3005792E1 /* XibUtils.h */,
+				5463A0EA1E88FBD3005792E1 /* XibUtils.m */,
 				5439DD3C1E77BB0E0093BE06 /* Category */,
 			);
 			path = Utils;
@@ -417,6 +445,8 @@
 		5439DD3C1E77BB0E0093BE06 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				5463A0EC1E88FBE5005792E1 /* NSObject+Undefine.h */,
+				5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */,
 				5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */,
 				5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */,
 				5439DD581E77FBB10093BE06 /* NSString+Extension.h */,
@@ -507,6 +537,40 @@
 				5439DDC81E7923360093BE06 /* GoalTipVM.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5463A0F51E88FE38005792E1 /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				5463A0F61E88FE38005792E1 /* Impl */,
+				5463A0F71E88FE38005792E1 /* NotificationManager.h */,
+				5463A0F81E88FE38005792E1 /* NotificationManager.m */,
+				5463A0F91E88FE38005792E1 /* NotificationProtocol.h */,
+				5463A0FB1E88FE5A005792E1 /* NotificationConfig.h */,
+				5463A0FC1E88FE5A005792E1 /* NotificationConfig.m */,
+			);
+			path = Notify;
+			sourceTree = "<group>";
+		};
+		5463A0F61E88FE38005792E1 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				5463A0FE1E88FFFF005792E1 /* NotifyHandler10.h */,
+				5463A0FF1E88FFFF005792E1 /* NotifyHandler10.m */,
+				5463A1011E890022005792E1 /* NotifyHandler09.h */,
+				5463A1021E890022005792E1 /* NotifyHandler09.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		5463A1061E89095A005792E1 /* Testcase */ = {
+			isa = PBXGroup;
+			children = (
+				5463A1091E890B4E005792E1 /* TestNotifyTableViewController.h */,
+				5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */,
+				5463A10C1E891118005792E1 /* Tests.storyboard */,
+			);
+			path = Testcase;
 			sourceTree = "<group>";
 		};
 		6DDDFD70CAC2EF272B8CAB78 /* Frameworks */ = {
@@ -610,6 +674,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 3GW7V9965X;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					5439DCC71E7673D00093BE06 = {
 						CreatedOnToolsVersion = 8.2;
@@ -653,6 +722,7 @@
 				5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */,
 				5422BDB21E7A7A07003C55FC /* CalendarView.xib in Resources */,
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
+				5463A10D1E891118005792E1 /* Tests.storyboard in Resources */,
 				5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */,
 				5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */,
 				5439DCBF1E7673D00093BE06 /* Assets.xcassets in Resources */,
@@ -822,11 +892,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5439DDCE1E7923360093BE06 /* GoalTipVM.m in Sources */,
+				5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */,
 				5439DCFB1E768AD40093BE06 /* GoalTableViewCell.m in Sources */,
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
+				5463A1001E88FFFF005792E1 /* NotifyHandler10.m in Sources */,
 				5422BDA41E7A5AFE003C55FC /* TableEnum.m in Sources */,
+				5463A0FD1E88FE5A005792E1 /* NotificationConfig.m in Sources */,
+				5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */,
 				5422BD831E7A347F003C55FC /* BaseTableViewCell.m in Sources */,
 				5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */,
+				5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */,
 				5422BDA11E7A5970003C55FC /* VMTableDataDelegate.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
 				5439DDB91E791ED40093BE06 /* TitleDetailTableViewCell.m in Sources */,
@@ -837,6 +912,7 @@
 				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */,
 				5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */,
+				5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */,
 				5439DDCD1E7923360093BE06 /* GoalContentVM.m in Sources */,
 				5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */,
 				5439DDD01E7923360093BE06 /* SelectRepeatCellVM.m in Sources */,
@@ -857,6 +933,7 @@
 				5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */,
 				5439DDCF1E7923360093BE06 /* SelectDateVM.m in Sources */,
 				5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */,
+				5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

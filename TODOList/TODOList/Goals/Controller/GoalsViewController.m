@@ -18,6 +18,7 @@
 #import "GoalBrowseViewController.h"
 
 #import "CalendarView.h"
+#import "NotificationManager.h"
 
 @interface GoalsViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray<GoalModel*>* _goalsList;
@@ -78,6 +79,11 @@
 }
 
 #pragma mark -- tableview
+//- (void)p_handleLongPress:(UILongPressGestureRecognizer*)gesture {
+//    NSLog(@"%s", __FUNCTION__);
+//    [self.tableView setEditing:YES animated:NO];
+//}
+
 - (void)p_initTableView {
     NSString* cellName = NSStringFromClass([GoalTableViewCell class]);
     [self.tableView registerNib:[UINib nibWithNibName:cellName bundle:nil] forCellReuseIdentifier:cellName];
@@ -85,6 +91,9 @@
     
 //    [self.myTableView setEditing:YES animated];
 //    self.tableView.editing = YES;
+    
+//    UILongPressGestureRecognizer* longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(p_handleLongPress:)];
+//    [self.tableView addGestureRecognizer:longPress];
 }
 
 - (void)p_configCell:(GoalTableViewCell*)cell forIndex:(NSIndexPath*)indexPath {
@@ -162,7 +171,10 @@
 }
 
 - (IBAction)onSettingClick:(id)sender {
-    SettingViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SettingViewController class])];
+//    SettingViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SettingViewController class])];
+//    [self.navigationController pushViewController:vc animated:YES];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"Tests" bundle:nil];
+    UIViewController* vc = [sb instantiateViewControllerWithIdentifier:@"TestsTableViewController"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

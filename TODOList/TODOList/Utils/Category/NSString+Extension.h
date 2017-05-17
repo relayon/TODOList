@@ -16,8 +16,8 @@
 
  @return MD5
  */
-- (NSString *) smc_MD5;
+- (NSString *)smc_MD5;
 
-+ (NSString *) smc_UUID;
++ (NSString *)smc_UUID;
 
 @end

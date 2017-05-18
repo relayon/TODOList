@@ -13,24 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableBaseViewModel : NSObject <TableBaseViewModelProtocol>
 
-/**
- 新建一个Section ViewModel
- 
- @param controller controller
- @param viewClassName view的类名
- @return ViewModel
- */
-+ (instancetype)modelWithController:(UIViewController* _Nullable)controller viewClassName:(NSString* _Nullable)viewClassName;
 
-/**
- 新建一个Section ViewModel
- 
- @param controller controller
- @param viewClassName view的类名
- @param height 高度
- @return ViewModel
- */
-+ (instancetype)modelWithController:(UIViewController* _Nullable)controller viewClassName:(NSString* _Nullable)viewClassName height:(float)height;
 
 @end
 

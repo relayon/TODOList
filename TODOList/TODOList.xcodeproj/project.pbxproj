@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5422BD831E7A347F003C55FC /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD821E7A347F003C55FC /* BaseTableViewCell.m */; };
-		5422BD861E7A3495003C55FC /* BaseTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD851E7A3495003C55FC /* BaseTableViewSection.m */; };
 		5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */; };
 		5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD971E7A3EE0003C55FC /* BaseTableCellViewModel.m */; };
 		5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD9A1E7A3EF2003C55FC /* BaseTableSectionViewModel.m */; };
 		5422BDA11E7A5970003C55FC /* VMTableDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA01E7A5970003C55FC /* VMTableDataDelegate.m */; };
 		5422BDA41E7A5AFE003C55FC /* TableEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA31E7A5AFE003C55FC /* TableEnum.m */; };
-		5422BDA71E7A647E003C55FC /* TitleDetailCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA61E7A647E003C55FC /* TitleDetailCellViewModel.m */; };
-		5422BDAA1E7A6882003C55FC /* GoalModel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDA91E7A6882003C55FC /* GoalModel+Extension.m */; };
-		5422BDB01E7A79F6003C55FC /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDAF1E7A79F6003C55FC /* CalendarView.m */; };
-		5422BDB21E7A7A07003C55FC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5422BDB11E7A7A07003C55FC /* CalendarView.xib */; };
 		5422BDB51E7B748F003C55FC /* PModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDB41E7B748F003C55FC /* PModel.m */; };
 		5422BDB91E7B77BB003C55FC /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDB81E7B77BB003C55FC /* DataManager.m */; };
 		5422BDBC1E7B7966003C55FC /* ORMGoalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BDBB1E7B7966003C55FC /* ORMGoalTests.m */; };
@@ -29,33 +23,15 @@
 		5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5439DCC01E7673D00093BE06 /* LaunchScreen.storyboard */; };
 		5439DCCD1E7673D00093BE06 /* TODOListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCCC1E7673D00093BE06 /* TODOListTests.m */; };
 		5439DCD81E7673D00093BE06 /* TODOListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCD71E7673D00093BE06 /* TODOListUITests.m */; };
-		5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCF01E767FB50093BE06 /* GoalsViewController.m */; };
-		5439DCFB1E768AD40093BE06 /* GoalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DCF91E768AD40093BE06 /* GoalTableViewCell.m */; };
-		5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DCFA1E768AD40093BE06 /* GoalTableViewCell.xib */; };
 		5439DD011E7691E00093BE06 /* common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD001E7691E00093BE06 /* common.storyboard */; };
 		5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD031E7692710093BE06 /* TextEditViewController.m */; };
 		5439DD091E7694D30093BE06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD0B1E7694D30093BE06 /* Localizable.strings */; };
-		5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD101E76A4C90093BE06 /* GoalEditViewController.m */; };
-		5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD131E76A9200093BE06 /* UITextViewCell.m */; };
-		5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD141E76A9200093BE06 /* UITextViewCell.xib */; };
-		5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */; };
-		5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */; };
 		5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD391E77B3470093BE06 /* DatePickerViewController.m */; };
 		5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */; };
 		5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */; };
-		5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD561E77F6D90093BE06 /* SettingViewController.m */; };
 		5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD591E77FBB10093BE06 /* NSString+Extension.m */; };
-		5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */; };
 		5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD641E78030E0093BE06 /* UITableView+Extension.m */; };
 		5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD9D1E7903B80093BE06 /* SelectItem.m */; };
-		5439DDB91E791ED40093BE06 /* TitleDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDB41E791ED40093BE06 /* TitleDetailTableViewCell.m */; };
-		5439DDBA1E791ED40093BE06 /* TitleDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5439DDB51E791ED40093BE06 /* TitleDetailTableViewCell.xib */; };
-		5439DDC21E7923300093BE06 /* GoalEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDBF1E7923300093BE06 /* GoalEnum.m */; };
-		5439DDC31E7923300093BE06 /* GoalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC11E7923300093BE06 /* GoalModel.m */; };
-		5439DDCD1E7923360093BE06 /* GoalContentVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC61E7923360093BE06 /* GoalContentVM.m */; };
-		5439DDCE1E7923360093BE06 /* GoalTipVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDC81E7923360093BE06 /* GoalTipVM.m */; };
-		5439DDCF1E7923360093BE06 /* SelectDateVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDCA1E7923360093BE06 /* SelectDateVM.m */; };
-		5439DDD01E7923360093BE06 /* SelectRepeatCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */; };
 		5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0EA1E88FBD3005792E1 /* XibUtils.m */; };
 		5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */; };
 		5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0F81E88FE38005792E1 /* NotificationManager.m */; };
@@ -64,6 +40,13 @@
 		5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A1021E890022005792E1 /* NotifyHandler09.m */; };
 		5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */; };
 		5463A10D1E891118005792E1 /* Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5463A10C1E891118005792E1 /* Tests.storyboard */; };
+		54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */; };
+		54BC2F151ECDA201005BCE6A /* TDTitleDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */; };
+		54BC2F191ECDA94A005BCE6A /* TDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC2F181ECDA94A005BCE6A /* TDTabBarController.m */; };
+		54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */; };
+		54F43B031ECD99FA007D4897 /* TDGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F43B021ECD99FA007D4897 /* TDGoals.storyboard */; };
+		54F43B091ECD9C27007D4897 /* GoalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43B081ECD9C27007D4897 /* GoalListViewController.m */; };
+		54F43B0D1ECD9C31007D4897 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43B0C1ECD9C31007D4897 /* SettingViewController.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -92,13 +75,6 @@
 		27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B1C33782FFED22C3137F15 /* Pods-TODOListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C3AD4E05396345EAE26075D /* Pods-TODOListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListTests/Pods-TODOListTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5422BD801E7A32CC003C55FC /* TitleDetailViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleDetailViewProtocol.h; sourceTree = "<group>"; };
-		5422BD811E7A347F003C55FC /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
-		5422BD821E7A347F003C55FC /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
-		5422BD841E7A3495003C55FC /* BaseTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewSection.h; sourceTree = "<group>"; };
-		5422BD851E7A3495003C55FC /* BaseTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewSection.m; sourceTree = "<group>"; };
-		5422BD871E7A34C8003C55FC /* TableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellProtocol.h; sourceTree = "<group>"; };
-		5422BD881E7A34D6003C55FC /* TableViewSectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSectionProtocol.h; sourceTree = "<group>"; };
 		5422BD901E7A3D3A003C55FC /* TableBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModel.h; sourceTree = "<group>"; };
 		5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TableBaseViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5422BD961E7A3EE0003C55FC /* BaseTableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCellViewModel.h; sourceTree = "<group>"; };
@@ -109,13 +85,6 @@
 		5422BDA01E7A5970003C55FC /* VMTableDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMTableDataDelegate.m; sourceTree = "<group>"; };
 		5422BDA21E7A5AFE003C55FC /* TableEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableEnum.h; sourceTree = "<group>"; };
 		5422BDA31E7A5AFE003C55FC /* TableEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableEnum.m; sourceTree = "<group>"; };
-		5422BDA51E7A647E003C55FC /* TitleDetailCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleDetailCellViewModel.h; sourceTree = "<group>"; };
-		5422BDA61E7A647E003C55FC /* TitleDetailCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDetailCellViewModel.m; sourceTree = "<group>"; };
-		5422BDA81E7A6882003C55FC /* GoalModel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoalModel+Extension.h"; sourceTree = "<group>"; };
-		5422BDA91E7A6882003C55FC /* GoalModel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoalModel+Extension.m"; sourceTree = "<group>"; };
-		5422BDAE1E7A79F6003C55FC /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
-		5422BDAF1E7A79F6003C55FC /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
-		5422BDB11E7A7A07003C55FC /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		5422BDB31E7B748F003C55FC /* PModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PModel.h; sourceTree = "<group>"; };
 		5422BDB41E7B748F003C55FC /* PModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PModel.m; sourceTree = "<group>"; };
 		5422BDB71E7B77BB003C55FC /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -138,11 +107,6 @@
 		5439DCD71E7673D00093BE06 /* TODOListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TODOListUITests.m; sourceTree = "<group>"; };
 		5439DCD91E7673D00093BE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5439DCE51E767BA80093BE06 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		5439DCEF1E767FB50093BE06 /* GoalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalsViewController.h; sourceTree = "<group>"; };
-		5439DCF01E767FB50093BE06 /* GoalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalsViewController.m; sourceTree = "<group>"; };
-		5439DCF81E768AD40093BE06 /* GoalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalTableViewCell.h; sourceTree = "<group>"; };
-		5439DCF91E768AD40093BE06 /* GoalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalTableViewCell.m; sourceTree = "<group>"; };
-		5439DCFA1E768AD40093BE06 /* GoalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalTableViewCell.xib; sourceTree = "<group>"; };
 		5439DD001E7691E00093BE06 /* common.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = common.storyboard; sourceTree = "<group>"; };
 		5439DD021E7692710093BE06 /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
 		5439DD031E7692710093BE06 /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
@@ -150,26 +114,14 @@
 		5439DD061E76935A0093BE06 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		5439DD0D1E7694DD0093BE06 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5439DD0E1E7694F00093BE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		5439DD0F1E76A4C90093BE06 /* GoalEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalEditViewController.h; sourceTree = "<group>"; };
-		5439DD101E76A4C90093BE06 /* GoalEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoalEditViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		5439DD121E76A9200093BE06 /* UITextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewCell.h; sourceTree = "<group>"; };
-		5439DD131E76A9200093BE06 /* UITextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewCell.m; sourceTree = "<group>"; };
-		5439DD141E76A9200093BE06 /* UITextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewCell.xib; sourceTree = "<group>"; };
-		5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwitchViewSection.h; sourceTree = "<group>"; };
-		5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewSection.m; sourceTree = "<group>"; };
-		5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UISwitchViewSection.xib; sourceTree = "<group>"; };
 		5439DD381E77B3470093BE06 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		5439DD391E77B3470093BE06 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSString.h"; sourceTree = "<group>"; };
 		5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSString.m"; sourceTree = "<group>"; };
 		5439DD501E77DEEE0093BE06 /* SelectItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItemViewController.h; sourceTree = "<group>"; };
 		5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItemViewController.m; sourceTree = "<group>"; };
-		5439DD551E77F6D90093BE06 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		5439DD561E77F6D90093BE06 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		5439DD581E77FBB10093BE06 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		5439DD591E77FBB10093BE06 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		5439DD5B1E7801080093BE06 /* GoalBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalBrowseViewController.h; sourceTree = "<group>"; };
-		5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalBrowseViewController.m; sourceTree = "<group>"; };
 		5439DD631E78030E0093BE06 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		5439DD641E78030E0093BE06 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		5439DD7B1E78E8160093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -178,21 +130,6 @@
 		5439DD9B1E7903B80093BE06 /* SelectableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableDelegate.h; sourceTree = "<group>"; };
 		5439DD9C1E7903B80093BE06 /* SelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectItem.h; sourceTree = "<group>"; };
 		5439DD9D1E7903B80093BE06 /* SelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItem.m; sourceTree = "<group>"; };
-		5439DDB31E791ED40093BE06 /* TitleDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleDetailTableViewCell.h; sourceTree = "<group>"; };
-		5439DDB41E791ED40093BE06 /* TitleDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDetailTableViewCell.m; sourceTree = "<group>"; };
-		5439DDB51E791ED40093BE06 /* TitleDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleDetailTableViewCell.xib; sourceTree = "<group>"; };
-		5439DDBE1E7923300093BE06 /* GoalEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalEnum.h; sourceTree = "<group>"; };
-		5439DDBF1E7923300093BE06 /* GoalEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEnum.m; sourceTree = "<group>"; };
-		5439DDC01E7923300093BE06 /* GoalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalModel.h; sourceTree = "<group>"; };
-		5439DDC11E7923300093BE06 /* GoalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalModel.m; sourceTree = "<group>"; };
-		5439DDC51E7923360093BE06 /* GoalContentVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalContentVM.h; sourceTree = "<group>"; };
-		5439DDC61E7923360093BE06 /* GoalContentVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoalContentVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		5439DDC71E7923360093BE06 /* GoalTipVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalTipVM.h; sourceTree = "<group>"; };
-		5439DDC81E7923360093BE06 /* GoalTipVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GoalTipVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		5439DDC91E7923360093BE06 /* SelectDateVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDateVM.h; sourceTree = "<group>"; };
-		5439DDCA1E7923360093BE06 /* SelectDateVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SelectDateVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		5439DDCB1E7923360093BE06 /* SelectRepeatCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectRepeatCellVM.h; sourceTree = "<group>"; };
-		5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SelectRepeatCellVM.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5463A0E91E88FBD3005792E1 /* XibUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibUtils.h; sourceTree = "<group>"; };
 		5463A0EA1E88FBD3005792E1 /* XibUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibUtils.m; sourceTree = "<group>"; };
 		5463A0EC1E88FBE5005792E1 /* NSObject+Undefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Undefine.h"; sourceTree = "<group>"; };
@@ -209,6 +146,18 @@
 		5463A1091E890B4E005792E1 /* TestNotifyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNotifyTableViewController.h; sourceTree = "<group>"; };
 		5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNotifyTableViewController.m; sourceTree = "<group>"; };
 		5463A10C1E891118005792E1 /* Tests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tests.storyboard; sourceTree = "<group>"; };
+		54BC2F111ECDA201005BCE6A /* TDTitleDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTitleDetailCell.h; sourceTree = "<group>"; };
+		54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTitleDetailCell.m; sourceTree = "<group>"; };
+		54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTitleDetailCell.xib; sourceTree = "<group>"; };
+		54BC2F171ECDA94A005BCE6A /* TDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTabBarController.h; sourceTree = "<group>"; };
+		54BC2F181ECDA94A005BCE6A /* TDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTabBarController.m; sourceTree = "<group>"; };
+		54F43AFE1ECD9870007D4897 /* UITabBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Extension.h"; sourceTree = "<group>"; };
+		54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Extension.m"; sourceTree = "<group>"; };
+		54F43B021ECD99FA007D4897 /* TDGoals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDGoals.storyboard; sourceTree = "<group>"; };
+		54F43B071ECD9C27007D4897 /* GoalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalListViewController.h; sourceTree = "<group>"; };
+		54F43B081ECD9C27007D4897 /* GoalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalListViewController.m; sourceTree = "<group>"; };
+		54F43B0B1ECD9C31007D4897 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		54F43B0C1ECD9C31007D4897 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -300,7 +249,7 @@
 			children = (
 				5439DD3B1E77BB020093BE06 /* Utils */,
 				5439DCE81E767DA50093BE06 /* Common */,
-				5439DCE61E767D570093BE06 /* Goals */,
+				54F43B011ECD98E0007D4897 /* TDGoals */,
 				5439DCB51E7673D00093BE06 /* AppDelegate.h */,
 				5439DCB61E7673D00093BE06 /* AppDelegate.m */,
 				5439DCB81E7673D00093BE06 /* ViewController.h */,
@@ -343,17 +292,6 @@
 			path = TODOListUITests;
 			sourceTree = "<group>";
 		};
-		5439DCE61E767D570093BE06 /* Goals */ = {
-			isa = PBXGroup;
-			children = (
-				5439DCEC1E767F850093BE06 /* Controller */,
-				5439DDBD1E7923300093BE06 /* DataModel */,
-				5439DDC41E7923360093BE06 /* ViewModel */,
-				5439DCEE1E767F850093BE06 /* View */,
-			);
-			path = Goals;
-			sourceTree = "<group>";
-		};
 		5439DCE81E767DA50093BE06 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,45 +327,7 @@
 		5439DCEB1E767DA50093BE06 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5439DDA61E79097C0093BE06 /* Protocol */,
-				5439DDA51E79097C0093BE06 /* Impl */,
-				5439DDB31E791ED40093BE06 /* TitleDetailTableViewCell.h */,
-				5439DDB41E791ED40093BE06 /* TitleDetailTableViewCell.m */,
-				5439DDB51E791ED40093BE06 /* TitleDetailTableViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5439DCEC1E767F850093BE06 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				5439DCEF1E767FB50093BE06 /* GoalsViewController.h */,
-				5439DCF01E767FB50093BE06 /* GoalsViewController.m */,
-				5439DD0F1E76A4C90093BE06 /* GoalEditViewController.h */,
-				5439DD101E76A4C90093BE06 /* GoalEditViewController.m */,
-				5439DD551E77F6D90093BE06 /* SettingViewController.h */,
-				5439DD561E77F6D90093BE06 /* SettingViewController.m */,
-				5439DD5B1E7801080093BE06 /* GoalBrowseViewController.h */,
-				5439DD5C1E7801080093BE06 /* GoalBrowseViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5439DCEE1E767F850093BE06 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5439DCF81E768AD40093BE06 /* GoalTableViewCell.h */,
-				5439DCF91E768AD40093BE06 /* GoalTableViewCell.m */,
-				5439DCFA1E768AD40093BE06 /* GoalTableViewCell.xib */,
-				5439DD121E76A9200093BE06 /* UITextViewCell.h */,
-				5439DD131E76A9200093BE06 /* UITextViewCell.m */,
-				5439DD141E76A9200093BE06 /* UITextViewCell.xib */,
-				5439DD1C1E76A9CB0093BE06 /* UISwitchViewSection.h */,
-				5439DD1D1E76A9CB0093BE06 /* UISwitchViewSection.m */,
-				5439DD1F1E76A9D60093BE06 /* UISwitchViewSection.xib */,
-				5422BDAE1E7A79F6003C55FC /* CalendarView.h */,
-				5422BDAF1E7A79F6003C55FC /* CalendarView.m */,
-				5422BDB11E7A7A07003C55FC /* CalendarView.xib */,
+				54BC2F0F1ECDA1BF005BCE6A /* TableCells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -445,6 +345,8 @@
 		5439DD3C1E77BB0E0093BE06 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				54F43AFE1ECD9870007D4897 /* UITabBar+Extension.h */,
+				54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */,
 				5463A0EC1E88FBE5005792E1 /* NSObject+Undefine.h */,
 				5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */,
 				5439DD3D1E77BB140093BE06 /* NSDate+NSString.h */,
@@ -462,8 +364,6 @@
 			children = (
 				5439DD7A1E78E8160093BE06 /* Protocol */,
 				5422BD891E7A3D3A003C55FC /* Impl */,
-				5422BDA51E7A647E003C55FC /* TitleDetailCellViewModel.h */,
-				5422BDA61E7A647E003C55FC /* TitleDetailCellViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -488,55 +388,6 @@
 				5422BDB41E7B748F003C55FC /* PModel.m */,
 			);
 			path = DataModel;
-			sourceTree = "<group>";
-		};
-		5439DDA51E79097C0093BE06 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				5422BD811E7A347F003C55FC /* BaseTableViewCell.h */,
-				5422BD821E7A347F003C55FC /* BaseTableViewCell.m */,
-				5422BD841E7A3495003C55FC /* BaseTableViewSection.h */,
-				5422BD851E7A3495003C55FC /* BaseTableViewSection.m */,
-			);
-			path = Impl;
-			sourceTree = "<group>";
-		};
-		5439DDA61E79097C0093BE06 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				5422BD871E7A34C8003C55FC /* TableViewCellProtocol.h */,
-				5422BD881E7A34D6003C55FC /* TableViewSectionProtocol.h */,
-				5422BD801E7A32CC003C55FC /* TitleDetailViewProtocol.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		5439DDBD1E7923300093BE06 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-				5439DDBE1E7923300093BE06 /* GoalEnum.h */,
-				5439DDBF1E7923300093BE06 /* GoalEnum.m */,
-				5439DDC01E7923300093BE06 /* GoalModel.h */,
-				5439DDC11E7923300093BE06 /* GoalModel.m */,
-				5422BDA81E7A6882003C55FC /* GoalModel+Extension.h */,
-				5422BDA91E7A6882003C55FC /* GoalModel+Extension.m */,
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		5439DDC41E7923360093BE06 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5439DDC51E7923360093BE06 /* GoalContentVM.h */,
-				5439DDC61E7923360093BE06 /* GoalContentVM.m */,
-				5439DDC91E7923360093BE06 /* SelectDateVM.h */,
-				5439DDCA1E7923360093BE06 /* SelectDateVM.m */,
-				5439DDCB1E7923360093BE06 /* SelectRepeatCellVM.h */,
-				5439DDCC1E7923360093BE06 /* SelectRepeatCellVM.m */,
-				5439DDC71E7923360093BE06 /* GoalTipVM.h */,
-				5439DDC81E7923360093BE06 /* GoalTipVM.m */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5463A0F51E88FE38005792E1 /* Notify */ = {
@@ -571,6 +422,78 @@
 				5463A10C1E891118005792E1 /* Tests.storyboard */,
 			);
 			path = Testcase;
+			sourceTree = "<group>";
+		};
+		54BC2F0F1ECDA1BF005BCE6A /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				54BC2F101ECDA201005BCE6A /* ctive-C */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		54BC2F101ECDA201005BCE6A /* ctive-C */ = {
+			isa = PBXGroup;
+			children = (
+				54BC2F111ECDA201005BCE6A /* TDTitleDetailCell.h */,
+				54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */,
+				54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */,
+			);
+			path = "ctive-C";
+			sourceTree = "<group>";
+		};
+		54BC2F161ECDA94A005BCE6A /* ctive-C */ = {
+			isa = PBXGroup;
+			children = (
+				54BC2F171ECDA94A005BCE6A /* TDTabBarController.h */,
+				54BC2F181ECDA94A005BCE6A /* TDTabBarController.m */,
+			);
+			path = "ctive-C";
+			sourceTree = "<group>";
+		};
+		54F43B011ECD98E0007D4897 /* TDGoals */ = {
+			isa = PBXGroup;
+			children = (
+				54F43B021ECD99FA007D4897 /* TDGoals.storyboard */,
+				54BC2F161ECDA94A005BCE6A /* ctive-C */,
+				54F43B041ECD9B2A007D4897 /* GoalList */,
+				54F43B051ECD9B2A007D4897 /* Setting */,
+			);
+			path = TDGoals;
+			sourceTree = "<group>";
+		};
+		54F43B041ECD9B2A007D4897 /* GoalList */ = {
+			isa = PBXGroup;
+			children = (
+				54F43B061ECD9C27007D4897 /* ctive-C */,
+			);
+			path = GoalList;
+			sourceTree = "<group>";
+		};
+		54F43B051ECD9B2A007D4897 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				54F43B0A1ECD9C31007D4897 /* ctive-C */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		54F43B061ECD9C27007D4897 /* ctive-C */ = {
+			isa = PBXGroup;
+			children = (
+				54F43B071ECD9C27007D4897 /* GoalListViewController.h */,
+				54F43B081ECD9C27007D4897 /* GoalListViewController.m */,
+			);
+			path = "ctive-C";
+			sourceTree = "<group>";
+		};
+		54F43B0A1ECD9C31007D4897 /* ctive-C */ = {
+			isa = PBXGroup;
+			children = (
+				54F43B0B1ECD9C31007D4897 /* SettingViewController.h */,
+				54F43B0C1ECD9C31007D4897 /* SettingViewController.m */,
+			);
+			path = "ctive-C";
 			sourceTree = "<group>";
 		};
 		6DDDFD70CAC2EF272B8CAB78 /* Frameworks */ = {
@@ -672,7 +595,7 @@
 				TargetAttributes = {
 					5439DCAE1E7673D00093BE06 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 3GW7V9965X;
+						DevelopmentTeam = XFNRGN873A;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -718,17 +641,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5439DD201E76A9D60093BE06 /* UISwitchViewSection.xib in Resources */,
-				5439DCFC1E768AD40093BE06 /* GoalTableViewCell.xib in Resources */,
-				5422BDB21E7A7A07003C55FC /* CalendarView.xib in Resources */,
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
 				5463A10D1E891118005792E1 /* Tests.storyboard in Resources */,
 				5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */,
-				5439DD161E76A9210093BE06 /* UITextViewCell.xib in Resources */,
+				54F43B031ECD99FA007D4897 /* TDGoals.storyboard in Resources */,
 				5439DCBF1E7673D00093BE06 /* Assets.xcassets in Resources */,
-				5439DDBA1E791ED40093BE06 /* TitleDetailTableViewCell.xib in Resources */,
 				5439DD011E7691E00093BE06 /* common.storyboard in Resources */,
 				5439DCBD1E7673D00093BE06 /* Main.storyboard in Resources */,
+				54BC2F151ECDA201005BCE6A /* TDTitleDetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,47 +811,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5439DDCE1E7923360093BE06 /* GoalTipVM.m in Sources */,
 				5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */,
-				5439DCFB1E768AD40093BE06 /* GoalTableViewCell.m in Sources */,
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
 				5463A1001E88FFFF005792E1 /* NotifyHandler10.m in Sources */,
 				5422BDA41E7A5AFE003C55FC /* TableEnum.m in Sources */,
 				5463A0FD1E88FE5A005792E1 /* NotificationConfig.m in Sources */,
 				5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */,
-				5422BD831E7A347F003C55FC /* BaseTableViewCell.m in Sources */,
-				5439DD1E1E76A9CB0093BE06 /* UISwitchViewSection.m in Sources */,
 				5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */,
 				5422BDA11E7A5970003C55FC /* VMTableDataDelegate.m in Sources */,
+				54BC2F191ECDA94A005BCE6A /* TDTabBarController.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
-				5439DDB91E791ED40093BE06 /* TitleDetailTableViewCell.m in Sources */,
 				5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */,
 				5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */,
 				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
-				5422BDB01E7A79F6003C55FC /* CalendarView.m in Sources */,
-				5439DD111E76A4C90093BE06 /* GoalEditViewController.m in Sources */,
 				5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */,
 				5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */,
 				5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */,
-				5439DDCD1E7923360093BE06 /* GoalContentVM.m in Sources */,
-				5439DCF11E767FB50093BE06 /* GoalsViewController.m in Sources */,
-				5439DDD01E7923360093BE06 /* SelectRepeatCellVM.m in Sources */,
-				5439DDC21E7923300093BE06 /* GoalEnum.m in Sources */,
+				54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
-				5422BD861E7A3495003C55FC /* BaseTableViewSection.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
-				5422BDA71E7A647E003C55FC /* TitleDetailCellViewModel.m in Sources */,
+				54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */,
 				5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */,
+				54F43B091ECD9C27007D4897 /* GoalListViewController.m in Sources */,
+				54F43B0D1ECD9C31007D4897 /* SettingViewController.m in Sources */,
 				5422BDB91E7B77BB003C55FC /* DataManager.m in Sources */,
-				5439DD571E77F6D90093BE06 /* SettingViewController.m in Sources */,
 				5422BDB51E7B748F003C55FC /* PModel.m in Sources */,
-				5422BDAA1E7A6882003C55FC /* GoalModel+Extension.m in Sources */,
-				5439DD151E76A9200093BE06 /* UITextViewCell.m in Sources */,
-				5439DD5D1E7801080093BE06 /* GoalBrowseViewController.m in Sources */,
 				5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */,
-				5439DDC31E7923300093BE06 /* GoalModel.m in Sources */,
 				5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */,
-				5439DDCF1E7923360093BE06 /* SelectDateVM.m in Sources */,
 				5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */,
 				5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */,
 			);
@@ -1097,7 +1003,7 @@
 			baseConfigurationReference = 069F381C3269A5CC7EE8492E /* Pods-TODOList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3GW7V9965X;
+				DEVELOPMENT_TEAM = XFNRGN873A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TODOList/PrefixHeader.pch;
 				INFOPLIST_FILE = TODOList/Info.plist;
@@ -1113,7 +1019,7 @@
 			baseConfigurationReference = BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3GW7V9965X;
+				DEVELOPMENT_TEAM = XFNRGN873A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TODOList/PrefixHeader.pch;
 				INFOPLIST_FILE = TODOList/Info.plist;

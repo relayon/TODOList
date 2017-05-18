@@ -63,9 +63,9 @@
 
 #pragma mark -- 标题
 - (void)p_setButonTitle {
-    [self.buttonTitle setImagePositionWithType:SSImagePositionTypeRight spacing:10.0f];
     self.buttonTitle.backgroundColor = [UIColor whiteColor];
     self.buttonTitle.frame = CGRectMake(0, 0, 100, 40);
+    [self.buttonTitle setImagePositionWithType:SSImagePositionTypeRight spacing:10.0f];
 }
 
 - (void)p_initCalendarView {

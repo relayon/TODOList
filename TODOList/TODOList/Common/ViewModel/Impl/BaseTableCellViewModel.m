@@ -10,24 +10,7 @@
 
 @implementation BaseTableCellViewModel
 
-/**
- TableCell被选中的回调
- 
- @param tableView Table
- @param indexPath index
- */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%s", __FUNCTION__);
-}
-
-/**
- 用户自定义事件：比如，在Cell上添加了一个按钮，开关等
- 
- @param tableView Table
- @param indexPath index
- @param userData 自定义数据
- */
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath withData:(id _Nullable)userData {
     NSLog(@"%s", __FUNCTION__);
 }
 

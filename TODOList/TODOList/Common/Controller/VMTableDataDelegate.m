@@ -7,96 +7,99 @@
 //
 
 #import "VMTableDataDelegate.h"
-#import "TableSectionViewModelProtocol.h"
-#import "TableViewSectionProtocol.h"
-#import "TableViewCellProtocol.h"
+// cell高度自适应
+#import "UITableView+FDTemplateLayoutCell.h"
+
+@interface VMTableDataDelegate ()
+
+@property (nonatomic, weak) NSArray<id<TableSectionViewModelProtocol>>* dataList;
+
+@end
 
 @implementation VMTableDataDelegate
 
-/**
- 保存数据到数据模型
- */
-- (void)saveToDataModel {
-    [self.dataList makeObjectsPerformSelector:@selector(saveToDataModel)];
-    for (id<TableSectionViewModelProtocol> section in self.dataList) {
-        [section.cells makeObjectsPerformSelector:@selector(saveToDataModel)];
-    }
-}
-
-/**
- 创建委托
- 
- @param data 数据源
- @return 委托
- */
-+ (instancetype)delegateWithData:(NSArray*)data {
-    return [self delegateWithData:data sectionType:TableSectionType_Single];
-}
-
-/**
- 创建委托
- 
- @param data 数据源
- @param sectionType 数据类型
- @return 委托
- */
-+ (instancetype)delegateWithData:(NSArray*)data sectionType:(TableSectionType)sectionType {
++ (instancetype)delegateWithData:(NSArray<id<TableSectionViewModelProtocol>>*)dataList {
     VMTableDataDelegate* delegate = [[[self class] alloc] init];
-    delegate.dataList = data;
-    delegate.sectionType = sectionType;
+    delegate.dataList = dataList;
     return delegate;
 }
 
-#pragma mark - UITableViewDataSource & UITableViewDelegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
-    id<TableSectionViewModelProtocol> sectionModel = self.dataList[indexPath.section];
-    id<TableCellViewModelProtocol> cellModel = sectionModel.cells[indexPath.row];
-    [cellModel tableView:tableView didSelectRowAtIndexPath:indexPath];
+#pragma mark -- get section & cell
+- (id<TableSectionViewModelProtocol>)p_sectionModelAtIndex:(NSInteger)index {
+    id<TableSectionViewModelProtocol> sm = self.dataList[index];
+    return sm;
 }
 
-#pragma mark -- table section
+- (id<TableCellViewModelProtocol>)p_cellModelAtIndexPath:(NSIndexPath*)indexPath {
+    id<TableSectionViewModelProtocol> sm = [self p_sectionModelAtIndex:indexPath.section];
+    id<TableCellViewModelProtocol> cm = sm.cells[indexPath.row];
+    return cm;
+}
+
+#pragma mark -- UITableViewDataSource && UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    id<TableSectionViewModelProtocol> sectionModel = self.dataList[section];
-    return sectionModel.viewHeight;
+    id<TableSectionViewModelProtocol> sectionModel = [self p_sectionModelAtIndex:section];
+    if (sectionModel.viewClassName) {
+        return sectionModel.customViewHeight;
+    } else {
+        return CGFLOAT_MIN;
+    }
 }
 
-- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    id<TableSectionViewModelProtocol> sectionModel = self.dataList[section];
-    NSString* viewName = sectionModel.viewClassName;
-    if (viewName) {
-        UIView<TableViewSectionProtocol>* view = [[[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil] firstObject];
-        [view updateWithViewModel:sectionModel withTableView:tableView forSection:section];
-        return view;
-    }
-    
-    return nil;
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id<TableSectionViewModelProtocol> sectionModel = self.dataList[indexPath.section];
-    id<TableCellViewModelProtocol> cellModel = sectionModel.cells[indexPath.row];
-    return cellModel.viewHeight;
+    id<TableCellViewModelProtocol> cellModel = [self p_cellModelAtIndexPath:indexPath];
+    CGFloat height = 0.0f;
+    
+    if ([cellModel isAutoHeight]) {
+        height = [tableView fd_heightForCellWithIdentifier:cellModel.viewClassName cacheByIndexPath:indexPath configuration:^(UITableViewCell* cell) {
+            [cellModel updateView:cell];
+        }];
+    } else {
+        height = [cellModel customViewHeight];
+    }
+    
+    return height;
+}
+
+- (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section {
+    id<TableSectionViewModelProtocol> sectionModel = [self p_sectionModelAtIndex:section];
+    
+    UIView* sectionView = nil;
+    if (sectionModel.viewClassName) {
+        sectionView = [[[NSBundle mainBundle] loadNibNamed:sectionModel.viewClassName owner:nil options:nil] firstObject];
+        [sectionModel updateView:sectionView];
+    }
+    
+    return sectionView;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.dataList.count;
+    NSInteger nc = self.dataList.count;
+    
+    return nc;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id<TableSectionViewModelProtocol> sectionModel = self.dataList[section];
+    id<TableSectionViewModelProtocol> sectionModel = [self p_sectionModelAtIndex:section];
+    
     return sectionModel.cells.count;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id<TableSectionViewModelProtocol> sectionModel = self.dataList[indexPath.section];
-    id<TableCellViewModelProtocol> cellModel = sectionModel.cells[indexPath.row];
-    
-    UITableViewCell<TableViewCellProtocol>* cell = [tableView dequeueReusableCellWithIdentifier:cellModel.viewClassName forIndexPath:indexPath];
-    [cell updateWithViewModel:cellModel withTableView:tableView forIndexPath:indexPath];
-    
-    return cell;
+    id<TableCellViewModelProtocol> cellModel = [self p_cellModelAtIndexPath:indexPath];
+    UITableViewCell* tCell = [tableView dequeueReusableCellWithIdentifier:cellModel.viewClassName forIndexPath:indexPath];
+    [cellModel updateView:tCell];
+    return tCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    id<TableCellViewModelProtocol> cellModel = [self p_cellModelAtIndexPath:indexPath];
+    [cellModel tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 @end

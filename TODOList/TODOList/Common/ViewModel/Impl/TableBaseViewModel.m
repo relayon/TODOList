@@ -18,51 +18,54 @@
 
 @synthesize controller;
 @synthesize viewClassName;
-@synthesize viewHeight;
 @synthesize dataModel;
 
 /**
- 新建一个Section ViewModel
+ 根据数据模型更新
  
- @param controller controller
- @param viewClassName view的类名
- @return ViewModel
+ @param dataModel 数据模型
  */
-+ (instancetype)modelWithController:(UIViewController* _Nullable)controller viewClassName:(NSString* _Nullable)viewClassName {
-    return [self modelWithController:controller viewClassName:viewClassName height:0.0f];
+- (void)updateWithDataModel:(id)dataModel {
+    
 }
 
 /**
- 新建一个Section ViewModel
+ 更新UI
  
- @param controller controller
- @param viewClassName view的类名
- @param height 高度
+ @param view UI
+ */
+- (void)updateView:(UIView*)view {
+    
+}
+
+/**
+ 高度是否自适应，默认：NO
+ 
+ @return YES/NO
+ */
+- (BOOL)isAutoHeight {
+    return NO;
+}
+
+/**
+ 自定义高度，在isAutoHeight为NO时有效
+ 
+ @return 高度
+ */
+- (CGFloat)customViewHeight {
+    return 45;
+}
+
+/**
+ 生成ViewModel
+ 
+ @param controller 控制器
  @return ViewModel
  */
-+ (instancetype)modelWithController:(UIViewController* _Nullable)controller viewClassName:(NSString* _Nullable)viewClassName height:(float)height {
++ (instancetype)modelWithController:(UIViewController* _Nullable)controller {
     TableBaseViewModel* model = [[[self class] alloc] init];
     model.controller = controller;
-    model.viewClassName = viewClassName;
-    model.viewHeight = height;
     return model;
-}
-
-#pragma mark -- TableBaseViewModelProtocol
-/**
- 绑定数据模型
- 
- @param model 数据模型
- */
-- (void)bindDataModel:(id)model {
-    self.dataModel = model;
-}
-
-/**
- 在对View的数据修改后，把修改的数据保存到数据模型
- */
-- (void)saveToDataModel {
-    NSLog(@"%s", __FUNCTION__);
 }
 
 @end

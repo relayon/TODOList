@@ -7,7 +7,6 @@
 //
 
 #import "GoalTipVM.h"
-#import "TitleDetailTableViewCell.h"
 #import "SelectDateVM.h"
 #import "SelectRepeatCellVM.h"
 

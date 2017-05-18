@@ -13,27 +13,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TableCellViewModelProtocol <NSObject, TableBaseViewModelProtocol>
+@protocol TableCellViewModelProtocol <TableBaseViewModelProtocol>
 
-// 可选实现，View可交互
-@optional
-
-/**
- TableCell被选中的回调
- 
- @param tableView Table
- @param indexPath index
- */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
-
-/**
- 用户自定义事件：比如，在Cell上添加了一个按钮，开关等
- 
- @param tableView Table
- @param indexPath index
- @param userData 自定义数据
- */
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath withData:(id _Nullable)userData;
 
 @end
 

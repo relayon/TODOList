@@ -15,38 +15,52 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TableBaseViewModelProtocol <NSObject>
 
+#pragma mark -- 属性
+@required
+// View所在的controller
+@property (nonatomic, weak) UIViewController* controller;
+// View使用的类名
+@property (nonatomic, copy) NSString* viewClassName;
+// 关联的数据模型
+@property (nullable, nonatomic, weak) id dataModel;
+
+#pragma mark -- 方法
 @required
 /**
- View所在的controller
- */
-@property (nonatomic, weak) UIViewController* controller;
-
-/**
- View使用的类名
- */
-@property (nonatomic, copy) NSString* viewClassName;
-
-/**
- View的高度
- */
-@property (nonatomic, assign) CGFloat viewHeight;
-
-/**
- 数据模型
- */
-@property (nonatomic, weak) id dataModel;
-
-/**
- 绑定数据模型
+ 根据数据模型更新
  
- @param model 数据模型
+ @param dataModel 数据模型
  */
-- (void)bindDataModel:(id)model;
+- (void)updateWithDataModel:(id)dataModel;
 
 /**
- 在对View的数据修改后，把修改的数据保存到数据模型
+ 更新UI
+
+ @param view UI
  */
-- (void)saveToDataModel;
+- (void)updateView:(UIView*)view;
+
+/**
+ 高度是否自适应，默认：NO
+
+ @return YES/NO
+ */
+- (BOOL)isAutoHeight;
+
+/**
+ 自定义高度，在isAutoHeight为NO时有效
+ 
+ @return 高度
+ */
+- (CGFloat)customViewHeight;
+
+/**
+ 生成ViewModel
+
+ @param controller 控制器
+ @return ViewModel
+ */
++ (instancetype)modelWithController:(UIViewController* _Nullable)controller;
 
 @end
 

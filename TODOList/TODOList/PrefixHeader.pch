@@ -36,4 +36,13 @@ return instance;}
 // 本地化
 #define L(key) NSLocalizedString(key, nil)
 
+// 包含透明通道的颜色
+#define RGBA(rgbaValue) [UIColor \
+colorWithRed:((CGFloat)((rgbaValue & 0xFF000000) >> 24))/255.0 \
+green:((CGFloat)((rgbaValue & 0xFF0000) >> 16))/255.0 \
+blue:((CGFloat)((rgbaValue & 0xFF00) >> 8))/255.0 \
+alpha:((CGFloat)(rgbaValue & 0xFF))/255.0]
+// 不透明颜色
+#define RGB(rgbValue) RGBA(rgbValue##FF)
+
 #endif /* PrefixHeader_pch */

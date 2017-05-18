@@ -10,7 +10,6 @@
 
 @interface DatePickerViewController ()
 - (IBAction)onValueChanged:(UIDatePicker *)sender;
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @property (nonatomic, strong) NSDate* selDate;
 @property (nonatomic, strong) NSDate* minDate;
@@ -38,6 +37,8 @@
     } 
     self.datePicker.minimumDate = self.minDate;
     self.datePicker.maximumDate = self.maxDate;
+    
+    self.datePicker.datePickerMode = self.pickerMode;
 }
 
 - (void)didReceiveMemoryWarning {

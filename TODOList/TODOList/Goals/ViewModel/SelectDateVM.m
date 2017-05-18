@@ -59,6 +59,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"common" bundle:nil];
     DatePickerViewController* vc = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([DatePickerViewController class])];
+    vc.pickerMode = UIDatePickerModeCountDownTimer;
     [vc setSelectedDate:self.fireDate];
     vc.onSelectDate = ^(NSDate* date) {
         self.fireDate = date;

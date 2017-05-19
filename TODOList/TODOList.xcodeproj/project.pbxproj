@@ -43,13 +43,10 @@
 		5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD9D1E7903B80093BE06 /* SelectItem.m */; };
 		5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0EA1E88FBD3005792E1 /* XibUtils.m */; };
 		5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */; };
-		5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0F81E88FE38005792E1 /* NotificationManager.m */; };
-		5463A0FD1E88FE5A005792E1 /* NotificationConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0FC1E88FE5A005792E1 /* NotificationConfig.m */; };
-		5463A1001E88FFFF005792E1 /* NotifyHandler10.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0FF1E88FFFF005792E1 /* NotifyHandler10.m */; };
-		5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A1021E890022005792E1 /* NotifyHandler09.m */; };
 		5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */; };
 		5463A10D1E891118005792E1 /* Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5463A10C1E891118005792E1 /* Tests.storyboard */; };
 		54806D521ECEBCA400881542 /* MiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54806D511ECEBCA400881542 /* MiddleViewController.m */; };
+		54806D551ECEBF5400881542 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54806D541ECEBF5400881542 /* NotificationManager.m */; };
 		54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */; };
 		54BC2F151ECDA201005BCE6A /* TDTitleDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */; };
 		54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */; };
@@ -158,20 +155,13 @@
 		5463A0EA1E88FBD3005792E1 /* XibUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibUtils.m; sourceTree = "<group>"; };
 		5463A0EC1E88FBE5005792E1 /* NSObject+Undefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Undefine.h"; sourceTree = "<group>"; };
 		5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Undefine.m"; sourceTree = "<group>"; };
-		5463A0F71E88FE38005792E1 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
-		5463A0F81E88FE38005792E1 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
-		5463A0F91E88FE38005792E1 /* NotificationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationProtocol.h; sourceTree = "<group>"; };
-		5463A0FB1E88FE5A005792E1 /* NotificationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationConfig.h; sourceTree = "<group>"; };
-		5463A0FC1E88FE5A005792E1 /* NotificationConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationConfig.m; sourceTree = "<group>"; };
-		5463A0FE1E88FFFF005792E1 /* NotifyHandler10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyHandler10.h; sourceTree = "<group>"; };
-		5463A0FF1E88FFFF005792E1 /* NotifyHandler10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyHandler10.m; sourceTree = "<group>"; };
-		5463A1011E890022005792E1 /* NotifyHandler09.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyHandler09.h; sourceTree = "<group>"; };
-		5463A1021E890022005792E1 /* NotifyHandler09.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyHandler09.m; sourceTree = "<group>"; };
 		5463A1091E890B4E005792E1 /* TestNotifyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNotifyTableViewController.h; sourceTree = "<group>"; };
 		5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNotifyTableViewController.m; sourceTree = "<group>"; };
 		5463A10C1E891118005792E1 /* Tests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tests.storyboard; sourceTree = "<group>"; };
 		54806D501ECEBCA400881542 /* MiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleViewController.h; sourceTree = "<group>"; };
 		54806D511ECEBCA400881542 /* MiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleViewController.m; sourceTree = "<group>"; };
+		54806D531ECEBF5400881542 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
+		54806D541ECEBF5400881542 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
 		54BC2F111ECDA201005BCE6A /* TDTitleDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTitleDetailCell.h; sourceTree = "<group>"; };
 		54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTitleDetailCell.m; sourceTree = "<group>"; };
 		54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTitleDetailCell.xib; sourceTree = "<group>"; };
@@ -462,25 +452,10 @@
 		5463A0F51E88FE38005792E1 /* Notify */ = {
 			isa = PBXGroup;
 			children = (
-				5463A0F61E88FE38005792E1 /* Impl */,
-				5463A0F71E88FE38005792E1 /* NotificationManager.h */,
-				5463A0F81E88FE38005792E1 /* NotificationManager.m */,
-				5463A0F91E88FE38005792E1 /* NotificationProtocol.h */,
-				5463A0FB1E88FE5A005792E1 /* NotificationConfig.h */,
-				5463A0FC1E88FE5A005792E1 /* NotificationConfig.m */,
+				54806D531ECEBF5400881542 /* NotificationManager.h */,
+				54806D541ECEBF5400881542 /* NotificationManager.m */,
 			);
 			path = Notify;
-			sourceTree = "<group>";
-		};
-		5463A0F61E88FE38005792E1 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				5463A0FE1E88FFFF005792E1 /* NotifyHandler10.h */,
-				5463A0FF1E88FFFF005792E1 /* NotifyHandler10.m */,
-				5463A1011E890022005792E1 /* NotifyHandler09.h */,
-				5463A1021E890022005792E1 /* NotifyHandler09.m */,
-			);
-			path = Impl;
 			sourceTree = "<group>";
 		};
 		5463A1061E89095A005792E1 /* Testcase */ = {
@@ -863,11 +838,7 @@
 			files = (
 				5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */,
 				5439DCBA1E7673D00093BE06 /* ViewController.m in Sources */,
-				5463A1001E88FFFF005792E1 /* NotifyHandler10.m in Sources */,
 				5422BDA41E7A5AFE003C55FC /* TableEnum.m in Sources */,
-				5463A0FD1E88FE5A005792E1 /* NotificationConfig.m in Sources */,
-				5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */,
-				5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */,
 				5405B1881ECE856400495A05 /* TDTabBarController.m in Sources */,
 				5405B1A01ECE953000495A05 /* UITableView+RegisterCell.m in Sources */,
 				5405B1971ECE8CF200495A05 /* GoalItemVM.m in Sources */,
@@ -883,6 +854,7 @@
 				5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */,
 				54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */,
 				5405B1A41ECE9C3400495A05 /* GoalListViewController.m in Sources */,
+				54806D551ECEBF5400881542 /* NotificationManager.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
 				54806D521ECEBCA400881542 /* MiddleViewController.m in Sources */,

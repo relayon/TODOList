@@ -1,44 +1,27 @@
 //
 //  NotificationManager.h
-//  TODOList
+//  MyNotify
 //
-//  Created by SMC-MAC on 17/3/27.
+//  Created by SMC-MAC on 17/5/17.
 //  Copyright © 2017年 heyou. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "NotificationConfig.h"
-NS_ASSUME_NONNULL_BEGIN
+
+@import UserNotifications;
+
 @interface NotificationManager : NSObject
 // 单例声明
 SINGLETON_DCL;
 
-/**
- 请求通知授权
- */
-- (void)requestAuthorization:(void (^)(BOOL granted, NSError *__nullable error))_callback;
+@property (nonatomic, strong) UNUserNotificationCenter* notificationCenter;
+// 请求授权
+- (void)requestAuth:(void (^)(BOOL result, NSError* msg))_callback;
 
-/**
- 获取通知是否可用
- 
- @param _callback 回调
- */
-- (void)getNotifyStatus:(void (^)(BOOL enabled))_callback;
 
-/**
- 添加通知
- 
- @param config 配置信息
- */
-- (void)scheduleNotification:(NotificationConfig*)config;
+// test
+- (void)test;
 
-/**
- 删除通知
- 
- @param config 配置信息
- */
-- (void)removeNotification:(NotificationConfig*)config;
+- (NSString*)get_string;
 
 @end
-
-NS_ASSUME_NONNULL_END

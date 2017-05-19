@@ -33,33 +33,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    if (indexPath.row == 0) {
-        [[NotificationManager sharedInstance] getNotifyStatus:^(BOOL enabled) {
-            NSLog(@"enable = %@", enabled?@"YES":@"NO");
-        }];
-    } else if (indexPath.row == 1) {
-        [[NotificationManager sharedInstance] requestAuthorization:^(BOOL granted, NSError * _Nullable error) {
-            NSLog(@"granted = %@", granted?@"YES":@"NO");
-        }];
-    } else if (indexPath.row == 2) {
-        NotificationConfig* cfg = [[NotificationConfig alloc] init];
-        cfg.notifyId = @"123";
-        cfg.notifyBody = @"Uncomment the following line to preserve selection between presentations.Uncomment the following line to preserve selection between presentations.Uncomment the following line to preserve selection between presentations.";
-        cfg.delaySeconds = 5;
-        [[NotificationManager sharedInstance] scheduleNotification:cfg];
-    } else if (indexPath.row == 3) {
-        NotificationConfig* cfg = [[NotificationConfig alloc] init];
-        cfg.notifyId = @"123";
-        [[NotificationManager sharedInstance] removeNotification:cfg];
-    } else if (indexPath.row == 4) {
-        
-    } else if (indexPath.row == 5) {
-        
-    } else if (indexPath.row == 6) {
-        
-    } else if (indexPath.row == 7) {
-        
-    }
+    
 }
 
 #pragma mark - Table view data source

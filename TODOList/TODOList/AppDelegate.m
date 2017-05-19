@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NotificationManager.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
+    [[NotificationManager sharedInstance] requestAuth:^(BOOL result, NSError *msg) {
+        if (result) {
+            // OK
+        } else {
+            // Error
+        }
+    }];
     
     return YES;
 }

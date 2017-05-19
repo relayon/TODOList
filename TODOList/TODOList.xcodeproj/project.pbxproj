@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5405B1821ECE852F00495A05 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B1811ECE852F00495A05 /* SettingViewController.m */; };
+		5405B1881ECE856400495A05 /* TDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B1871ECE856400495A05 /* TDTabBarController.m */; };
+		5405B1921ECE87BC00495A05 /* GoalEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B18D1ECE87BC00495A05 /* GoalEnum.m */; };
+		5405B1931ECE87BD00495A05 /* GoalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B18F1ECE87BC00495A05 /* GoalModel.m */; };
+		5405B1941ECE87BD00495A05 /* GoalModel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B1911ECE87BC00495A05 /* GoalModel+Extension.m */; };
+		5405B1971ECE8CF200495A05 /* GoalItemVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B1961ECE8CF200495A05 /* GoalItemVM.m */; };
+		5405B19B1ECE8EEE00495A05 /* TDGoalItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B1991ECE8EEE00495A05 /* TDGoalItemCell.m */; };
+		5405B19C1ECE8EEE00495A05 /* TDGoalItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5405B19A1ECE8EEE00495A05 /* TDGoalItemCell.xib */; };
+		5405B1A01ECE953000495A05 /* UITableView+RegisterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B19F1ECE953000495A05 /* UITableView+RegisterCell.m */; };
+		5405B1A41ECE9C3400495A05 /* GoalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B1A31ECE9C3400495A05 /* GoalListViewController.m */; };
 		5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */; };
 		5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD971E7A3EE0003C55FC /* BaseTableCellViewModel.m */; };
 		5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422BD9A1E7A3EF2003C55FC /* BaseTableSectionViewModel.m */; };
@@ -30,7 +40,6 @@
 		5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */; };
 		5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */; };
 		5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD591E77FBB10093BE06 /* NSString+Extension.m */; };
-		5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD641E78030E0093BE06 /* UITableView+Extension.m */; };
 		5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439DD9D1E7903B80093BE06 /* SelectItem.m */; };
 		5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0EA1E88FBD3005792E1 /* XibUtils.m */; };
 		5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A0ED1E88FBE5005792E1 /* NSObject+Undefine.m */; };
@@ -42,11 +51,8 @@
 		5463A10D1E891118005792E1 /* Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5463A10C1E891118005792E1 /* Tests.storyboard */; };
 		54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */; };
 		54BC2F151ECDA201005BCE6A /* TDTitleDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */; };
-		54BC2F191ECDA94A005BCE6A /* TDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC2F181ECDA94A005BCE6A /* TDTabBarController.m */; };
 		54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */; };
 		54F43B031ECD99FA007D4897 /* TDGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F43B021ECD99FA007D4897 /* TDGoals.storyboard */; };
-		54F43B091ECD9C27007D4897 /* GoalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43B081ECD9C27007D4897 /* GoalListViewController.m */; };
-		54F43B0D1ECD9C31007D4897 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43B0C1ECD9C31007D4897 /* SettingViewController.m */; };
 		9E070E6ED891C240953199AC /* libPods-TODOListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BC10EAA811641F21D4A55 /* libPods-TODOListUITests.a */; };
 		BC9F9E3BB1AA9DBA03A8A1C6 /* libPods-TODOListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */; };
 		D7A993415A2B7AF427A6BDB7 /* libPods-TODOList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */; };
@@ -75,6 +81,25 @@
 		27DE6136EE70A7B97042316E /* libPods-TODOListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B1C33782FFED22C3137F15 /* Pods-TODOListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C3AD4E05396345EAE26075D /* Pods-TODOListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListTests/Pods-TODOListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5405B1801ECE852F00495A05 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		5405B1811ECE852F00495A05 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		5405B1861ECE856400495A05 /* TDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTabBarController.h; sourceTree = "<group>"; };
+		5405B1871ECE856400495A05 /* TDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTabBarController.m; sourceTree = "<group>"; };
+		5405B18C1ECE87BC00495A05 /* GoalEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalEnum.h; sourceTree = "<group>"; };
+		5405B18D1ECE87BC00495A05 /* GoalEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalEnum.m; sourceTree = "<group>"; };
+		5405B18E1ECE87BC00495A05 /* GoalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalModel.h; sourceTree = "<group>"; };
+		5405B18F1ECE87BC00495A05 /* GoalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalModel.m; sourceTree = "<group>"; };
+		5405B1901ECE87BC00495A05 /* GoalModel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoalModel+Extension.h"; sourceTree = "<group>"; };
+		5405B1911ECE87BC00495A05 /* GoalModel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoalModel+Extension.m"; sourceTree = "<group>"; };
+		5405B1951ECE8CF200495A05 /* GoalItemVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalItemVM.h; sourceTree = "<group>"; };
+		5405B1961ECE8CF200495A05 /* GoalItemVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalItemVM.m; sourceTree = "<group>"; };
+		5405B1981ECE8EEE00495A05 /* TDGoalItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDGoalItemCell.h; sourceTree = "<group>"; };
+		5405B1991ECE8EEE00495A05 /* TDGoalItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDGoalItemCell.m; sourceTree = "<group>"; };
+		5405B19A1ECE8EEE00495A05 /* TDGoalItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDGoalItemCell.xib; sourceTree = "<group>"; };
+		5405B19E1ECE953000495A05 /* UITableView+RegisterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RegisterCell.h"; sourceTree = "<group>"; };
+		5405B19F1ECE953000495A05 /* UITableView+RegisterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RegisterCell.m"; sourceTree = "<group>"; };
+		5405B1A21ECE9C3400495A05 /* GoalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalListViewController.h; sourceTree = "<group>"; };
+		5405B1A31ECE9C3400495A05 /* GoalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalListViewController.m; sourceTree = "<group>"; };
 		5422BD901E7A3D3A003C55FC /* TableBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableBaseViewModel.h; sourceTree = "<group>"; };
 		5422BD911E7A3D3A003C55FC /* TableBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TableBaseViewModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		5422BD961E7A3EE0003C55FC /* BaseTableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCellViewModel.h; sourceTree = "<group>"; };
@@ -122,8 +147,6 @@
 		5439DD511E77DEEE0093BE06 /* SelectItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectItemViewController.m; sourceTree = "<group>"; };
 		5439DD581E77FBB10093BE06 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		5439DD591E77FBB10093BE06 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		5439DD631E78030E0093BE06 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
-		5439DD641E78030E0093BE06 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		5439DD7B1E78E8160093BE06 /* TableBaseViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TableBaseViewModelProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		5439DD7C1E78E8160093BE06 /* TableCellViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellViewModelProtocol.h; sourceTree = "<group>"; };
 		5439DD7D1E78E8160093BE06 /* TableSectionViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionViewModelProtocol.h; sourceTree = "<group>"; };
@@ -149,15 +172,9 @@
 		54BC2F111ECDA201005BCE6A /* TDTitleDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTitleDetailCell.h; sourceTree = "<group>"; };
 		54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTitleDetailCell.m; sourceTree = "<group>"; };
 		54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTitleDetailCell.xib; sourceTree = "<group>"; };
-		54BC2F171ECDA94A005BCE6A /* TDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTabBarController.h; sourceTree = "<group>"; };
-		54BC2F181ECDA94A005BCE6A /* TDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTabBarController.m; sourceTree = "<group>"; };
 		54F43AFE1ECD9870007D4897 /* UITabBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Extension.h"; sourceTree = "<group>"; };
 		54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Extension.m"; sourceTree = "<group>"; };
 		54F43B021ECD99FA007D4897 /* TDGoals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDGoals.storyboard; sourceTree = "<group>"; };
-		54F43B071ECD9C27007D4897 /* GoalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalListViewController.h; sourceTree = "<group>"; };
-		54F43B081ECD9C27007D4897 /* GoalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalListViewController.m; sourceTree = "<group>"; };
-		54F43B0B1ECD9C31007D4897 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		54F43B0C1ECD9C31007D4897 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		68C1C035918F67745789D09D /* Pods-TODOListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOListUITests/Pods-TODOListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A32ECF9B93F4119E74B5E24 /* libPods-TODOList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF92F79BF8F0C326AEDB180E /* Pods-TODOList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TODOList/Pods-TODOList.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +209,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5405B1891ECE876000495A05 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5405B18C1ECE87BC00495A05 /* GoalEnum.h */,
+				5405B18D1ECE87BC00495A05 /* GoalEnum.m */,
+				5405B18E1ECE87BC00495A05 /* GoalModel.h */,
+				5405B18F1ECE87BC00495A05 /* GoalModel.m */,
+				5405B1901ECE87BC00495A05 /* GoalModel+Extension.h */,
+				5405B1911ECE87BC00495A05 /* GoalModel+Extension.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		5405B18A1ECE876000495A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5405B1981ECE8EEE00495A05 /* TDGoalItemCell.h */,
+				5405B1991ECE8EEE00495A05 /* TDGoalItemCell.m */,
+				5405B19A1ECE8EEE00495A05 /* TDGoalItemCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5405B18B1ECE876000495A05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5405B1951ECE8CF200495A05 /* GoalItemVM.h */,
+				5405B1961ECE8CF200495A05 /* GoalItemVM.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5405B19D1ECE94B200495A05 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5405B19E1ECE953000495A05 /* UITableView+RegisterCell.h */,
+				5405B19F1ECE953000495A05 /* UITableView+RegisterCell.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5405B1A11ECE9C3400495A05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5405B1A21ECE9C3400495A05 /* GoalListViewController.h */,
+				5405B1A31ECE9C3400495A05 /* GoalListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5422BD891E7A3D3A003C55FC /* Impl */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,8 +420,6 @@
 				5439DD3E1E77BB140093BE06 /* NSDate+NSString.m */,
 				5439DD581E77FBB10093BE06 /* NSString+Extension.h */,
 				5439DD591E77FBB10093BE06 /* NSString+Extension.m */,
-				5439DD631E78030E0093BE06 /* UITableView+Extension.h */,
-				5439DD641E78030E0093BE06 /* UITableView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -362,6 +427,7 @@
 		5439DD741E78E8160093BE06 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5405B19D1ECE94B200495A05 /* Category */,
 				5439DD7A1E78E8160093BE06 /* Protocol */,
 				5422BD891E7A3D3A003C55FC /* Impl */,
 			);
@@ -442,20 +508,12 @@
 			path = "ctive-C";
 			sourceTree = "<group>";
 		};
-		54BC2F161ECDA94A005BCE6A /* ctive-C */ = {
-			isa = PBXGroup;
-			children = (
-				54BC2F171ECDA94A005BCE6A /* TDTabBarController.h */,
-				54BC2F181ECDA94A005BCE6A /* TDTabBarController.m */,
-			);
-			path = "ctive-C";
-			sourceTree = "<group>";
-		};
 		54F43B011ECD98E0007D4897 /* TDGoals */ = {
 			isa = PBXGroup;
 			children = (
 				54F43B021ECD99FA007D4897 /* TDGoals.storyboard */,
-				54BC2F161ECDA94A005BCE6A /* ctive-C */,
+				5405B1861ECE856400495A05 /* TDTabBarController.h */,
+				5405B1871ECE856400495A05 /* TDTabBarController.m */,
 				54F43B041ECD9B2A007D4897 /* GoalList */,
 				54F43B051ECD9B2A007D4897 /* Setting */,
 			);
@@ -465,7 +523,10 @@
 		54F43B041ECD9B2A007D4897 /* GoalList */ = {
 			isa = PBXGroup;
 			children = (
-				54F43B061ECD9C27007D4897 /* ctive-C */,
+				5405B1A11ECE9C3400495A05 /* Controller */,
+				5405B1891ECE876000495A05 /* DataModel */,
+				5405B18A1ECE876000495A05 /* View */,
+				5405B18B1ECE876000495A05 /* ViewModel */,
 			);
 			path = GoalList;
 			sourceTree = "<group>";
@@ -473,27 +534,10 @@
 		54F43B051ECD9B2A007D4897 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				54F43B0A1ECD9C31007D4897 /* ctive-C */,
+				5405B1801ECE852F00495A05 /* SettingViewController.h */,
+				5405B1811ECE852F00495A05 /* SettingViewController.m */,
 			);
 			path = Setting;
-			sourceTree = "<group>";
-		};
-		54F43B061ECD9C27007D4897 /* ctive-C */ = {
-			isa = PBXGroup;
-			children = (
-				54F43B071ECD9C27007D4897 /* GoalListViewController.h */,
-				54F43B081ECD9C27007D4897 /* GoalListViewController.m */,
-			);
-			path = "ctive-C";
-			sourceTree = "<group>";
-		};
-		54F43B0A1ECD9C31007D4897 /* ctive-C */ = {
-			isa = PBXGroup;
-			children = (
-				54F43B0B1ECD9C31007D4897 /* SettingViewController.h */,
-				54F43B0C1ECD9C31007D4897 /* SettingViewController.m */,
-			);
-			path = "ctive-C";
 			sourceTree = "<group>";
 		};
 		6DDDFD70CAC2EF272B8CAB78 /* Frameworks */ = {
@@ -642,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5439DD091E7694D30093BE06 /* Localizable.strings in Resources */,
+				5405B19C1ECE8EEE00495A05 /* TDGoalItemCell.xib in Resources */,
 				5463A10D1E891118005792E1 /* Tests.storyboard in Resources */,
 				5439DCC21E7673D00093BE06 /* LaunchScreen.storyboard in Resources */,
 				54F43B031ECD99FA007D4897 /* TDGoals.storyboard in Resources */,
@@ -818,28 +863,33 @@
 				5463A0FD1E88FE5A005792E1 /* NotificationConfig.m in Sources */,
 				5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */,
 				5463A0FA1E88FE38005792E1 /* NotificationManager.m in Sources */,
+				5405B1881ECE856400495A05 /* TDTabBarController.m in Sources */,
+				5405B1A01ECE953000495A05 /* UITableView+RegisterCell.m in Sources */,
+				5405B1971ECE8CF200495A05 /* GoalItemVM.m in Sources */,
 				5422BDA11E7A5970003C55FC /* VMTableDataDelegate.m in Sources */,
-				54BC2F191ECDA94A005BCE6A /* TDTabBarController.m in Sources */,
 				5439DD041E7692710093BE06 /* TextEditViewController.m in Sources */,
-				5439DD651E78030E0093BE06 /* UITableView+Extension.m in Sources */,
 				5422BD9B1E7A3EF2003C55FC /* BaseTableSectionViewModel.m in Sources */,
+				5405B1941ECE87BD00495A05 /* GoalModel+Extension.m in Sources */,
 				5439DD5A1E77FBB10093BE06 /* NSString+Extension.m in Sources */,
+				5405B1921ECE87BC00495A05 /* GoalEnum.m in Sources */,
 				5439DD521E77DEEE0093BE06 /* SelectItemViewController.m in Sources */,
+				5405B19B1ECE8EEE00495A05 /* TDGoalItemCell.m in Sources */,
 				5439DD9E1E7903B80093BE06 /* SelectItem.m in Sources */,
 				5463A0EE1E88FBE5005792E1 /* NSObject+Undefine.m in Sources */,
 				54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */,
+				5405B1A41ECE9C3400495A05 /* GoalListViewController.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
 				54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */,
 				5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */,
-				54F43B091ECD9C27007D4897 /* GoalListViewController.m in Sources */,
-				54F43B0D1ECD9C31007D4897 /* SettingViewController.m in Sources */,
 				5422BDB91E7B77BB003C55FC /* DataManager.m in Sources */,
+				5405B1931ECE87BD00495A05 /* GoalModel.m in Sources */,
 				5422BDB51E7B748F003C55FC /* PModel.m in Sources */,
 				5439DD3F1E77BB140093BE06 /* NSDate+NSString.m in Sources */,
 				5422BD951E7A3D3A003C55FC /* TableBaseViewModel.m in Sources */,
 				5439DD3A1E77B3470093BE06 /* DatePickerViewController.m in Sources */,
 				5463A0EB1E88FBD3005792E1 /* XibUtils.m in Sources */,
+				5405B1821ECE852F00495A05 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

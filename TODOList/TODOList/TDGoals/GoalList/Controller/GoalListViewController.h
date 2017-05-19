@@ -1,5 +1,5 @@
 //
-//  SettingViewController.h
+//  GoalListViewController.h
 //  TODOList
 //
 //  Created by SMC-MAC on 2017/5/18.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingViewController : UIViewController
+@interface GoalListViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

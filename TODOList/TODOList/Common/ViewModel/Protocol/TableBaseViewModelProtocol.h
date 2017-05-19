@@ -19,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 // View所在的controller
 @property (nonatomic, weak) UIViewController* controller;
-// View使用的类名
-@property (nonatomic, copy) NSString* viewClassName;
 // 关联的数据模型
 @property (nullable, nonatomic, weak) id dataModel;
 
@@ -29,10 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  根据数据模型更新
  
- @param dataModel 数据模型
+ @param dm 数据模型
  */
-- (void)updateWithDataModel:(id)dataModel;
+- (void)updateWithDataModel:(id)dm;
 
+// View使用的类名
++ (NSString*)viewClassName;
 /**
  更新UI
 

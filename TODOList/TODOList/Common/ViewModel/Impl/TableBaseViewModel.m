@@ -17,16 +17,20 @@
 @implementation TableBaseViewModel
 
 @synthesize controller;
-@synthesize viewClassName;
 @synthesize dataModel;
 
 /**
  根据数据模型更新
  
- @param dataModel 数据模型
+ @param dm 数据模型
  */
-- (void)updateWithDataModel:(id)dataModel {
-    
+- (void)updateWithDataModel:(id)dm {
+    self.dataModel = dm;
+}
+
+// View使用的类名
++ (NSString*)viewClassName {
+    return nil;
 }
 
 /**

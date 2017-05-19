@@ -39,7 +39,7 @@
 #pragma mark -- UITableViewDataSource && UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     id<TableSectionViewModelProtocol> sectionModel = [self p_sectionModelAtIndex:section];
-    if (sectionModel.viewClassName) {
+    if ([[sectionModel class] viewClassName]) {
         return sectionModel.customViewHeight;
     } else {
         return CGFLOAT_MIN;
@@ -55,7 +55,7 @@
     CGFloat height = 0.0f;
     
     if ([cellModel isAutoHeight]) {
-        height = [tableView fd_heightForCellWithIdentifier:cellModel.viewClassName cacheByIndexPath:indexPath configuration:^(UITableViewCell* cell) {
+        height = [tableView fd_heightForCellWithIdentifier:[[cellModel class] viewClassName] cacheByIndexPath:indexPath configuration:^(UITableViewCell* cell) {
             [cellModel updateView:cell];
         }];
     } else {
@@ -69,8 +69,8 @@
     id<TableSectionViewModelProtocol> sectionModel = [self p_sectionModelAtIndex:section];
     
     UIView* sectionView = nil;
-    if (sectionModel.viewClassName) {
-        sectionView = [[[NSBundle mainBundle] loadNibNamed:sectionModel.viewClassName owner:nil options:nil] firstObject];
+    if ([[sectionModel class] viewClassName]) {
+        sectionView = [[[NSBundle mainBundle] loadNibNamed:[[sectionModel class] viewClassName] owner:nil options:nil] firstObject];
         [sectionModel updateView:sectionView];
     }
     
@@ -91,7 +91,7 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<TableCellViewModelProtocol> cellModel = [self p_cellModelAtIndexPath:indexPath];
-    UITableViewCell* tCell = [tableView dequeueReusableCellWithIdentifier:cellModel.viewClassName forIndexPath:indexPath];
+    UITableViewCell* tCell = [tableView dequeueReusableCellWithIdentifier:[[cellModel class] viewClassName] forIndexPath:indexPath];
     [cellModel updateView:tCell];
     return tCell;
 }

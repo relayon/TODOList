@@ -11,8 +11,14 @@
 #import "TDGoalItemCell.h"
 
 @implementation GoalItemVM
-// view name
-+ (NSString*)viewClassName {
+// View使用的所有类名
++ (NSArray<NSString*>*)viewClassNames {
+    NSString* vName = NSStringFromClass([TDGoalItemCell class]);
+    return @[vName];
+}
+
+// View使用的类名
+- (NSString*)viewClassName {
     NSString* vName = NSStringFromClass([TDGoalItemCell class]);
     return vName;
 }

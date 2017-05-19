@@ -42,7 +42,7 @@
 
 - (void)p_registerCell {
     NSMutableSet<NSString*>* cellNames = [NSMutableSet set];
-    [cellNames addObject:[GoalItemVM viewClassName]];
+    [cellNames addObjectsFromArray:[GoalItemVM viewClassNames]];
     
     [self.tableView registerCell:cellNames];
 }

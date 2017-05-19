@@ -28,8 +28,13 @@
     self.dataModel = dm;
 }
 
+// View使用的所有类名
++ (NSArray<NSString*>*)viewClassNames {
+    return @[];
+}
+
 // View使用的类名
-+ (NSString*)viewClassName {
+- (NSString*)viewClassName {
     return nil;
 }
 

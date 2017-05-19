@@ -31,8 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)updateWithDataModel:(id)dm;
 
+// View使用的所有类名
++ (NSArray<NSString*>*)viewClassNames;
 // View使用的类名
-+ (NSString*)viewClassName;
+- (NSString*)viewClassName;
 /**
  更新UI
 

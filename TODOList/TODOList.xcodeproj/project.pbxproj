@@ -49,6 +49,7 @@
 		5463A1031E890022005792E1 /* NotifyHandler09.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A1021E890022005792E1 /* NotifyHandler09.m */; };
 		5463A10B1E890B4E005792E1 /* TestNotifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */; };
 		5463A10D1E891118005792E1 /* Tests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5463A10C1E891118005792E1 /* Tests.storyboard */; };
+		54806D521ECEBCA400881542 /* MiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54806D511ECEBCA400881542 /* MiddleViewController.m */; };
 		54BC2F141ECDA201005BCE6A /* TDTitleDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */; };
 		54BC2F151ECDA201005BCE6A /* TDTitleDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */; };
 		54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F43AFF1ECD9870007D4897 /* UITabBar+Extension.m */; };
@@ -169,6 +170,8 @@
 		5463A1091E890B4E005792E1 /* TestNotifyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNotifyTableViewController.h; sourceTree = "<group>"; };
 		5463A10A1E890B4E005792E1 /* TestNotifyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNotifyTableViewController.m; sourceTree = "<group>"; };
 		5463A10C1E891118005792E1 /* Tests.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tests.storyboard; sourceTree = "<group>"; };
+		54806D501ECEBCA400881542 /* MiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleViewController.h; sourceTree = "<group>"; };
+		54806D511ECEBCA400881542 /* MiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleViewController.m; sourceTree = "<group>"; };
 		54BC2F111ECDA201005BCE6A /* TDTitleDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTitleDetailCell.h; sourceTree = "<group>"; };
 		54BC2F121ECDA201005BCE6A /* TDTitleDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTitleDetailCell.m; sourceTree = "<group>"; };
 		54BC2F131ECDA201005BCE6A /* TDTitleDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTitleDetailCell.xib; sourceTree = "<group>"; };
@@ -514,6 +517,8 @@
 				54F43B021ECD99FA007D4897 /* TDGoals.storyboard */,
 				5405B1861ECE856400495A05 /* TDTabBarController.h */,
 				5405B1871ECE856400495A05 /* TDTabBarController.m */,
+				54806D501ECEBCA400881542 /* MiddleViewController.h */,
+				54806D511ECEBCA400881542 /* MiddleViewController.m */,
 				54F43B041ECD9B2A007D4897 /* GoalList */,
 				54F43B051ECD9B2A007D4897 /* Setting */,
 			);
@@ -880,6 +885,7 @@
 				5405B1A41ECE9C3400495A05 /* GoalListViewController.m in Sources */,
 				5439DCB71E7673D00093BE06 /* AppDelegate.m in Sources */,
 				5439DCB41E7673D00093BE06 /* main.m in Sources */,
+				54806D521ECEBCA400881542 /* MiddleViewController.m in Sources */,
 				54F43B001ECD9870007D4897 /* UITabBar+Extension.m in Sources */,
 				5422BD981E7A3EE0003C55FC /* BaseTableCellViewModel.m in Sources */,
 				5422BDB91E7B77BB003C55FC /* DataManager.m in Sources */,

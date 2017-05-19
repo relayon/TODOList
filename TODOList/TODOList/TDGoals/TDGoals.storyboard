@@ -48,7 +48,7 @@
         <!--设置-->
         <scene sceneID="Zsu-M8-15x">
             <objects>
-                <viewController id="Xoq-mE-ars" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="Xoq-mE-ars" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MXk-fo-tWN"/>
                         <viewControllerLayoutGuide type="bottom" id="wMS-uJ-q6j"/>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1542" y="1146"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Middle View Controller-->
         <scene sceneID="hQ3-4Y-nMg">
             <objects>
-                <navigationController id="tbN-AY-HyP" sceneMemberID="viewController">
+                <navigationController id="tbN-AY-HyP" customClass="MiddleViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="5fj-vp-OJ3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iY1-5l-B5F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

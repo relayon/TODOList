@@ -8,8 +8,9 @@
 
 #import "TDTabBarController.h"
 #import "UITabBar+Extension.h"
+#import "MiddleViewController.h"
 
-@interface TDTabBarController ()
+@interface TDTabBarController () <UITabBarControllerDelegate>
 
 @end
 
@@ -19,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self p_addCenterButton];
+    
+    self.delegate = self;
 }
 
 - (void)onButtonClick:(id)sender {
@@ -27,15 +30,15 @@
 
 - (void)p_addCenterButton {
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.backgroundColor = [UIColor lightGrayColor];
-    [btn setTitle:@"开始" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor whiteColor];
+    [btn setTitle:@"" forState:UIControlStateNormal];
     btn.frame = CGRectMake(0, 0, 75, 75);
     btn.layer.masksToBounds = YES;
     btn.layer.cornerRadius = 75/2.0f;
-    btn.layer.borderWidth = 0.5f;
-    btn.layer.borderColor = [UIColor redColor].CGColor;
+//    btn.layer.borderWidth = 0.5f;
+//    btn.layer.borderColor = [UIColor redColor].CGColor;
     [btn addTarget:self action:@selector(onButtonClick:) forControlEvents:UIControlEventTouchDown];
-    
+    [btn setImage:[UIImage imageNamed:@"img_add"] forState:UIControlStateNormal];
     UITabBar* tabBar = self.tabBar;
     
     // btn.center = tabBar.center;
@@ -51,14 +54,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -- UITabBarControllerDelegate
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    if ([viewController isKindOfClass:[MiddleViewController class]]) {
+        return NO;
+    }
+    
+    return YES;
 }
-*/
 
 @end
